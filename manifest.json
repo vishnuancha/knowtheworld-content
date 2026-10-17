@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T03:04:36Z",
+  "generatedAt": "2026-10-17T03:17:45Z",
   "schemaVersion": 2,
   "languages": [
     "en",
@@ -8,16 +8,10 @@
   "media": "media.json",
   "days": [
     {
-      "date": "2026-10-17",
-      "url": "days/2026-10-17.json",
-      "sha256": "86a713bb7a6b2d1da1ae29fcc55e8dd45a82dcdcfae24c60528f8822ad0c5450",
-      "bytes": 149552
-    },
-    {
       "date": "2026-10-16",
       "url": "days/2026-10-16.json",
-      "sha256": "151d7eb46a0da5eb2af33835e30f6b513e07fa1688497526a8d9da8d08a306c2",
-      "bytes": 164123
+      "sha256": "8ddf25f43241a432be3e3483932511a3a6d24ab473658967a83d94767e02761d",
+      "bytes": 313632
     },
     {
       "date": "2026-10-15",
