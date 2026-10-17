@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T02:38:08Z",
+  "generatedAt": "2026-10-17T03:04:36Z",
   "files": [
     {
       "path": "audio/airplane/engines.mp3",
@@ -27,6 +27,31 @@
       "sha256": "98aab097387289480a4d1df311f5726c04b8f0c578a0eaccad161f80f6f3f06c"
     },
     {
+      "path": "audio/bees/dance.mp3",
+      "bytes": 84524,
+      "sha256": "8bef08e5424e00dfba92b568a785a9e30c3bccd5bd8878a09ac3d087852d8b71"
+    },
+    {
+      "path": "audio/bees/food.mp3",
+      "bytes": 74732,
+      "sha256": "aab5104c32bb9e5337cc09e511691c3df24b9fc61c9b4ed88b394d747a78a422"
+    },
+    {
+      "path": "audio/bees/lights.mp3",
+      "bytes": 94124,
+      "sha256": "e8d7ab8cde901fb2ef2070f7577ea7e87957cb38bc02686614406779e2577fbb"
+    },
+    {
+      "path": "audio/bees/pollen.mp3",
+      "bytes": 73004,
+      "sha256": "b47df334b25e328e461b20ab4fab5b3895e5904091f4b583d85ccd557dcb774c"
+    },
+    {
+      "path": "audio/bees/scent.mp3",
+      "bytes": 75500,
+      "sha256": "3bb5933870101987d479fbfecc14912de6cb2a0d0a8612e96ecbd661821c924a"
+    },
+    {
       "path": "audio/daynight/half.mp3",
       "bytes": 83948,
       "sha256": "3e210bd370f43f6a34c11f572429de8996df04e4cbac1249c84d00be6793e7fa"
@@ -50,6 +75,56 @@
       "path": "audio/daynight/you.mp3",
       "bytes": 77996,
       "sha256": "4673420f787ab708990244f33b2ef197813fcae63b82c4304106107cef144e89"
+    },
+    {
+      "path": "audio/fridge/cycle.mp3",
+      "bytes": 79532,
+      "sha256": "bec90f91890c3dcccb9a0e8c8b80c6ee8fa4cec58be9c7427fb1c419d7e35ff5"
+    },
+    {
+      "path": "audio/fridge/inside.mp3",
+      "bytes": 74732,
+      "sha256": "449b3237b3da730d23c9a8029cc8b0b9579872223926e3a3da6d700409f4d504"
+    },
+    {
+      "path": "audio/fridge/pipes.mp3",
+      "bytes": 72044,
+      "sha256": "f30490c013efad14a77d1597f69036caba46b3cf181f09a6964f2a574ce0cc51"
+    },
+    {
+      "path": "audio/fridge/pump.mp3",
+      "bytes": 75308,
+      "sha256": "e70fd8ac9dd1fc8efb5bf521fb1851344ac19a2c9db2b87c6b3b72c59bfc54d7"
+    },
+    {
+      "path": "audio/fridge/sweat.mp3",
+      "bytes": 81644,
+      "sha256": "bbfe87ed02348f4bc9ab83dd6e31cc7d34cb7ba58afe52d64b85eabe8f4a1cc6"
+    },
+    {
+      "path": "audio/gps/circles.mp3",
+      "bytes": 86444,
+      "sha256": "9f5df57659dc945a761aa4c2f4f82311eae3890d2f17634f2bab789becc11243"
+    },
+    {
+      "path": "audio/gps/fourth.mp3",
+      "bytes": 89324,
+      "sha256": "ddfb2e8582bdf1ec8228614be8525910a01d1c63e65157c15131bd149dd614d0"
+    },
+    {
+      "path": "audio/gps/pocket.mp3",
+      "bytes": 80108,
+      "sha256": "ec75dce3180e2c12a89de772d5f529815f28d781e7f2cb98ce91a9f982ad6227"
+    },
+    {
+      "path": "audio/gps/sats.mp3",
+      "bytes": 79148,
+      "sha256": "964aa4dea3d3087d7f7522b68b64d4755fb2f27adb50b9919456cceebb7333f5"
+    },
+    {
+      "path": "audio/gps/time.mp3",
+      "bytes": 88748,
+      "sha256": "44e23541524a2962540e36ec43cd7da52ceda45919d2e87e0e3ac618592a7963"
     },
     {
       "path": "audio/gravity/fall.mp3",
@@ -127,6 +202,31 @@
       "sha256": "5e3b70d6f4416f7e95edf0b8d3e3f8b47cd304b346881ffec38139e5bdabef31"
     },
     {
+      "path": "audio/hi/bees/dance.mp3",
+      "bytes": 116204,
+      "sha256": "964b104173b8474216fc33d1e55eae6a019755ccc2dadb624a60a0fe7c7bb1cb"
+    },
+    {
+      "path": "audio/hi/bees/food.mp3",
+      "bytes": 116204,
+      "sha256": "fc334a3245060142eee0f81e8ea9c968f82605e10b1879229934d5738505654f"
+    },
+    {
+      "path": "audio/hi/bees/lights.mp3",
+      "bytes": 128108,
+      "sha256": "4a6105cb93aaff1b18ee0dc12bf0d32b1d882277a00af8ef6945747d01813356"
+    },
+    {
+      "path": "audio/hi/bees/pollen.mp3",
+      "bytes": 107756,
+      "sha256": "f8296381328deaecebe1898547a66b434946fd9d207a11420c185cad36345895"
+    },
+    {
+      "path": "audio/hi/bees/scent.mp3",
+      "bytes": 103916,
+      "sha256": "64dde6bacccc073108c16403f7b0f0823168557acd1c3dd5cac60313f71b1891"
+    },
+    {
       "path": "audio/hi/daynight/half.mp3",
       "bytes": 123884,
       "sha256": "e25359574339b9e7c63a2009bcf4d678135c00263ee962fb94c66c81e8d8aa78"
@@ -150,6 +250,56 @@
       "path": "audio/hi/daynight/you.mp3",
       "bytes": 104300,
       "sha256": "dcfe14f85393b485fabd98b7c5bd434dd4a2c13a7f81424eda75a2a766f23697"
+    },
+    {
+      "path": "audio/hi/fridge/cycle.mp3",
+      "bytes": 119468,
+      "sha256": "e3c8d0f148e3942a0a10804808e11dfa00ad135b359b9f3d0593f8858a16f159"
+    },
+    {
+      "path": "audio/hi/fridge/inside.mp3",
+      "bytes": 108332,
+      "sha256": "810993dc6f29f1e532901c3b3920986144d4185752294f921ed0517dd27e1a4c"
+    },
+    {
+      "path": "audio/hi/fridge/pipes.mp3",
+      "bytes": 100268,
+      "sha256": "f6b40d7f52aecf3db09ed6431937eb27169440689b66e2ff6909b7aff72d6e68"
+    },
+    {
+      "path": "audio/hi/fridge/pump.mp3",
+      "bytes": 111404,
+      "sha256": "a7859bebcac89cb340ef7d98194873b0670ce395e197f5f59bc381bfc01c3df6"
+    },
+    {
+      "path": "audio/hi/fridge/sweat.mp3",
+      "bytes": 114284,
+      "sha256": "eab62e3e89fc76d3fde9976e38290cd86f56cc98215b9aa464ee09ee83e229d2"
+    },
+    {
+      "path": "audio/hi/gps/circles.mp3",
+      "bytes": 111596,
+      "sha256": "47e33ee9a373607d7e95e786158fd04a2a25a2789de7a63ffb49eb028e071423"
+    },
+    {
+      "path": "audio/hi/gps/fourth.mp3",
+      "bytes": 114284,
+      "sha256": "4d488cef26970becf4da59d0395137064fa0bb84211d76ea9025a374edadaa52"
+    },
+    {
+      "path": "audio/hi/gps/pocket.mp3",
+      "bytes": 111788,
+      "sha256": "f19a5f5dd22187e18868aca4466f5b1f827bd9cee1fb7ff918484b4f9435dd34"
+    },
+    {
+      "path": "audio/hi/gps/sats.mp3",
+      "bytes": 107756,
+      "sha256": "74389a687f0111e1ce02f2c1873310db821e0961e440dbea848cfd8bf4eeb0c7"
+    },
+    {
+      "path": "audio/hi/gps/time.mp3",
+      "bytes": 110060,
+      "sha256": "767277f7e96e2c3e217da3105904e8c4555181f54549fbcee913e3c15e914c0e"
     },
     {
       "path": "audio/hi/gravity/fall.mp3",
@@ -350,6 +500,31 @@
       "path": "audio/hi/rainbow/spread.mp3",
       "bytes": 120236,
       "sha256": "3b12eba1fa58c5780729579d511c870a338eded6acc337ae6f5e27bed0ebffef"
+    },
+    {
+      "path": "audio/hi/seasalt/carry.mp3",
+      "bytes": 114668,
+      "sha256": "3386ae4c71bded6d31011a3d6b4d5a14c5743e3048249756863d772661589194"
+    },
+    {
+      "path": "audio/hi/seasalt/lakes.mp3",
+      "bytes": 116396,
+      "sha256": "6ef8649ebae002ace48b44dc0efcc6aa3eeba801b9b1baaaf998a41244505ce3"
+    },
+    {
+      "path": "audio/hi/seasalt/stay.mp3",
+      "bytes": 129644,
+      "sha256": "34cb767ee0b4807b7f49b36a99beef646225a3147124a0adce6817a49cac6358"
+    },
+    {
+      "path": "audio/hi/seasalt/taste.mp3",
+      "bytes": 120044,
+      "sha256": "76fbd50b916cab4ae7bb5ccb691e0a50edc638b2b522cddcc7b126fab3897078"
+    },
+    {
+      "path": "audio/hi/seasalt/wear.mp3",
+      "bytes": 102380,
+      "sha256": "9e82cedaecafc4d8f01ccf314b489f39a922f7c23bd05619ae2ae66f2ef9c9dc"
     },
     {
       "path": "audio/hi/seasons/between.mp3",
@@ -665,6 +840,31 @@
       "path": "audio/rainbow/spread.mp3",
       "bytes": 80108,
       "sha256": "25745a28c1949a2fa0f139864e0abad4e528971d7d5afecccb30745be05a3a4e"
+    },
+    {
+      "path": "audio/seasalt/carry.mp3",
+      "bytes": 83948,
+      "sha256": "bae014c0278230b0c9c8d321ae71c78fd1b2964658c0d6849e75ece551fbb6ca"
+    },
+    {
+      "path": "audio/seasalt/lakes.mp3",
+      "bytes": 81836,
+      "sha256": "1b8b6e2df90025e1061e2775dda524c71636e0ce9a418498b7ebcac5f1f03880"
+    },
+    {
+      "path": "audio/seasalt/stay.mp3",
+      "bytes": 87596,
+      "sha256": "5d592439701387f0ee10e80d281477cb9cf236659064ef2ab70f0bd41ec6cc2d"
+    },
+    {
+      "path": "audio/seasalt/taste.mp3",
+      "bytes": 87788,
+      "sha256": "b878ea7d2317969609339fa055e4d1f5eaa328ed8be50bf343ce5067478133b1"
+    },
+    {
+      "path": "audio/seasalt/wear.mp3",
+      "bytes": 83756,
+      "sha256": "d50999c03020187b475af77242f21f9191c926641d1efb1db69bdb80641f0a8d"
     },
     {
       "path": "audio/seasons/between.mp3",
