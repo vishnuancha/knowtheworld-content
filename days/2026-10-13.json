@@ -1,0 +1,271 @@
+{
+ "date": "2026-10-13",
+ "lessons": [
+  {
+   "id": "transistor",
+   "title": "How does a transistor work?",
+   "subtitle": "The tiny switch hiding inside every chip",
+   "category": "Technology",
+   "emoji": "🔌",
+   "accent": "#4895EF",
+   "available": true,
+   "scenes": [
+    {
+     "id": "intro",
+     "title": "Meet the tiny helper",
+     "tint": "#E0F4FF",
+     "narration": "Inside your phone, your computer, even your car, live billions of tiny helpers. Each one is called a transistor. Let's find out what it does, and why it's so special.",
+     "audio": "audio/transistor/intro.mp3",
+     "audioSeconds": 11.2
+    },
+    {
+     "id": "switch",
+     "title": "A light switch",
+     "tint": "#FFF3C4",
+     "narration": "Let's start with something you know: a light switch. Flip it on, and electricity can flow around, so the light turns on. Flip it off, and the light goes out.",
+     "audio": "audio/transistor/switch.mp3",
+     "audioSeconds": 9.75
+    },
+    {
+     "id": "nofingers",
+     "title": "No fingers inside!",
+     "tint": "#FFE0E0",
+     "narration": "But inside a phone, there are no fingers to flip switches. Billions of switches would need billions of fingers! So we need a switch that can flip itself.",
+     "audio": "audio/transistor/nofingers.mp3",
+     "audioSeconds": 9.97
+    },
+    {
+     "id": "water",
+     "title": "A door in a pipe",
+     "tint": "#DDF1FF",
+     "narration": "Here's a trick. Pretend electricity is water in a pipe. Now put a little door in the pipe, called a gate. Door closed, no water. Door open, water flows!",
+     "audio": "audio/transistor/water.mp3",
+     "audioSeconds": 10.28
+    },
+    {
+     "id": "parts",
+     "title": "Three parts",
+     "tint": "#EAE0FF",
+     "narration": "A transistor has three parts. The Source, where the electricity comes in. The Drain, where it flows out. And the Gate, the little door in the middle that decides who passes.",
+     "audio": "audio/transistor/parts.mp3",
+     "audioSeconds": 11.05
+    },
+    {
+     "id": "off",
+     "title": "Closed means off",
+     "tint": "#ECECF3",
+     "narration": "When nothing touches the gate, the door stays shut, and no electricity gets through. We call this off, and computers write it as the number zero.",
+     "audio": "audio/transistor/off.mp3",
+     "audioSeconds": 9.12
+    },
+    {
+     "id": "on",
+     "title": "Open means on",
+     "tint": "#DFF8E5",
+     "narration": "Now give the gate just a tiny bit of electricity. The door swings open, and a big river of electricity rushes through! That's on, and computers write it as one.",
+     "audio": "audio/transistor/on.mp3",
+     "audioSeconds": 11.05
+    },
+    {
+     "id": "inside",
+     "title": "Peek inside the chip",
+     "tint": "#FFF1D6",
+     "narration": "But how does a gate open with nothing moving? Inside, it's made from silicon, which comes from sand. A little charge on the gate pulls electrons together into a bridge, and they cross.",
+     "audio": "audio/transistor/inside.mp3",
+     "audioSeconds": 12.05
+    },
+    {
+     "id": "chain",
+     "title": "Switches flip switches",
+     "tint": "#FFE8F1",
+     "narration": "Best of all, one transistor's flow can flip the next transistor's gate, like falling dominoes. Switches now control switches, with no fingers needed!",
+     "audio": "audio/transistor/chain.mp3",
+     "audioSeconds": 10.1
+    },
+    {
+     "id": "decide",
+     "title": "Making decisions",
+     "tint": "#E0F7F4",
+     "narration": "Put two switches in a row, and you get a decision. The light turns on only if the first one AND the second one are open. That's how a computer thinks!",
+     "audio": "audio/transistor/decide.mp3",
+     "audioSeconds": 9.55
+    },
+    {
+     "id": "billions",
+     "title": "Billions of flips",
+     "tint": "#FFE3E8",
+     "narration": "Now flip millions of them, super fast, in clever patterns. Zeros and ones become pictures, music and messages. Every photo you see is switches blinking on and off!",
+     "audio": "audio/transistor/billions.mp3",
+     "audioSeconds": 11.93
+    },
+    {
+     "id": "tiny",
+     "title": "So very tiny",
+     "tint": "#EAF4FF",
+     "narration": "And they're unbelievably small. More than a thousand transistors could line up across the width of one hair. A modern phone chip holds around fifteen billion of them.",
+     "audio": "audio/transistor/tiny.mp3",
+     "audioSeconds": 10.97
+    },
+    {
+     "id": "recap",
+     "title": "The big idea",
+     "tint": "#FFF3C4",
+     "narration": "So that's the secret. A transistor is a tiny switch, flipped by electricity instead of fingers. Put billions together, and you get the magic inside every phone and computer.",
+     "audio": "audio/transistor/recap.mp3",
+     "audioSeconds": 12.07
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What does the gate of a transistor do?",
+     "options": [
+      "It stores electricity like a battery",
+      "It opens and closes a door for electricity",
+      "It makes the phone screen bright"
+     ],
+     "answer": 1,
+     "explanation": "The gate is the little door. A tiny bit of electricity on it decides whether the big flow can pass."
+    },
+    {
+     "question": "The gate gets a tiny bit of electricity. What happens?",
+     "options": [
+      "The door opens and electricity flows: ON, or 1",
+      "The door locks tight: OFF, or 0",
+      "The transistor turns into a battery"
+     ],
+     "answer": 0,
+     "explanation": "Electricity on the gate swings the door open, so a big river of electricity rushes through."
+    },
+    {
+     "question": "Why can a phone chip hold billions of transistors?",
+     "options": [
+      "Each one is flipped by a tiny finger",
+      "Each one is made of gold",
+      "Electricity flips each one, and they are unbelievably small"
+     ],
+     "answer": 2,
+     "explanation": "No fingers needed. Electricity flips them, and they are so tiny that billions fit on one chip."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "ट्रांज़िस्टर कैसे काम करता है?",
+     "subtitle": "हर चिप में छिपा छोटा स्विच",
+     "quiz": [
+      {
+       "question": "ट्रांज़िस्टर का गेट क्या करता है?",
+       "options": [
+        "बैटरी की तरह बिजली जमा करता है",
+        "बिजली के लिए दरवाज़ा खोलता और बंद करता है",
+        "फ़ोन की स्क्रीन चमकाता है"
+       ],
+       "explanation": "गेट वह छोटा दरवाज़ा है। उस पर लगी थोड़ी बिजली तय करती है कि बड़ा बहाव पार जाएगा या नहीं।"
+      },
+      {
+       "question": "गेट पर थोड़ी बिजली आई। अब क्या होगा?",
+       "options": [
+        "दरवाज़ा खुलेगा और बिजली बहेगी: ऑन, यानी 1",
+        "दरवाज़ा कसकर बंद रहेगा: ऑफ, यानी 0",
+        "ट्रांज़िस्टर बैटरी बन जाएगा"
+       ],
+       "explanation": "गेट पर बिजली दरवाज़ा खोल देती है, और बिजली की बड़ी नदी बह निकलती है।"
+      },
+      {
+       "question": "फ़ोन की चिप में अरबों ट्रांज़िस्टर कैसे आ जाते हैं?",
+       "options": [
+        "हर एक को छोटी उँगली ऑन करती है",
+        "हर एक सोने का बना होता है",
+        "बिजली हर एक को ऑन करती है, और वे बेहद छोटे हैं"
+       ],
+       "explanation": "उँगलियों की ज़रूरत नहीं। बिजली इन्हें चलाती है, और ये इतने छोटे हैं कि एक चिप पर अरबों आ जाते हैं।"
+      }
+     ],
+     "scenes": {
+      "intro": {
+       "narration": "आपके फ़ोन, कंप्यूटर, यहाँ तक कि कार के अंदर अरबों छोटे-छोटे मददगार रहते हैं। हर एक को ट्रांज़िस्टर कहते हैं। चलिए देखें यह क्या करता है, और इतना ख़ास क्यों है।",
+       "audio": "audio/hi/transistor/intro.mp3",
+       "audioSeconds": 15.95
+      },
+      "switch": {
+       "narration": "शुरू करें उससे जो आप जानते हैं: बिजली का स्विच। उसे ऑन करो, बिजली बहने लगती है और बत्ती जल जाती है। ऑफ करो, बत्ती बुझ जाती है।",
+       "audio": "audio/hi/transistor/switch.mp3",
+       "audioSeconds": 13.47
+      },
+      "nofingers": {
+       "narration": "लेकिन फ़ोन के अंदर स्विच ऑन करने के लिए उँगलियाँ नहीं होतीं। अरबों स्विच के लिए अरबों उँगलियाँ चाहिए! इसलिए हमें ऐसा स्विच चाहिए जो ख़ुद को ऑन-ऑफ कर सके।",
+       "audio": "audio/hi/transistor/nofingers.mp3",
+       "audioSeconds": 15.3
+      },
+      "water": {
+       "narration": "एक तरकीब। मान लो बिजली एक पाइप में बहता पानी है। अब पाइप में एक छोटा दरवाज़ा लगाओ, जिसे गेट कहते हैं। दरवाज़ा बंद, पानी नहीं। दरवाज़ा खुला, पानी बहा!",
+       "audio": "audio/hi/transistor/water.mp3",
+       "audioSeconds": 15.47
+      },
+      "parts": {
+       "narration": "ट्रांज़िस्टर के तीन हिस्से होते हैं। सोर्स, जहाँ से बिजली आती है। ड्रेन, जहाँ से वह बहकर निकलती है। और गेट — बीच का छोटा दरवाज़ा, जो तय करता है कि कौन पार जाएगा।",
+       "audio": "audio/hi/transistor/parts.mp3",
+       "audioSeconds": 17.0
+      },
+      "off": {
+       "narration": "जब गेट को कुछ नहीं छूता, दरवाज़ा बंद रहता है और बिजली पार नहीं जाती। इसे हम ऑफ कहते हैं, और कंप्यूटर इसे शून्य (0) लिखता है।",
+       "audio": "audio/hi/transistor/off.mp3",
+       "audioSeconds": 12.7
+      },
+      "on": {
+       "narration": "अब गेट पर बहुत थोड़ी बिजली दो। दरवाज़ा खुल जाता है, और बिजली की बड़ी नदी बह निकलती है! यह ऑन है, और कंप्यूटर इसे एक (1) लिखता है।",
+       "audio": "audio/hi/transistor/on.mp3",
+       "audioSeconds": 13.72
+      },
+      "inside": {
+       "narration": "लेकिन बिना कुछ हिले गेट कैसे खुलता है? अंदर यह सिलिकॉन से बना होता है, जो रेत से मिलता है। गेट पर थोड़ा चार्ज इलेक्ट्रॉनों को जोड़कर एक पुल बना देता है, और वे पार चले जाते हैं।",
+       "audio": "audio/hi/transistor/inside.mp3",
+       "audioSeconds": 16.75
+      },
+      "chain": {
+       "narration": "सबसे अच्छी बात — एक ट्रांज़िस्टर का बहाव अगले ट्रांज़िस्टर का गेट खोल सकता है, जैसे गिरती हुई डोमिनो गोटियाँ। अब स्विच स्विच को चलाते हैं, बिना किसी उँगली के!",
+       "audio": "audio/hi/transistor/chain.mp3",
+       "audioSeconds": 14.25
+      },
+      "decide": {
+       "narration": "दो स्विच एक पंक्ति में रखो, तो फ़ैसला बनता है। बत्ती तभी जलेगी जब पहला और दूसरा — दोनों खुले हों। कंप्यूटर ऐसे ही सोचता है!",
+       "audio": "audio/hi/transistor/decide.mp3",
+       "audioSeconds": 13.23
+      },
+      "billions": {
+       "narration": "अब लाखों को बहुत तेज़ी से, चतुर तरीक़ों में ऑन-ऑफ करो। शून्य और एक तस्वीरें, संगीत और संदेश बन जाते हैं। आपकी हर फ़ोटो बस स्विचों का जलना-बुझना है!",
+       "audio": "audio/hi/transistor/billions.mp3",
+       "audioSeconds": 15.12
+      },
+      "tiny": {
+       "narration": "और ये सोच से भी छोटे हैं। एक बाल की चौड़ाई में हज़ार से ज़्यादा ट्रांज़िस्टर आ जाते हैं। आज के फ़ोन की चिप में क़रीब पंद्रह अरब होते हैं।",
+       "audio": "audio/hi/transistor/tiny.mp3",
+       "audioSeconds": 13.38
+      },
+      "recap": {
+       "narration": "तो यही है राज़। ट्रांज़िस्टर एक छोटा स्विच है, जिसे उँगलियों की जगह बिजली ऑन-ऑफ करती है। अरबों को मिला दो, और हर फ़ोन और कंप्यूटर का जादू तैयार है।",
+       "audio": "audio/hi/transistor/recap.mp3",
+       "audioSeconds": 14.93
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "microwave",
+   "title": "How does a microwave heat food?",
+   "subtitle": "Tiny waves that make water wiggle",
+   "category": "Kitchen science",
+   "emoji": "🍲",
+   "accent": "#FF6B6B",
+   "available": false,
+   "scenes": [],
+   "i18n": {
+    "hi": {
+     "title": "माइक्रोवेव खाना कैसे गरम करता है?",
+     "subtitle": "छोटी लहरें जो पानी को हिलाती हैं",
+     "quiz": []
+    }
+   }
+  }
+ ]
+}

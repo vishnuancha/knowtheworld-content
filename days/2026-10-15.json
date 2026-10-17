@@ -1,0 +1,4946 @@
+{
+ "date": "2026-10-15",
+ "lessons": [
+  {
+   "id": "sky",
+   "title": "Why is the sky blue?",
+   "subtitle": "Sunlight has a secret",
+   "category": "Weather",
+   "emoji": "🌤️",
+   "accent": "#4CC9F0",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "white",
+     "title": "Sunlight is secretly colourful",
+     "tint": "#FFF3C4",
+     "narration": "Sunlight looks plain white or yellow. But it has a secret! Hiding inside it are all the colors of the rainbow, mixed together like a bag of colorful sweets.",
+     "draw": [
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "80 + cos(i * 0.5236 + e * 0.2) * 52.5",
+         "y1": "110 + sin(i * 0.5236 + e * 0.2) * 52.5",
+         "x2": "80 + cos(i * 0.5236 + e * 0.2) * 65.10000000000001 + wave(e, 0.8, i * 0.1) * 4.2",
+         "y2": "110 + sin(i * 0.5236 + e * 0.2) * 65.10000000000001 + wave(e, 0.8, i * 0.1) * 4.2",
+         "color": "electric",
+         "w": 5.04
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 80,
+       "y": 110,
+       "r": 42,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 64.88,
+       "y": 102.44,
+       "r": 4.2,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 95.12,
+       "y": 102.44,
+       "r": 4.2,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        93.64,
+        118.42,
+        91.64,
+        122.47,
+        88.48,
+        125.69,
+        84.46,
+        127.77,
+        80.0,
+        128.48,
+        75.54,
+        127.77,
+        71.52,
+        125.69,
+        68.36,
+        122.47,
+        66.36,
+        118.42
+       ],
+       "stroke": "ink",
+       "sw": 3.36
+      },
+      {
+       "op": "circle",
+       "x": 53.96,
+       "y": 116.72,
+       "r": 5.46,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 106.04,
+       "y": 116.72,
+       "r": 5.46,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.12, 0.22)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          130,
+          100,
+          200,
+          175,
+          200,
+          205,
+          130,
+          130
+         ],
+         "closed": true,
+         "fill": "white",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        150,
+        252,
+        205,
+        200,
+        255
+       ],
+       "closed": true,
+       "fill": "#EAF6FF",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "ramp(u, 0.1, 0.2)"
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.3, 0.55)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 200,
+         "x2": 385,
+         "y2": 118,
+         "color": "coral",
+         "w": 11
+        },
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 203,
+         "x2": 385,
+         "y2": 152,
+         "color": "#FF9F43",
+         "w": 11
+        },
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 206,
+         "x2": 385,
+         "y2": 186,
+         "color": "sun",
+         "w": 11
+        },
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 209,
+         "x2": 385,
+         "y2": 220,
+         "color": "leaf",
+         "w": 11
+        },
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 212,
+         "x2": 385,
+         "y2": 254,
+         "color": "water",
+         "w": 11
+        },
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 215,
+         "x2": 385,
+         "y2": 288,
+         "color": "grape",
+         "w": 11
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "white light",
+       "x": 190,
+       "y": 60,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.2)"
+      },
+      {
+       "op": "text",
+       "s": "all the colours!",
+       "x": 250,
+       "y": 350,
+       "size": 22,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.6, 0.75)"
+      }
+     ],
+     "audio": "audio/sky/white.mp3",
+     "audioSeconds": 10.12
+    },
+    {
+     "id": "air",
+     "title": "The air is full of tiny bits",
+     "tint": "#DDF1FF",
+     "narration": "The air around you is not empty. It is full of teeny tiny bits, far too small to see. When sunlight rushes through the air, it bumps into those tiny bits.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 320,
+       "w": 420,
+       "h": 90,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "60 + cos(i * 0.5236 + e * 0.2) * 42.5",
+         "y1": "60 + sin(i * 0.5236 + e * 0.2) * 42.5",
+         "x2": "60 + cos(i * 0.5236 + e * 0.2) * 52.7 + wave(e, 0.8, i * 0.1) * 3.4000000000000004",
+         "y2": "60 + sin(i * 0.5236 + e * 0.2) * 52.7 + wave(e, 0.8, i * 0.1) * 3.4000000000000004",
+         "color": "electric",
+         "w": 4.08
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 60,
+       "y": 60,
+       "r": 34,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 47.76,
+       "y": 53.88,
+       "r": 3.4,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 72.24,
+       "y": 53.88,
+       "r": 3.4,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        71.04,
+        66.82,
+        69.42,
+        70.1,
+        66.86,
+        72.7,
+        63.61,
+        74.38,
+        60.0,
+        74.96,
+        56.39,
+        74.38,
+        53.14,
+        72.7,
+        50.58,
+        70.1,
+        48.96,
+        66.82
+       ],
+       "stroke": "ink",
+       "sw": 2.72
+      },
+      {
+       "op": "circle",
+       "x": 38.92,
+       "y": 65.44,
+       "r": 4.42,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 81.08,
+       "y": 65.44,
+       "r": 4.42,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "repeat",
+       "n": 46,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "20 + hash(i, 1) * 360",
+         "y": "120 + hash(i, 2) * 190 + wave(e, 0.4, hash(i, 3)) * 5",
+         "r": "2.5 + hash(i, 4) * 2.5",
+         "fill": "#8EA4BF",
+         "a": 0.85
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.15, 0.3) * 0.9",
+       "do": [
+        {
+         "op": "line",
+         "x1": 90,
+         "y1": 90,
+         "x2": 330,
+         "y2": 300,
+         "color": "#FFE08A",
+         "w": 9
+        },
+        {
+         "op": "line",
+         "x1": 100,
+         "y1": 70,
+         "x2": 340,
+         "y2": 270,
+         "color": "#FFE08A",
+         "w": 9
+        },
+        {
+         "op": "line",
+         "x1": 75,
+         "y1": 110,
+         "x2": 310,
+         "y2": 320,
+         "color": "#FFE08A",
+         "w": 9
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.35, 0.5)",
+       "do": [
+        {
+         "op": "text",
+         "s": "tiny bits of air",
+         "x": 250,
+         "y": 120,
+         "size": 21,
+         "color": "ink",
+         "pill": "white",
+         "pillStroke": "ink"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.55, 0.7)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 300,
+         "y": 215,
+         "r": 34,
+         "fill": "white",
+         "stroke": "ink",
+         "sw": 4,
+         "a": 0.9
+        },
+        {
+         "op": "circle",
+         "x": 300,
+         "y": 215,
+         "r": 11,
+         "fill": "#8EA4BF",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "line",
+         "x1": 325,
+         "y1": 240,
+         "x2": 350,
+         "y2": 268,
+         "color": "ink",
+         "w": 8
+        }
+       ]
+      }
+     ],
+     "audio": "audio/sky/air.mp3",
+     "audioSeconds": 10.57
+    },
+    {
+     "id": "bounce",
+     "title": "Blue is extra bouncy",
+     "tint": "#E8F3FF",
+     "narration": "Red light zooms straight through. But blue light is extra bouncy! It ricochets off the tiny bits and scatters all over the sky, like a bouncy ball in a playground.",
+     "draw": [
+      {
+       "op": "text",
+       "s": "red goes straight",
+       "x": 125,
+       "y": 50,
+       "size": 20,
+       "color": "white",
+       "pill": "coral",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.05, 0.15)"
+      },
+      {
+       "op": "line",
+       "x1": 20,
+       "y1": 90,
+       "x2": "lerp(20, 385, ramp(u, 0.05, 0.4))",
+       "y2": 90,
+       "color": "coral",
+       "w": 12
+      },
+      {
+       "op": "line",
+       "x1": 20,
+       "y1": 280,
+       "x2": "lerp(20, 190, ramp(u, 0.3, 0.5))",
+       "y2": 280,
+       "color": "water",
+       "w": 12,
+       "a": "ramp(u, 0.28, 0.32)"
+      },
+      {
+       "op": "repeat",
+       "n": 9,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": 190,
+         "y1": 280,
+         "x2": "190 + cos(i * 0.7 - 1.45) * lerp(0, 120 + hash(i) * 60, ramp(u, 0.5, 0.8))",
+         "y2": "280 + sin(i * 0.7 - 1.45) * lerp(0, 120 + hash(i) * 60, ramp(u, 0.5, 0.8))",
+         "color": "water",
+         "w": 7,
+         "a": "ramp(u, 0.5, 0.58)"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 190,
+       "y": 280,
+       "r": 18,
+       "fill": "#B9C6D8",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "circle",
+       "x": 184.24,
+       "y": 277.12,
+       "r": 2.2,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 195.76,
+       "y": 277.12,
+       "r": 2.2,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 190,
+       "y": 285.28,
+       "r": 2.24,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 180.08,
+       "y": 282.56,
+       "r": 2.08,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 199.92,
+       "y": 282.56,
+       "r": 2.08,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "text",
+       "s": "blue bounces!",
+       "x": 110,
+       "y": 360,
+       "size": 20,
+       "color": "white",
+       "pill": "water",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.4)"
+      }
+     ],
+     "audio": "audio/sky/bounce.mp3",
+     "audioSeconds": 10.85
+    },
+    {
+     "id": "look",
+     "title": "Blue from everywhere",
+     "tint": "#CFEAFF",
+     "narration": "All that bouncing blue light comes to your eyes from every direction. So when you look up, the whole big sky looks blue!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 330,
+       "fill": "#8FD3FF",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 90,
+       "y": 70,
+       "scale": 0.9,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 320,
+       "y": 110,
+       "scale": 0.7,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 320,
+       "w": 420,
+       "h": 100,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 16,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "lerp(10 + hash(i, 1) * 380, 200, (e * 0.22 + i / 16) % 1)",
+         "y": "lerp(10 + hash(i, 2) * 200, 262, (e * 0.22 + i / 16) % 1)",
+         "r": 6,
+         "fill": "water",
+         "stroke": "white",
+         "sw": 2,
+         "a": "ramp(u, 0.15, 0.3)"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 372,
+       "scale": 0.85,
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "coral",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -91.4,
+         "r": 2.8,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "blue light from everywhere!",
+       "x": 200,
+       "y": 28,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      }
+     ],
+     "audio": "audio/sky/look.mp3",
+     "audioSeconds": 7.47
+    },
+    {
+     "id": "sunset",
+     "title": "Why sunsets glow",
+     "tint": "#FFE6CC",
+     "narration": "At sunset the Sun is low, so its light takes a long trip through the air. Most of the blue bounces away before it reaches you. Only red and orange are left, so the sky glows!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 100,
+       "fill": "#6B5B95",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 100,
+       "w": 400,
+       "h": 80,
+       "fill": "#E56B8A",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 180,
+       "w": 400,
+       "h": 70,
+       "fill": "#FF9F43",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 250,
+       "w": 400,
+       "h": 70,
+       "fill": "#FFD27A",
+       "r": 0
+      },
+      {
+       "op": "circle",
+       "x": 250,
+       "y": "lerp(250, 290, ramp(u, 0.0, 0.5))",
+       "r": 56,
+       "fill": "#FFE8A3",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 300,
+       "w": 420,
+       "h": 120,
+       "fill": "#3D3A5C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 70,
+       "y": 392,
+       "scale": 0.8,
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "sun",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -5.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          6.5,
+          -93.99,
+          5.54,
+          -92.06,
+          4.04,
+          -90.53,
+          2.12,
+          -89.54,
+          -0.0,
+          -89.2,
+          -2.12,
+          -89.54,
+          -4.04,
+          -90.53,
+          -5.54,
+          -92.06,
+          -6.5,
+          -93.99
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "line",
+       "x1": 80,
+       "y1": 255,
+       "x2": 186.6,
+       "y2": 255.0,
+       "color": "white",
+       "w": 6,
+       "a": "ramp(u, 0.3, 0.4)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        182.39,
+        261.09,
+        195,
+        255,
+        182.39,
+        248.91
+       ],
+       "closed": true,
+       "fill": "white",
+       "stroke": "white",
+       "sw": 2,
+       "a": "ramp(u, 0.3, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "a long trip through the air",
+       "x": 200,
+       "y": 60,
+       "size": 19,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "blue bounced away",
+       "x": 130,
+       "y": 150,
+       "size": 17,
+       "color": "white",
+       "pill": "water",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.65)"
+      },
+      {
+       "op": "text",
+       "s": "red + orange arrive!",
+       "x": 290,
+       "y": 200,
+       "size": 17,
+       "color": "white",
+       "pill": "coral",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.65, 0.75)"
+      }
+     ],
+     "audio": "audio/sky/sunset.mp3",
+     "audioSeconds": 11.35
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What is sunlight really made of?",
+     "options": [
+      "Only yellow",
+      "All the colors mixed together",
+      "Only blue"
+     ],
+     "answer": 1,
+     "explanation": "Sunlight hides every color of the rainbow inside it."
+    },
+    {
+     "question": "Which color bounces around the most in the air?",
+     "options": [
+      "Red",
+      "Blue",
+      "Green"
+     ],
+     "answer": 1,
+     "explanation": "Blue light is the bounciest, so it fills the whole sky."
+    },
+    {
+     "question": "Why is the sunset red and orange?",
+     "options": [
+      "The Sun gets hot",
+      "The light travels far and the blue bounces away",
+      "The clouds are painted"
+     ],
+     "answer": 1,
+     "explanation": "After a long trip through the air, only red and orange are left."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "आसमान नीला क्यों दिखता है?",
+     "subtitle": "सूरज की रोशनी में छिपा राज़",
+     "quiz": [
+      {
+       "question": "सूरज की रोशनी असल में किससे बनी है?",
+       "options": [
+        "सिर्फ़ पीले रंग से",
+        "इंद्रधनुष के सारे रंग मिले-जुले",
+        "सिर्फ़ नीले रंग से"
+       ],
+       "explanation": "सूरज की रोशनी में इंद्रधनुष का हर रंग छिपा होता है।"
+      },
+      {
+       "question": "हवा में कौन सा रंग सबसे ज़्यादा उछलता है?",
+       "options": [
+        "लाल",
+        "नीला",
+        "हरा"
+       ],
+       "explanation": "नीली रोशनी सबसे ज़्यादा उछलती है, इसलिए पूरा आसमान उससे भर जाता है।"
+      },
+      {
+       "question": "सूरज डूबते समय आसमान लाल-नारंगी क्यों होता है?",
+       "options": [
+        "सूरज गरम हो जाता है",
+        "रोशनी लंबा सफ़र करती है और नीली उछलकर दूर हो जाती है",
+        "बादलों पर रंग पोता जाता है"
+       ],
+       "explanation": "हवा में लंबे सफ़र के बाद सिर्फ़ लाल और नारंगी बचती हैं।"
+      }
+     ],
+     "scenes": {
+      "white": {
+       "narration": "सूरज की रोशनी सादी सफ़ेद या पीली दिखती है। लेकिन इसमें एक राज़ छिपा है! इसके अंदर इंद्रधनुष के सारे रंग मिले-जुले हैं — जैसे रंगीन मिठाइयों का थैला।",
+       "audio": "audio/hi/sky/white.mp3",
+       "audioSeconds": 15.45
+      },
+      "air": {
+       "narration": "आपके चारों ओर की हवा ख़ाली नहीं है। यह बहुत-बहुत छोटे कणों से भरी है, जो देखने के लिए बहुत छोटे हैं। जब सूरज की रोशनी हवा से गुज़रती है, वह इन छोटे कणों से टकराती है।",
+       "audio": "audio/hi/sky/air.mp3",
+       "audioSeconds": 16.6
+      },
+      "bounce": {
+       "narration": "लाल रोशनी सीधी निकल जाती है। लेकिन नीली रोशनी बहुत उछलती है! वह छोटे कणों से टकराकर पूरे आसमान में बिखर जाती है — जैसे मैदान में उछलती गेंद।",
+       "audio": "audio/hi/sky/bounce.mp3",
+       "audioSeconds": 14.75
+      },
+      "look": {
+       "narration": "यह उछलती नीली रोशनी हर दिशा से आपकी आँखों तक पहुँचती है। इसलिए जब आप ऊपर देखते हैं, पूरा बड़ा आसमान नीला दिखता है!",
+       "audio": "audio/hi/sky/look.mp3",
+       "audioSeconds": 12.18
+      },
+      "sunset": {
+       "narration": "सूरज डूबते समय नीचे होता है, इसलिए उसकी रोशनी को हवा में लंबा सफ़र करना पड़ता है। ज़्यादातर नीली रोशनी आप तक पहुँचने से पहले ही उछलकर बिखर जाती है। सिर्फ़ लाल और नारंगी बचती है, इसलिए आसमान दमक उठता है!",
+       "audio": "audio/hi/sky/sunset.mp3",
+       "audioSeconds": 20.6
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "rain",
+   "title": "Where does rain come from?",
+   "subtitle": "The water that goes round and round",
+   "category": "Weather",
+   "emoji": "🌧️",
+   "accent": "#4895EF",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "warm",
+     "title": "The Sun warms the sea",
+     "tint": "#DFF1FF",
+     "narration": "Puddles, rivers and seas are full of water. When the warm Sun shines on them, some water turns into a very light, invisible mist called vapor. It floats up, up, up into the sky.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 290,
+       "w": 420,
+       "h": 120,
+       "fill": "#6EB6F2",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "330 + cos(i * 0.5236 + e * 0.2) * 42.5",
+         "y1": "110 + sin(i * 0.5236 + e * 0.2) * 42.5",
+         "x2": "330 + cos(i * 0.5236 + e * 0.2) * 52.7 + wave(e, 0.8, i * 0.1) * 3.4000000000000004",
+         "y2": "110 + sin(i * 0.5236 + e * 0.2) * 52.7 + wave(e, 0.8, i * 0.1) * 3.4000000000000004",
+         "color": "electric",
+         "w": 4.08
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 330,
+       "y": 110,
+       "r": 34,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 317.76,
+       "y": 103.88,
+       "r": 3.4,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 342.24,
+       "y": 103.88,
+       "r": 3.4,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        341.04,
+        116.82,
+        339.42,
+        120.1,
+        336.86,
+        122.7,
+        333.61,
+        124.38,
+        330.0,
+        124.96,
+        326.39,
+        124.38,
+        323.14,
+        122.7,
+        320.58,
+        120.1,
+        318.96,
+        116.82
+       ],
+       "stroke": "ink",
+       "sw": 2.72
+      },
+      {
+       "op": "circle",
+       "x": 308.92,
+       "y": 115.44,
+       "r": 4.42,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 351.08,
+       "y": 115.44,
+       "r": 4.42,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "repeat",
+       "n": 5,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "60 + i * 62",
+         "y1": 296,
+         "x2": "60 + i * 62 + 18",
+         "y2": "270 - wave(e, 0.5, i * 0.2) * 12",
+         "color": "white",
+         "w": 5,
+         "a": "ramp(u, 0.1, 0.4) * 0.8"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "40 + i * 52 + wave(e, 0.3, i) * 6",
+         "y": "lerp(285, 120, (e * 0.18 + i / 7) % 1)",
+         "r": 5,
+         "fill": "white",
+         "stroke": "water",
+         "sw": 2,
+         "a": "ramp(u, 0.25, 0.5) * (1 - ((e * 0.18 + i / 7) % 1))"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "the Sun warms the sea",
+       "x": 200,
+       "y": 355,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.05, 0.2)"
+      },
+      {
+       "op": "text",
+       "s": "water goes up as invisible vapor",
+       "x": 190,
+       "y": 36,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.6)"
+      }
+     ],
+     "audio": "audio/rain/warm.mp3",
+     "audioSeconds": 12.65
+    },
+    {
+     "id": "cloud",
+     "title": "Clouds are made",
+     "tint": "#EAF4FF",
+     "narration": "High in the sky the air is cold. The vapor cools down and turns back into tiny drops of water. Billions of them huddle together, and that is what a cloud is!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 220,
+       "w": 400,
+       "h": 180,
+       "fill": "#6EB6F2",
+       "r": 0
+      },
+      {
+       "op": "repeat",
+       "n": 9,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "30 + i * 42",
+         "y": "lerp(215, 150, ramp(u, 0.05, 0.45)) - wave(e, 0.5, i * 0.3) * 6",
+         "r": 4,
+         "fill": "white",
+         "stroke": "#9BC7F0",
+         "sw": 1.5,
+         "a": 0.9
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 110,
+       "y": "lerp(140, 110, ramp(u, 0.3, 0.8))",
+       "scale": "lerp(0.3, 1.2, ramp(u, 0.3, 0.8))",
+       "a": "ramp(u, 0.3, 0.45)",
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 250,
+       "y": "lerp(120, 90, ramp(u, 0.35, 0.85))",
+       "scale": "lerp(0.3, 1.5, ramp(u, 0.35, 0.85))",
+       "a": "ramp(u, 0.35, 0.5)",
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "tiny drops team up",
+       "x": 200,
+       "y": 360,
+       "size": 21,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.55)"
+      },
+      {
+       "op": "text",
+       "s": "cold air up high",
+       "x": 100,
+       "y": 40,
+       "size": 17,
+       "color": "ink",
+       "pill": "#CDEBFF",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.2, 0.35)"
+      }
+     ],
+     "audio": "audio/rain/cloud.mp3",
+     "audioSeconds": 10.75
+    },
+    {
+     "id": "fall",
+     "title": "Drops get heavy",
+     "tint": "#D6E4F2",
+     "narration": "The little drops bump into each other and join up. They grow big and heavy, until the cloud cannot hold them any more. Down they fall as rain!",
+     "draw": [
+      {
+       "op": "group",
+       "x": 200,
+       "y": 135,
+       "scale": 2.1,
+       "a": 1,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": -5.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -3.34,
+          14.88,
+          -2.29,
+          13.74,
+          -1.0,
+          12.88,
+          0.46,
+          12.34,
+          2.0,
+          12.16,
+          3.54,
+          12.34,
+          5.0,
+          12.88,
+          6.29,
+          13.74,
+          7.34,
+          14.88
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 11,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": "70 + i * 26 + hash(i, 5) * 8",
+         "y": "170 + ((e * 0.5 + hash(i, 1)) % 1) * 170",
+         "scale": 0.55,
+         "a": "ramp(u, 0.2, 0.35)",
+         "do": [
+          {
+           "op": "poly",
+           "pts": [
+            0,
+            -30,
+            9,
+            -14,
+            12.61,
+            -2.09,
+            13.82,
+            1.75,
+            13.89,
+            5.78,
+            12.81,
+            9.66,
+            10.66,
+            13.07,
+            7.64,
+            15.73,
+            3.99,
+            17.42,
+            -0.0,
+            18.0,
+            -3.99,
+            17.42,
+            -7.64,
+            15.73,
+            -10.66,
+            13.07,
+            -12.81,
+            9.66,
+            -13.89,
+            5.78,
+            -13.82,
+            1.75,
+            -12.61,
+            -2.09,
+            -9,
+            -14
+           ],
+           "closed": true,
+           "fill": "water",
+           "stroke": "ink",
+           "sw": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 350,
+       "w": 420,
+       "h": 60,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "text",
+       "s": "drops get heavy and fall!",
+       "x": 200,
+       "y": 28,
+       "size": 21,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      }
+     ],
+     "audio": "audio/rain/fall.mp3",
+     "audioSeconds": 8.8
+    },
+    {
+     "id": "home",
+     "title": "Water goes home",
+     "tint": "#D9E9F7",
+     "narration": "The rain fills the rivers, and the rivers flow all the way back to the sea. Then the Sun warms the water, and it starts all over again.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#A9C7E3",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 80,
+       "y": 60,
+       "scale": 1.3,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": -5.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          9.15,
+          10.41,
+          8.1,
+          12.53,
+          6.44,
+          14.22,
+          4.34,
+          15.31,
+          2.0,
+          15.68,
+          -0.34,
+          15.31,
+          -2.44,
+          14.22,
+          -4.1,
+          12.53,
+          -5.15,
+          10.41
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -11.64,
+         "y": 9.52,
+         "r": 2.86,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 15.64,
+         "y": 9.52,
+         "r": 2.86,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "poly",
+       "pts": [
+        190.0,
+        300,
+        300,
+        130,
+        410.0,
+        300
+       ],
+       "closed": true,
+       "fill": "#8FA3B8",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "poly",
+       "pts": [
+        269.2,
+        177.6,
+        300,
+        130,
+        330.8,
+        177.6,
+        311.0,
+        187.8,
+        300,
+        174.2,
+        286.8,
+        187.8
+       ],
+       "closed": true,
+       "fill": "white",
+       "stroke": "ink",
+       "sw": 2.5
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 300,
+       "w": 420,
+       "h": 110,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "poly",
+       "pts": [
+        300,
+        215,
+        292,
+        245,
+        305,
+        270,
+        270,
+        300,
+        240,
+        330,
+        150,
+        355
+       ],
+       "stroke": "#4EA5F0",
+       "sw": 12
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 345,
+       "w": 400,
+       "h": 60,
+       "fill": "#4EA5F0",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 8,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "lerp(300, 150, ((e * 0.2 + i / 8) % 1))",
+         "y": "lerp(215, 355, ((e * 0.2 + i / 8) % 1))",
+         "r": 5,
+         "fill": "white",
+         "a": 0.9
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 14,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": "20 + hash(i, 1) * 360",
+         "y": "-20 + ((e * 0.6 + hash(i, 2)) % 1) * 300",
+         "scale": 0.35,
+         "a": 0.9,
+         "do": [
+          {
+           "op": "poly",
+           "pts": [
+            0,
+            -30,
+            9,
+            -14,
+            12.61,
+            -2.09,
+            13.82,
+            1.75,
+            13.89,
+            5.78,
+            12.81,
+            9.66,
+            10.66,
+            13.07,
+            7.64,
+            15.73,
+            3.99,
+            17.42,
+            -0.0,
+            18.0,
+            -3.99,
+            17.42,
+            -7.64,
+            15.73,
+            -10.66,
+            13.07,
+            -12.81,
+            9.66,
+            -13.89,
+            5.78,
+            -13.82,
+            1.75,
+            -12.61,
+            -2.09,
+            -9,
+            -14
+           ],
+           "closed": true,
+           "fill": "water",
+           "stroke": "ink",
+           "sw": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "rivers carry water home",
+       "x": 200,
+       "y": 385,
+       "size": 19,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.55)"
+      }
+     ],
+     "audio": "audio/rain/home.mp3",
+     "audioSeconds": 8.9
+    },
+    {
+     "id": "cycle",
+     "title": "A giant circle",
+     "tint": "#E6F6EA",
+     "narration": "Up as vapor, together as clouds, down as rain, and back again. The water is going round and round, and it has been doing it for millions of years!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 310,
+       "w": 420,
+       "h": 110,
+       "fill": "#6EB6F2",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "55 + cos(i * 0.5236 + e * 0.2) * 35.0",
+         "y1": "60 + sin(i * 0.5236 + e * 0.2) * 35.0",
+         "x2": "55 + cos(i * 0.5236 + e * 0.2) * 43.4 + wave(e, 0.8, i * 0.1) * 2.8000000000000003",
+         "y2": "60 + sin(i * 0.5236 + e * 0.2) * 43.4 + wave(e, 0.8, i * 0.1) * 2.8000000000000003",
+         "color": "electric",
+         "w": 3.36
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 55,
+       "y": 60,
+       "r": 28,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 44.92,
+       "y": 54.96,
+       "r": 2.8,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 65.08,
+       "y": 54.96,
+       "r": 2.8,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        64.09,
+        65.61,
+        62.76,
+        68.31,
+        60.65,
+        70.46,
+        57.97,
+        71.84,
+        55.0,
+        72.32,
+        52.03,
+        71.84,
+        49.35,
+        70.46,
+        47.24,
+        68.31,
+        45.91,
+        65.61
+       ],
+       "stroke": "ink",
+       "sw": 2.5
+      },
+      {
+       "op": "circle",
+       "x": 37.64,
+       "y": 64.48,
+       "r": 3.64,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 72.36,
+       "y": 64.48,
+       "r": 3.64,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "x": 210,
+       "y": 90,
+       "scale": 1.3,
+       "a": "ramp(u, 0.5, 0.65)",
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "line",
+       "x1": 95,
+       "y1": 290,
+       "x2": 95.0,
+       "y2": 143.2,
+       "color": "coral",
+       "w": 9,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        104.57,
+        149.81,
+        95,
+        130,
+        85.43,
+        149.81
+       ],
+       "closed": true,
+       "fill": "coral",
+       "stroke": "coral",
+       "sw": 2,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "up as vapor",
+       "x": 95,
+       "y": 330,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "line",
+       "x1": 320,
+       "y1": 150,
+       "x2": 320.0,
+       "y2": 276.8,
+       "color": "water",
+       "w": 9,
+       "a": "ramp(u, 0.65, 0.8)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        310.43,
+        270.19,
+        320,
+        290,
+        329.57,
+        270.19
+       ],
+       "closed": true,
+       "fill": "water",
+       "stroke": "water",
+       "sw": 2,
+       "a": "ramp(u, 0.65, 0.8)"
+      },
+      {
+       "op": "repeat",
+       "n": 3,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": 320,
+         "y": "160 + ((e * 0.4 + i / 3) % 1) * 110",
+         "scale": 0.45,
+         "a": "ramp(u, 0.65, 0.8)",
+         "do": [
+          {
+           "op": "poly",
+           "pts": [
+            0,
+            -30,
+            9,
+            -14,
+            12.61,
+            -2.09,
+            13.82,
+            1.75,
+            13.89,
+            5.78,
+            12.81,
+            9.66,
+            10.66,
+            13.07,
+            7.64,
+            15.73,
+            3.99,
+            17.42,
+            -0.0,
+            18.0,
+            -3.99,
+            17.42,
+            -7.64,
+            15.73,
+            -10.66,
+            13.07,
+            -12.81,
+            9.66,
+            -13.89,
+            5.78,
+            -13.82,
+            1.75,
+            -12.61,
+            -2.09,
+            -9,
+            -14
+           ],
+           "closed": true,
+           "fill": "water",
+           "stroke": "ink",
+           "sw": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "down as rain",
+       "x": 320,
+       "y": 330,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.65, 0.8)"
+      },
+      {
+       "op": "text",
+       "s": "clouds form",
+       "x": 210,
+       "y": 150,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.55)"
+      },
+      {
+       "op": "line",
+       "x1": 290,
+       "y1": 372,
+       "x2": 139.6,
+       "y2": 372.0,
+       "color": "ink",
+       "w": 6,
+       "a": "ramp(u, 0.8, 0.92)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        144.41,
+        365.04,
+        130,
+        372,
+        144.41,
+        378.96
+       ],
+       "closed": true,
+       "fill": "ink",
+       "stroke": "ink",
+       "sw": 2,
+       "a": "ramp(u, 0.8, 0.92)"
+      },
+      {
+       "op": "text",
+       "s": "back to the sea",
+       "x": 210,
+       "y": 372,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.8, 0.92)"
+      },
+      {
+       "op": "text",
+       "s": "The water cycle!",
+       "x": 210,
+       "y": 235,
+       "size": 24,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.85, 0.95)"
+      }
+     ],
+     "audio": "audio/rain/cycle.mp3",
+     "audioSeconds": 9.78
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What makes water float up into the sky?",
+     "options": [
+      "The warm Sun",
+      "The wind blows it",
+      "The moon"
+     ],
+     "answer": 0,
+     "explanation": "The Sun's warmth turns water into vapor that floats up."
+    },
+    {
+     "question": "What is a cloud made of?",
+     "options": [
+      "Cotton",
+      "Tiny drops of water",
+      "Smoke"
+     ],
+     "answer": 1,
+     "explanation": "A cloud is billions of tiny water drops huddled together."
+    },
+    {
+     "question": "Where does the rain water go after it falls?",
+     "options": [
+      "It disappears",
+      "Into rivers and back to the sea",
+      "To the Moon"
+     ],
+     "answer": 1,
+     "explanation": "Rivers carry it back to the sea, and the cycle starts again."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "बारिश कहाँ से आती है?",
+     "subtitle": "पानी जो गोल-गोल घूमता रहता है",
+     "quiz": [
+      {
+       "question": "पानी को आसमान में ऊपर उठाने में कौन मदद करता है?",
+       "options": [
+        "गरम सूरज",
+        "हवा उसे उड़ा ले जाती है",
+        "चाँद"
+       ],
+       "explanation": "सूरज की गरमी पानी को वाष्प बनाकर ऊपर उठा देती है।"
+      },
+      {
+       "question": "बादल किससे बना होता है?",
+       "options": [
+        "रुई से",
+        "पानी की छोटी-छोटी बूँदों से",
+        "धुएँ से"
+       ],
+       "explanation": "बादल अरबों छोटी पानी की बूँदों का मेला है।"
+      },
+      {
+       "question": "गिरने के बाद बारिश का पानी कहाँ जाता है?",
+       "options": [
+        "ग़ायब हो जाता है",
+        "नदियों में और वापस समुद्र में",
+        "चाँद पर"
+       ],
+       "explanation": "नदियाँ पानी को समुद्र तक लौटा देती हैं, और चक्र फिर शुरू हो जाता है।"
+      }
+     ],
+     "scenes": {
+      "warm": {
+       "narration": "गड्ढे, नदियाँ और समुद्र पानी से भरे हैं। जब गरम सूरज उन पर चमकता है, थोड़ा पानी एक बहुत हल्की, अनदेखी भाप बन जाता है, जिसे वाष्प कहते हैं। वह ऊपर, और ऊपर, आसमान में उठ जाती है।",
+       "audio": "audio/hi/rain/warm.mp3",
+       "audioSeconds": 18.23
+      },
+      "cloud": {
+       "narration": "ऊपर आसमान में हवा ठंडी होती है। वाष्प ठंडा होकर फिर पानी की छोटी-छोटी बूँदें बन जाती है। अरबों बूँदें मिलकर बैठ जाती हैं — और यही बादल है!",
+       "audio": "audio/hi/rain/cloud.mp3",
+       "audioSeconds": 14.68
+      },
+      "fall": {
+       "narration": "छोटी बूँदें एक-दूसरे से टकराकर जुड़ती जाती हैं। वे इतनी बड़ी और भारी हो जाती हैं कि बादल उन्हें सँभाल नहीं पाता। फिर वे बारिश बनकर नीचे गिरती हैं!",
+       "audio": "audio/hi/rain/fall.mp3",
+       "audioSeconds": 15.53
+      },
+      "home": {
+       "narration": "बारिश नदियों को भर देती है, और नदियाँ बहकर वापस समुद्र तक पहुँचती हैं। फिर सूरज पानी को गरम करता है, और सब कुछ दोबारा शुरू हो जाता है।",
+       "audio": "audio/hi/rain/home.mp3",
+       "audioSeconds": 12.93
+      },
+      "cycle": {
+       "narration": "ऊपर वाष्प बनकर, साथ में बादल बनकर, नीचे बारिश बनकर, और फिर वापस। पानी गोल-गोल घूम रहा है, और यह लाखों सालों से ऐसे ही चल रहा है!",
+       "audio": "audio/hi/rain/cycle.mp3",
+       "audioSeconds": 13.25
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "rainbow",
+   "title": "How does a rainbow appear?",
+   "subtitle": "Raindrops that bend sunlight",
+   "category": "Weather",
+   "emoji": "🌈",
+   "accent": "#2EC4B6",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "both",
+     "title": "Sun and rain together",
+     "tint": "#E7F3FF",
+     "narration": "Rainbows appear when the Sun shines while it is raining. The sunshine and the little raindrops hang in the air at the same time. That is the recipe!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 320,
+       "w": 420,
+       "h": 100,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "70 + cos(i * 0.5236 + e * 0.2) * 45.0",
+         "y1": "70 + sin(i * 0.5236 + e * 0.2) * 45.0",
+         "x2": "70 + cos(i * 0.5236 + e * 0.2) * 55.800000000000004 + wave(e, 0.8, i * 0.1) * 3.6",
+         "y2": "70 + sin(i * 0.5236 + e * 0.2) * 55.800000000000004 + wave(e, 0.8, i * 0.1) * 3.6",
+         "color": "electric",
+         "w": 4.32
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 70,
+       "r": 36,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 57.04,
+       "y": 63.52,
+       "r": 3.6,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 82.96,
+       "y": 63.52,
+       "r": 3.6,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        81.69,
+        77.22,
+        79.98,
+        80.69,
+        77.26,
+        83.45,
+        73.82,
+        85.23,
+        70.0,
+        85.84,
+        66.18,
+        85.23,
+        62.74,
+        83.45,
+        60.02,
+        80.69,
+        58.31,
+        77.22
+       ],
+       "stroke": "ink",
+       "sw": 2.88
+      },
+      {
+       "op": "circle",
+       "x": 47.68,
+       "y": 75.76,
+       "r": 4.68,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 92.32,
+       "y": 75.76,
+       "r": 4.68,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 90,
+       "scale": 1.1,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#C9D3E0"
+        },
+        {
+         "op": "circle",
+         "x": -5.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -3.34,
+          14.88,
+          -2.29,
+          13.74,
+          -1.0,
+          12.88,
+          0.46,
+          12.34,
+          2.0,
+          12.16,
+          3.54,
+          12.34,
+          5.0,
+          12.88,
+          6.29,
+          13.74,
+          7.34,
+          14.88
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 10,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": "215 + (i % 5) * 28 + hash(i) * 8",
+         "y": "130 + ((e * 0.55 + hash(i, 1)) % 1) * 190",
+         "scale": 0.4,
+         "a": 0.9,
+         "do": [
+          {
+           "op": "poly",
+           "pts": [
+            0,
+            -30,
+            9,
+            -14,
+            12.61,
+            -2.09,
+            13.82,
+            1.75,
+            13.89,
+            5.78,
+            12.81,
+            9.66,
+            10.66,
+            13.07,
+            7.64,
+            15.73,
+            3.99,
+            17.42,
+            -0.0,
+            18.0,
+            -3.99,
+            17.42,
+            -7.64,
+            15.73,
+            -10.66,
+            13.07,
+            -12.81,
+            9.66,
+            -13.89,
+            5.78,
+            -13.82,
+            1.75,
+            -12.61,
+            -2.09,
+            -9,
+            -14
+           ],
+           "closed": true,
+           "fill": "water",
+           "stroke": "ink",
+           "sw": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "sunshine + raindrops",
+       "x": 200,
+       "y": 370,
+       "size": 21,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      }
+     ],
+     "audio": "audio/rainbow/both.mp3",
+     "audioSeconds": 9.68
+    },
+    {
+     "id": "drop",
+     "title": "A drop bends the light",
+     "tint": "#DDEFFF",
+     "narration": "Sunlight slips inside a raindrop, and something magic happens. The water bends the light, and the colors hidden inside begin to separate.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 205,
+       "r": 110,
+       "fill": "#DDF1FF",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "line",
+       "x1": 20,
+       "y1": 175,
+       "x2": "lerp(20, 150, ramp(u, 0.0, 0.3))",
+       "y2": "lerp(175, 205, ramp(u, 0.0, 0.3))",
+       "color": "#FFF1A8",
+       "w": 10
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.35, 0.55)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 150,
+         "y1": 205,
+         "x2": 255,
+         "y2": 170,
+         "color": "coral",
+         "w": 5
+        },
+        {
+         "op": "line",
+         "x1": 150,
+         "y1": 205,
+         "x2": 256,
+         "y2": 190,
+         "color": "#FF9F43",
+         "w": 5
+        },
+        {
+         "op": "line",
+         "x1": 150,
+         "y1": 205,
+         "x2": 255,
+         "y2": 210,
+         "color": "sun",
+         "w": 5
+        },
+        {
+         "op": "line",
+         "x1": 150,
+         "y1": 205,
+         "x2": 254,
+         "y2": 230,
+         "color": "leaf",
+         "w": 5
+        },
+        {
+         "op": "line",
+         "x1": 150,
+         "y1": 205,
+         "x2": 252,
+         "y2": 250,
+         "color": "water",
+         "w": 5
+        },
+        {
+         "op": "line",
+         "x1": 150,
+         "y1": 205,
+         "x2": 250,
+         "y2": 268,
+         "color": "grape",
+         "w": 5
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "a": 1,
+       "do": [
+        {
+         "op": "group",
+         "x": 200,
+         "y": 205,
+         "scale": 2.1,
+         "do": [
+          {
+           "op": "poly",
+           "pts": [
+            0,
+            -30,
+            9,
+            -14,
+            12.61,
+            -2.09,
+            13.82,
+            1.75,
+            13.89,
+            5.78,
+            12.81,
+            9.66,
+            10.66,
+            13.07,
+            7.64,
+            15.73,
+            3.99,
+            17.42,
+            -0.0,
+            18.0,
+            -3.99,
+            17.42,
+            -7.64,
+            15.73,
+            -10.66,
+            13.07,
+            -12.81,
+            9.66,
+            -13.89,
+            5.78,
+            -13.82,
+            1.75,
+            -12.61,
+            -2.09,
+            -9,
+            -14
+           ],
+           "closed": true,
+           "fill": "#EAF6FF",
+           "stroke": "ink",
+           "sw": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "a drop bends the light",
+       "x": 200,
+       "y": 360,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "sunlight",
+       "x": 70,
+       "y": 125,
+       "size": 19,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.05, 0.15)"
+      }
+     ],
+     "audio": "audio/rainbow/drop.mp3",
+     "audioSeconds": 9.15
+    },
+    {
+     "id": "spread",
+     "title": "Colours spread out",
+     "tint": "#E7F3FF",
+     "narration": "Every color bends by a different amount. Red bends a little, and purple bends the most. So the colors fan out and come back out of the drop in a neat order.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#E7F3FF",
+       "r": 0
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 175,
+       "r": 80,
+       "fill": "#DDF1FF",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "line",
+       "x1": 40,
+       "y1": 175,
+       "x2": 150,
+       "y2": 175,
+       "color": "#FFF1A8",
+       "w": 9
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 175,
+       "x2": 195,
+       "y2": 250.0,
+       "color": "coral",
+       "w": 4
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 175,
+       "x2": 199,
+       "y2": 251.5,
+       "color": "#FF9F43",
+       "w": 4
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 175,
+       "x2": 203,
+       "y2": 253.0,
+       "color": "sun",
+       "w": 4
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 175,
+       "x2": 207,
+       "y2": 254.5,
+       "color": "leaf",
+       "w": 4
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 175,
+       "x2": 211,
+       "y2": 256.0,
+       "color": "water",
+       "w": 4
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 175,
+       "x2": 215,
+       "y2": 257.5,
+       "color": "grape",
+       "w": 4
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.3, 0.5)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 240,
+         "y1": 230,
+         "x2": 330,
+         "y2": 290,
+         "color": "coral",
+         "w": 4
+        },
+        {
+         "op": "line",
+         "x1": 238,
+         "y1": 232,
+         "x2": 330,
+         "y2": 304,
+         "color": "#FF9F43",
+         "w": 4
+        },
+        {
+         "op": "line",
+         "x1": 236,
+         "y1": 234,
+         "x2": 330,
+         "y2": 318,
+         "color": "sun",
+         "w": 4
+        },
+        {
+         "op": "line",
+         "x1": 234,
+         "y1": 236,
+         "x2": 330,
+         "y2": 332,
+         "color": "leaf",
+         "w": 4
+        },
+        {
+         "op": "line",
+         "x1": 232,
+         "y1": 238,
+         "x2": 330,
+         "y2": 346,
+         "color": "water",
+         "w": 4
+        },
+        {
+         "op": "line",
+         "x1": 230,
+         "y1": 240,
+         "x2": 330,
+         "y2": 360,
+         "color": "grape",
+         "w": 4
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 350,
+       "y": 395,
+       "scale": 0.75,
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "coral",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -9.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 5.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -91.4,
+         "r": 2.8,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "each colour bends a different amount",
+       "x": 200,
+       "y": 36,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.6)"
+      },
+      {
+       "op": "text",
+       "s": "the colours spread out!",
+       "x": 150,
+       "y": 345,
+       "size": 19,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.7)"
+      }
+     ],
+     "audio": "audio/rainbow/spread.mp3",
+     "audioSeconds": 9.93
+    },
+    {
+     "id": "arch",
+     "title": "Millions of drops",
+     "tint": "#D5ECFF",
+     "narration": "There are millions of raindrops in the sky, and each one sends colors to your eyes. All together they paint a giant, curved band of color across the sky.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#CFE9FF",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 330,
+       "w": 420,
+       "h": 90,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 70,
+       "y": 60,
+       "scale": 0.8,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 340,
+       "y": 70,
+       "scale": 0.7,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "white"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "white"
+        }
+       ]
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 330,
+       "r": 175,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "coral",
+       "a": "ramp(u, 0.05, 0.2)"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 330,
+       "r": 155,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "#FF9F43",
+       "a": "ramp(u, 0.15000000000000002, 0.30000000000000004)"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 330,
+       "r": 135,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "sun",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 330,
+       "r": 115,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "leaf",
+       "a": "ramp(u, 0.35000000000000003, 0.5)"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 330,
+       "r": 95,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "water",
+       "a": "ramp(u, 0.45, 0.6000000000000001)"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 330,
+       "r": 75,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "grape",
+       "a": "ramp(u, 0.55, 0.7)"
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 330,
+       "r": 55,
+       "fill": "#CFE9FF"
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 330,
+       "w": 400,
+       "h": 80,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 392,
+       "scale": 0.7,
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "coral",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          6.5,
+          -93.99,
+          5.54,
+          -92.06,
+          4.04,
+          -90.53,
+          2.12,
+          -89.54,
+          -0.0,
+          -89.2,
+          -2.12,
+          -89.54,
+          -4.04,
+          -90.53,
+          -5.54,
+          -92.06,
+          -6.5,
+          -93.99
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 6,
+       "var": "i",
+       "do": [
+        {
+         "op": "sparkle",
+         "x": "60 + hash(i, 1) * 280",
+         "y": "40 + hash(i, 2) * 200",
+         "r": "7 * (0.6 + 0.4 * wave(e, 0.7, i * 0.3))",
+         "color": "sun",
+         "a": "ramp(u, 0.7, 0.8)"
+        }
+       ]
+      }
+     ],
+     "audio": "audio/rainbow/arch.mp3",
+     "audioSeconds": 9.93
+    },
+    {
+     "id": "order",
+     "title": "Always the same order",
+     "tint": "#D5ECFF",
+     "narration": "Red is always on top, then orange, yellow, green, blue and purple. To see a rainbow, stand with the Sun behind you and look at the rain in front of you.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#CFE9FF",
+       "r": 0
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 340,
+       "r": 175,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "coral"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 340,
+       "r": 157,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "#FF9F43"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 340,
+       "r": 139,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "sun"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 340,
+       "r": 121,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "leaf"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 340,
+       "r": 103,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "water"
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 340,
+       "r": 85,
+       "from": 3.14,
+       "to": 6.28,
+       "fill": "grape"
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 340,
+       "r": 66,
+       "fill": "#CFE9FF"
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 340,
+       "w": 400,
+       "h": 70,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "text",
+       "s": "Red",
+       "x": 200,
+       "y": 178,
+       "size": 12,
+       "color": "white",
+       "a": "ramp(u, 0.1, 0.2)"
+      },
+      {
+       "op": "text",
+       "s": "Orange",
+       "x": 200,
+       "y": 196,
+       "size": 12,
+       "color": "white",
+       "a": "ramp(u, 0.22, 0.32)"
+      },
+      {
+       "op": "text",
+       "s": "Yellow",
+       "x": 200,
+       "y": 214,
+       "size": 12,
+       "color": "white",
+       "a": "ramp(u, 0.33999999999999997, 0.44)"
+      },
+      {
+       "op": "text",
+       "s": "Green",
+       "x": 200,
+       "y": 232,
+       "size": 12,
+       "color": "white",
+       "a": "ramp(u, 0.45999999999999996, 0.56)"
+      },
+      {
+       "op": "text",
+       "s": "Blue",
+       "x": 200,
+       "y": 250,
+       "size": 12,
+       "color": "white",
+       "a": "ramp(u, 0.58, 0.6799999999999999)"
+      },
+      {
+       "op": "text",
+       "s": "Purple",
+       "x": 200,
+       "y": 268,
+       "size": 12,
+       "color": "white",
+       "a": "ramp(u, 0.7, 0.8)"
+      },
+      {
+       "op": "text",
+       "s": "Red, Orange, Yellow, Green, Blue, Purple",
+       "x": 200,
+       "y": 372,
+       "size": 14,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.3)"
+      },
+      {
+       "op": "text",
+       "s": "Sun behind you, rain in front!",
+       "x": 200,
+       "y": 40,
+       "size": 19,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.6, 0.75)"
+      }
+     ],
+     "audio": "audio/rainbow/order.mp3",
+     "audioSeconds": 10.2
+    }
+   ],
+   "quiz": [
+    {
+     "question": "When do rainbows appear?",
+     "options": [
+      "When the Sun shines and it rains",
+      "On a dark night",
+      "When it snows"
+     ],
+     "answer": 0,
+     "explanation": "You need sunshine and raindrops at the same time."
+    },
+    {
+     "question": "What do raindrops do to sunlight?",
+     "options": [
+      "Make it hotter",
+      "Bend it and spread out its colors",
+      "Hide it"
+     ],
+     "answer": 1,
+     "explanation": "Each color bends by a different amount, so they spread out."
+    },
+    {
+     "question": "Which color is on top of a rainbow?",
+     "options": [
+      "Blue",
+      "Green",
+      "Red"
+     ],
+     "answer": 2,
+     "explanation": "Red is always at the top and purple at the bottom."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "इंद्रधनुष कैसे बनता है?",
+     "subtitle": "बारिश की बूँदें जो रोशनी मोड़ती हैं",
+     "quiz": [
+      {
+       "question": "इंद्रधनुष कब दिखते हैं?",
+       "options": [
+        "जब सूरज चमकता है और बारिश हो रही हो",
+        "अँधेरी रात में",
+        "जब बर्फ़ गिरती है"
+       ],
+       "explanation": "एक साथ धूप और बारिश की बूँदें चाहिए।"
+      },
+      {
+       "question": "बारिश की बूँदें सूरज की रोशनी के साथ क्या करती हैं?",
+       "options": [
+        "उसे और गरम करती हैं",
+        "उसे मोड़कर उसके रंग फैला देती हैं",
+        "उसे छिपा देती हैं"
+       ],
+       "explanation": "हर रंग अलग मात्रा में मुड़ता है, इसलिए वे फैल जाते हैं।"
+      },
+      {
+       "question": "इंद्रधनुष में सबसे ऊपर कौन सा रंग होता है?",
+       "options": [
+        "नीला",
+        "हरा",
+        "लाल"
+       ],
+       "explanation": "लाल हमेशा सबसे ऊपर और बैंगनी सबसे नीचे होता है।"
+      }
+     ],
+     "scenes": {
+      "both": {
+       "narration": "इंद्रधनुष तब दिखता है जब सूरज चमक रहा हो और बारिश हो रही हो। धूप और पानी की छोटी बूँदें एक ही समय हवा में रहती हैं। यही इसका नुस्ख़ा है!",
+       "audio": "audio/hi/rainbow/both.mp3",
+       "audioSeconds": 14.62
+      },
+      "drop": {
+       "narration": "सूरज की रोशनी एक बूँद के अंदर घुसती है, और कुछ जादू होता है। पानी रोशनी को मोड़ देता है, और अंदर छिपे रंग अलग-अलग होने लगते हैं।",
+       "audio": "audio/hi/rainbow/drop.mp3",
+       "audioSeconds": 12.4
+      },
+      "spread": {
+       "narration": "हर रंग अलग मात्रा में मुड़ता है। लाल थोड़ा मुड़ता है, और बैंगनी सबसे ज़्यादा। इसलिए रंग पंखे की तरह फैलकर बूँद से बाहर एक साफ़ क्रम में निकलते हैं।",
+       "audio": "audio/hi/rainbow/spread.mp3",
+       "audioSeconds": 14.95
+      },
+      "arch": {
+       "narration": "आसमान में लाखों बूँदें हैं, और हर एक आपकी आँखों तक रंग भेजती है। सब मिलकर आसमान पर रंगों की एक बड़ी, मुड़ी हुई पट्टी बना देती हैं।",
+       "audio": "audio/hi/rainbow/arch.mp3",
+       "audioSeconds": 12.75
+      },
+      "order": {
+       "narration": "लाल हमेशा सबसे ऊपर, फिर नारंगी, पीला, हरा, नीला और बैंगनी। इंद्रधनुष देखने के लिए सूरज पीछे रखो और सामने की बारिश की ओर देखो।",
+       "audio": "audio/hi/rainbow/order.mp3",
+       "audioSeconds": 13.1
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "lightning",
+   "title": "What makes thunder and lightning?",
+   "subtitle": "A cloud full of sparks",
+   "category": "Weather",
+   "emoji": "⚡",
+   "accent": "#FFB703",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "storm",
+     "title": "Storm clouds",
+     "tint": "#D5DCEB",
+     "narration": "Sometimes big dark storm clouds roll in. Inside them, tiny bits of ice and water droplets are zooming up and down, rubbing and bumping into each other.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#6B7A99",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 110,
+       "y": 110,
+       "scale": 1.8,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": -5.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.92,
+         "y": 2.04,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -3.34,
+          14.88,
+          -2.29,
+          13.74,
+          -1.0,
+          12.88,
+          0.46,
+          12.34,
+          2.0,
+          12.16,
+          3.54,
+          12.34,
+          5.0,
+          12.88,
+          6.29,
+          13.74,
+          7.34,
+          14.88
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 90,
+       "scale": 1.5,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#8794AD"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 14,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "40 + hash(i, 1) * 320",
+         "y": "190 + ((e * 0.7 + hash(i, 2)) % 1) * 160",
+         "r": 3.5,
+         "fill": "#9BC7F0",
+         "a": 0.85
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "a stormy sky",
+       "x": 200,
+       "y": 360,
+       "size": 22,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      }
+     ],
+     "audio": "audio/lightning/storm.mp3",
+     "audioSeconds": 10.38
+    },
+    {
+     "id": "static",
+     "title": "Sparks gather",
+     "tint": "#D5DCEB",
+     "narration": "All that rubbing is like rubbing a balloon on your hair. It builds up static electricity! The top of the cloud collects plus charge, and the bottom collects minus charge.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#6B7A99",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 120,
+       "scale": 2.6,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#9AA6BC"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#9AA6BC"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 10,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "90 + hash(i, 1) * 220",
+         "y": "60 + hash(i, 2) * 110 + ((e * 0.9 + hash(i, 3)) % 1) * 40 * (1 - hash(i, 4)) ",
+         "r": 5.5,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 2,
+         "a": "ramp(u, 0.1, 0.25)"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "text",
+         "s": "−",
+         "x": "110 + i * 28",
+         "y": "168",
+         "size": 26,
+         "color": "water",
+         "a": "ramp(u, 0.3, 0.45)"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "text",
+         "s": "+",
+         "x": "110 + i * 28",
+         "y": "74",
+         "size": 26,
+         "color": "coral",
+         "a": "ramp(u, 0.3, 0.45)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "tiny bits of ice rub and bump",
+       "x": 200,
+       "y": 270,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "the cloud collects static electricity",
+       "x": 200,
+       "y": 330,
+       "size": 17,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.6)"
+      }
+     ],
+     "audio": "audio/lightning/static.mp3",
+     "audioSeconds": 10.53
+    },
+    {
+     "id": "zap",
+     "title": "Zap!",
+     "tint": "#C3CCE0",
+     "narration": "When there is too much electricity, it has to go somewhere. It makes a giant spark that leaps across the sky or down to the ground. That spark is lightning!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#4F5D7D",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 85,
+       "scale": 2.4,
+       "do": [
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 24.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 32.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 28.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 20.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 26.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -34,
+         "y": 6,
+         "r": 22,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": -8,
+         "y": -10,
+         "r": 30,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": 24,
+         "y": -4,
+         "r": 26,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": 44,
+         "y": 10,
+         "r": 18,
+         "fill": "#8794AD"
+        },
+        {
+         "op": "circle",
+         "x": 6,
+         "y": 14,
+         "r": 24,
+         "fill": "#8794AD"
+        }
+       ]
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 340,
+       "w": 420,
+       "h": 80,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 90,
+       "y": 345,
+       "scale": 1.0,
+       "do": [
+        {
+         "op": "rect",
+         "x": -7,
+         "y": -24,
+         "w": 14,
+         "h": 40,
+         "fill": "#B98B5E",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 30.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 28,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 310,
+       "y": 345,
+       "scale": 1.1,
+       "do": [
+        {
+         "op": "rect",
+         "x": -34,
+         "y": -30,
+         "w": 68,
+         "h": 52,
+         "fill": "#FFE3B3",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -42,
+          -28,
+          0,
+          -62,
+          42,
+          -28
+         ],
+         "closed": true,
+         "fill": "coral",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -9,
+         "y": -4,
+         "w": 18,
+         "h": 26,
+         "fill": "#8D6E63",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 2.5
+        },
+        {
+         "op": "rect",
+         "x": 14,
+         "y": -18,
+         "w": 14,
+         "h": 14,
+         "fill": "#CDEBFF",
+         "stroke": "ink",
+         "r": 2,
+         "sw": 2.5
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          215,
+          90,
+          170,
+          190,
+          205,
+          190,
+          165,
+          300,
+          250,
+          170,
+          212,
+          170,
+          250,
+          90
+         ],
+         "closed": true,
+         "fill": "#FFF4A3",
+         "stroke": "electric",
+         "sw": 6,
+         "a": "ramp(u, 0.35, 0.4) * (1 - ramp(u, 0.55, 0.9))"
+        }
+       ]
+      },
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "white",
+       "r": 0,
+       "a": "window(u, 0.37, 0.5, 0.04) * 0.55"
+      },
+      {
+       "op": "text",
+       "s": "ZAP!",
+       "x": 200,
+       "y": 365,
+       "size": 28,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "window(u, 0.37, 0.8, 0.06)"
+      },
+      {
+       "op": "text",
+       "s": "electricity jumps to the ground",
+       "x": 200,
+       "y": 30,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.12, 0.25)"
+      }
+     ],
+     "audio": "audio/lightning/zap.mp3",
+     "audioSeconds": 9.95
+    },
+    {
+     "id": "boom",
+     "title": "Boom!",
+     "tint": "#E4EAF5",
+     "narration": "Lightning is hotter than the surface of the Sun! It heats the air so fast that the air bursts outward with a giant BOOM. That booming sound is thunder.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#C9D6EA",
+       "r": 0
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 22,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "window(u, 0.05, 0.4, 0.05)"
+      },
+      {
+       "op": "repeat",
+       "n": 4,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": 200,
+         "y": 200,
+         "r": "20 + i * 55 + ramp(u, 0.08, 0.85) * 120",
+         "stroke": "electric",
+         "sw": 8,
+         "a": "window(u, 0.08, 0.95, 0.12) * (0.9 - i * 0.2)"
+        }
+       ]
+      },
+      {
+       "op": "poly",
+       "pts": [
+        215,
+        90,
+        170,
+        190,
+        205,
+        190,
+        165,
+        300,
+        250,
+        170,
+        212,
+        170,
+        250,
+        90
+       ],
+       "closed": true,
+       "fill": "#FFF4A3",
+       "stroke": "electric",
+       "sw": 5,
+       "a": "window(u, 0.02, 0.25, 0.04)"
+      },
+      {
+       "op": "text",
+       "s": "The air gets super hot, then BOOM!",
+       "x": 200,
+       "y": 340,
+       "size": 19,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "BOOM",
+       "x": 200,
+       "y": 200,
+       "size": 52,
+       "color": "coral",
+       "a": "window(u, 0.4, 0.85, 0.08)"
+      }
+     ],
+     "audio": "audio/lightning/boom.mp3",
+     "audioSeconds": 9.95
+    },
+    {
+     "id": "count",
+     "title": "Light is faster than sound",
+     "tint": "#EEF2FA",
+     "narration": "Light travels much faster than sound. So you see the flash first, and hear the thunder later. Count the seconds in between to know how far away the storm is!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#E8EEF8",
+       "r": 0
+      },
+      {
+       "op": "circle",
+       "x": 60,
+       "y": 150,
+       "r": 14,
+       "fill": "electric",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "circle",
+       "x": 60,
+       "y": 270,
+       "r": 14,
+       "fill": "sky",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "text",
+       "s": "light",
+       "x": 60,
+       "y": 118,
+       "size": 18,
+       "a": 1
+      },
+      {
+       "op": "text",
+       "s": "sound",
+       "x": 60,
+       "y": 305,
+       "size": 18
+      },
+      {
+       "op": "line",
+       "x1": 80,
+       "y1": 150,
+       "x2": "lerp(80, 350, ramp(u, 0.05, 0.25))",
+       "y2": 150,
+       "color": "electric",
+       "w": 8
+      },
+      {
+       "op": "line",
+       "x1": 80,
+       "y1": 270,
+       "x2": "lerp(80, 350, ramp(u, 0.05, 0.75))",
+       "y2": 270,
+       "color": "sky",
+       "w": 8
+      },
+      {
+       "op": "sparkle",
+       "x": "lerp(80, 350, ramp(u, 0.05, 0.25))",
+       "y": 150,
+       "r": 12,
+       "color": "sun"
+      },
+      {
+       "op": "text",
+       "s": "Light zooms: you see the flash first",
+       "x": 200,
+       "y": 60,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "Sound is slower: the thunder comes later",
+       "x": 200,
+       "y": 340,
+       "size": 16,
+       "color": "ink",
+       "pill": "sky",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.6, 0.75)"
+      }
+     ],
+     "audio": "audio/lightning/count.mp3",
+     "audioSeconds": 10.15
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What is lightning?",
+     "options": [
+      "A giant spark of electricity",
+      "A shining star",
+      "A flashlight in the sky"
+     ],
+     "answer": 0,
+     "explanation": "Built-up static electricity jumps as a giant spark."
+    },
+    {
+     "question": "What makes the sound of thunder?",
+     "options": [
+      "Clouds bumping",
+      "Hot air bursting outward",
+      "Wind blowing"
+     ],
+     "answer": 1,
+     "explanation": "The air heats so fast it bursts outward with a BOOM."
+    },
+    {
+     "question": "Why do you see lightning before you hear thunder?",
+     "options": [
+      "Light is faster than sound",
+      "Thunder is shy",
+      "Your eyes are faster than your ears"
+     ],
+     "answer": 0,
+     "explanation": "Light travels much faster than sound."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "बिजली और गड़गड़ाहट कैसे होती है?",
+     "subtitle": "चिंगारियों से भरा बादल",
+     "quiz": [
+      {
+       "question": "बिजली क्या है?",
+       "options": [
+        "बिजली की एक बड़ी चिंगारी",
+        "चमकता हुआ तारा",
+        "आसमान में जलती टॉर्च"
+       ],
+       "explanation": "जमा हुई स्टैटिक बिजली एक बड़ी चिंगारी बनकर कूदती है।"
+      },
+      {
+       "question": "गड़गड़ाहट की आवाज़ किससे होती है?",
+       "options": [
+        "बादलों के टकराने से",
+        "गरम हवा के बाहर फटने से",
+        "हवा चलने से"
+       ],
+       "explanation": "हवा इतनी तेज़ गरम होती है कि धमाके के साथ बाहर फट पड़ती है।"
+      },
+      {
+       "question": "बिजली की चमक गड़गड़ाहट से पहले क्यों दिखती है?",
+       "options": [
+        "रोशनी आवाज़ से तेज़ चलती है",
+        "गड़गड़ाहट शरमाती है",
+        "आँखें कानों से तेज़ होती हैं"
+       ],
+       "explanation": "रोशनी आवाज़ से बहुत तेज़ चलती है।"
+      }
+     ],
+     "scenes": {
+      "storm": {
+       "narration": "कभी-कभी बड़े, गहरे तूफ़ानी बादल आ जाते हैं। उनके अंदर बर्फ़ के छोटे टुकड़े और पानी की बूँदें ऊपर-नीचे दौड़ती हैं, रगड़ खाती हैं और टकराती हैं।",
+       "audio": "audio/hi/lightning/storm.mp3",
+       "audioSeconds": 13.85
+      },
+      "static": {
+       "narration": "यह सारी रगड़ वैसी ही है जैसे बालों पर गुब्बारा रगड़ना। इससे स्टैटिक बिजली जमा होती है! बादल के ऊपर प्लस चार्ज जमा होता है, और नीचे माइनस चार्ज।",
+       "audio": "audio/hi/lightning/static.mp3",
+       "audioSeconds": 14.9
+      },
+      "zap": {
+       "narration": "जब बिजली बहुत ज़्यादा हो जाती है, उसे कहीं जाना ही होता है। वह आसमान में या ज़मीन तक कूदने वाली एक बड़ी चिंगारी बना देती है। वही चिंगारी बिजली है!",
+       "audio": "audio/hi/lightning/zap.mp3",
+       "audioSeconds": 15.03
+      },
+      "boom": {
+       "narration": "बिजली सूरज की सतह से भी ज़्यादा गरम होती है! यह हवा को इतनी तेज़ी से गरम करती है कि हवा एक बड़े धमाके के साथ बाहर फट पड़ती है। वह फटने की आवाज़ ही गड़गड़ाहट है।",
+       "audio": "audio/hi/lightning/boom.mp3",
+       "audioSeconds": 17.12
+      },
+      "count": {
+       "narration": "रोशनी आवाज़ से बहुत तेज़ चलती है। इसलिए पहले चमक दिखती है, और गड़गड़ाहट बाद में सुनाई देती है। बीच के सेकंड गिनो, तो पता चल जाएगा कि तूफ़ान कितनी दूर है!",
+       "audio": "audio/hi/lightning/count.mp3",
+       "audioSeconds": 15.7
+      }
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,7832 @@
+{
+ "date": "2026-10-16",
+ "lessons": [
+  {
+   "id": "seasons",
+   "title": "Why do we have seasons?",
+   "subtitle": "A tilted planet on a long trip",
+   "category": "Space",
+   "emoji": "🍂",
+   "accent": "#FF9F43",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "tilt",
+     "title": "A tilted Earth",
+     "tint": "#E8F1FF",
+     "narration": "The Earth spins like a ball with a stick through it. But it does not stand up straight! It is tilted a little, like a leaning top, and it always leans the same way.",
+     "draw": [
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 20,
+       "x2": 200,
+       "y2": 380,
+       "color": "#B8C2D6",
+       "w": 3
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 200,
+       "rot": 0.41,
+       "do": [
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -121.5,
+         "x2": 0,
+         "y2": 121.5,
+         "color": "ink",
+         "w": 5
+        },
+        {
+         "op": "group",
+         "x": 0,
+         "y": 0,
+         "scale": 1.5,
+         "do": [
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 60,
+           "fill": "water"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            -40,
+            -22,
+            -18,
+            -42,
+            4,
+            -30,
+            -4,
+            -8,
+            -28,
+            4,
+            -46,
+            -4
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            16,
+            4,
+            40,
+            -8,
+            52,
+            14,
+            34,
+            42,
+            14,
+            34
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            -30,
+            26,
+            -12,
+            20,
+            -8,
+            42,
+            -26,
+            46
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 60,
+           "stroke": "ink",
+           "sw": 2.67
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "Tilted!",
+       "x": 110,
+       "y": 60,
+       "size": 24,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "North",
+       "x": 270,
+       "y": 50,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.2)"
+      }
+     ],
+     "audio": "audio/seasons/tilt.mp3",
+     "audioSeconds": 10.1
+    },
+    {
+     "id": "trip",
+     "title": "A trip around the Sun",
+     "tint": "#E7E9FF",
+     "narration": "The Earth also travels around the Sun. One whole trip takes one year. All the way around, the tilt keeps pointing the same way into space.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 130,
+       "stroke": "#B8C2D6",
+       "sw": 4
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "200 + cos(i * 0.5236 + e * 0.2) * 47.5",
+         "y1": "200 + sin(i * 0.5236 + e * 0.2) * 47.5",
+         "x2": "200 + cos(i * 0.5236 + e * 0.2) * 58.9 + wave(e, 0.8, i * 0.1) * 3.8000000000000003",
+         "y2": "200 + sin(i * 0.5236 + e * 0.2) * 58.9 + wave(e, 0.8, i * 0.1) * 3.8000000000000003",
+         "color": "electric",
+         "w": 4.56
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 38,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 186.32,
+       "y": 193.16,
+       "r": 3.8,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 213.68,
+       "y": 193.16,
+       "r": 3.8,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        212.34,
+        207.62,
+        210.53,
+        211.28,
+        207.67,
+        214.2,
+        204.04,
+        216.07,
+        200.0,
+        216.72,
+        195.96,
+        216.07,
+        192.33,
+        214.2,
+        189.47,
+        211.28,
+        187.66,
+        207.62
+       ],
+       "stroke": "ink",
+       "sw": 3.04
+      },
+      {
+       "op": "circle",
+       "x": 176.44,
+       "y": 206.08,
+       "r": 4.94,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 223.56,
+       "y": 206.08,
+       "r": 4.94,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 200,
+       "a": 1,
+       "do": [
+        {
+         "op": "group",
+         "x": "cos(e * 0.6) * 130",
+         "y": "sin(e * 0.6) * 130",
+         "do": [
+          {
+           "op": "group",
+           "x": 0,
+           "y": 0,
+           "rot": 0.41,
+           "do": [
+            {
+             "op": "line",
+             "x1": 0,
+             "y1": -32.4,
+             "x2": 0,
+             "y2": 32.4,
+             "color": "ink",
+             "w": 5
+            },
+            {
+             "op": "group",
+             "x": 0,
+             "y": 0,
+             "scale": 0.4,
+             "do": [
+              {
+               "op": "circle",
+               "x": 0,
+               "y": 0,
+               "r": 60,
+               "fill": "water"
+              },
+              {
+               "op": "poly",
+               "pts": [
+                -40,
+                -22,
+                -18,
+                -42,
+                4,
+                -30,
+                -4,
+                -8,
+                -28,
+                4,
+                -46,
+                -4
+               ],
+               "closed": true,
+               "fill": "leaf"
+              },
+              {
+               "op": "poly",
+               "pts": [
+                16,
+                4,
+                40,
+                -8,
+                52,
+                14,
+                34,
+                42,
+                14,
+                34
+               ],
+               "closed": true,
+               "fill": "leaf"
+              },
+              {
+               "op": "poly",
+               "pts": [
+                -30,
+                26,
+                -12,
+                20,
+                -8,
+                42,
+                -26,
+                46
+               ],
+               "closed": true,
+               "fill": "leaf"
+              },
+              {
+               "op": "circle",
+               "x": 0,
+               "y": 0,
+               "r": 60,
+               "stroke": "ink",
+               "sw": 10.0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "1 trip = 1 year",
+       "x": 200,
+       "y": 36,
+       "size": 22,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      }
+     ],
+     "audio": "audio/seasons/trip.mp3",
+     "audioSeconds": 9.0
+    },
+    {
+     "id": "summer",
+     "title": "Summer",
+     "tint": "#FFF0C2",
+     "narration": "When your part of the Earth leans toward the Sun, the sunlight shines straight down on you. The days are long and warm. That is summer!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFF0C2",
+       "r": 0
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "55 + cos(i * 0.5236 + e * 0.2) * 68.75",
+         "y1": "200 + sin(i * 0.5236 + e * 0.2) * 68.75",
+         "x2": "55 + cos(i * 0.5236 + e * 0.2) * 85.25 + wave(e, 0.8, i * 0.1) * 5.5",
+         "y2": "200 + sin(i * 0.5236 + e * 0.2) * 85.25 + wave(e, 0.8, i * 0.1) * 5.5",
+         "color": "electric",
+         "w": 6.6
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 55,
+       "y": 200,
+       "r": 55,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 35.2,
+       "y": 190.1,
+       "r": 5.5,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 74.8,
+       "y": 190.1,
+       "r": 5.5,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        72.86,
+        211.03,
+        70.24,
+        216.33,
+        66.1,
+        220.55,
+        60.84,
+        223.26,
+        55.0,
+        224.2,
+        49.16,
+        223.26,
+        43.9,
+        220.55,
+        39.76,
+        216.33,
+        37.14,
+        211.03
+       ],
+       "stroke": "ink",
+       "sw": 4.4
+      },
+      {
+       "op": "circle",
+       "x": 20.9,
+       "y": 208.8,
+       "r": 7.15,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 89.1,
+       "y": 208.8,
+       "r": 7.15,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 120,
+         "y1": 160,
+         "x2": 250,
+         "y2": 160,
+         "color": "#FFE08A",
+         "w": 8
+        },
+        {
+         "op": "line",
+         "x1": 120,
+         "y1": 200,
+         "x2": 250,
+         "y2": 200,
+         "color": "#FFE08A",
+         "w": 8
+        },
+        {
+         "op": "line",
+         "x1": 120,
+         "y1": 240,
+         "x2": 250,
+         "y2": 240,
+         "color": "#FFE08A",
+         "w": 8
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 215,
+       "rot": -0.41,
+       "do": [
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -105.3,
+         "x2": 0,
+         "y2": 105.3,
+         "color": "ink",
+         "w": 5
+        },
+        {
+         "op": "group",
+         "x": 0,
+         "y": 0,
+         "scale": 1.3,
+         "do": [
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 60,
+           "fill": "water"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            -40,
+            -22,
+            -18,
+            -42,
+            4,
+            -30,
+            -4,
+            -8,
+            -28,
+            4,
+            -46,
+            -4
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            16,
+            4,
+            40,
+            -8,
+            52,
+            14,
+            34,
+            42,
+            14,
+            34
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            -30,
+            26,
+            -12,
+            20,
+            -8,
+            42,
+            -26,
+            46
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 60,
+           "stroke": "ink",
+           "sw": 3.08
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 284,
+       "y": 140,
+       "scale": 0.45,
+       "a": "ramp(u, 0.3, 0.45)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "sky",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          6.5,
+          -93.99,
+          5.54,
+          -92.06,
+          4.04,
+          -90.53,
+          2.12,
+          -89.54,
+          -0.0,
+          -89.2,
+          -2.12,
+          -89.54,
+          -4.04,
+          -90.53,
+          -5.54,
+          -92.06,
+          -6.5,
+          -93.99
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "Summer!",
+       "x": 300,
+       "y": 345,
+       "size": 26,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      },
+      {
+       "op": "text",
+       "s": "leaning TOWARD the Sun",
+       "x": 200,
+       "y": 40,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      }
+     ],
+     "audio": "audio/seasons/summer.mp3",
+     "audioSeconds": 8.28
+    },
+    {
+     "id": "winter",
+     "title": "Winter",
+     "tint": "#DCEBFA",
+     "narration": "Later in the year, your part of the Earth leans away. The sunlight comes in slanted and weak. The days are short and cold. That is winter!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#DCEBFA",
+       "r": 0
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "55 + cos(i * 0.5236 + e * 0.2) * 68.75",
+         "y1": "200 + sin(i * 0.5236 + e * 0.2) * 68.75",
+         "x2": "55 + cos(i * 0.5236 + e * 0.2) * 85.25 + wave(e, 0.8, i * 0.1) * 5.5",
+         "y2": "200 + sin(i * 0.5236 + e * 0.2) * 85.25 + wave(e, 0.8, i * 0.1) * 5.5",
+         "color": "electric",
+         "w": 6.6
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 55,
+       "y": 200,
+       "r": 55,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 35.2,
+       "y": 190.1,
+       "r": 5.5,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 74.8,
+       "y": 190.1,
+       "r": 5.5,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        72.86,
+        211.03,
+        70.24,
+        216.33,
+        66.1,
+        220.55,
+        60.84,
+        223.26,
+        55.0,
+        224.2,
+        49.16,
+        223.26,
+        43.9,
+        220.55,
+        39.76,
+        216.33,
+        37.14,
+        211.03
+       ],
+       "stroke": "ink",
+       "sw": 4.4
+      },
+      {
+       "op": "circle",
+       "x": 20.9,
+       "y": 208.8,
+       "r": 7.15,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 89.1,
+       "y": 208.8,
+       "r": 7.15,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 120,
+         "y1": 150,
+         "x2": 245,
+         "y2": 195,
+         "color": "#FFE08A",
+         "w": 8
+        },
+        {
+         "op": "line",
+         "x1": 120,
+         "y1": 190,
+         "x2": 245,
+         "y2": 225,
+         "color": "#FFE08A",
+         "w": 8
+        },
+        {
+         "op": "line",
+         "x1": 120,
+         "y1": 230,
+         "x2": 245,
+         "y2": 255,
+         "color": "#FFE08A",
+         "w": 8
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 215,
+       "rot": 0.41,
+       "do": [
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -105.3,
+         "x2": 0,
+         "y2": 105.3,
+         "color": "ink",
+         "w": 5
+        },
+        {
+         "op": "group",
+         "x": 0,
+         "y": 0,
+         "scale": 1.3,
+         "do": [
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 60,
+           "fill": "water"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            -40,
+            -22,
+            -18,
+            -42,
+            4,
+            -30,
+            -4,
+            -8,
+            -28,
+            4,
+            -46,
+            -4
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            16,
+            4,
+            40,
+            -8,
+            52,
+            14,
+            34,
+            42,
+            14,
+            34
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            -30,
+            26,
+            -12,
+            20,
+            -8,
+            42,
+            -26,
+            46
+           ],
+           "closed": true,
+           "fill": "leaf"
+          },
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 60,
+           "stroke": "ink",
+           "sw": 3.08
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 318,
+       "y": 140,
+       "scale": 0.45,
+       "a": "ramp(u, 0.3, 0.45)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "#FF9EC4",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -4.85,
+          -89.93,
+          -3.9,
+          -90.96,
+          -2.72,
+          -91.75,
+          -1.4,
+          -92.23,
+          -0.0,
+          -92.4,
+          1.4,
+          -92.23,
+          2.72,
+          -91.75,
+          3.9,
+          -90.96,
+          4.85,
+          -89.93
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 10,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "20 + hash(i, 1) * 360",
+         "y": "((e * 0.5 + hash(i, 2)) % 1) * 400",
+         "r": 4,
+         "fill": "white",
+         "a": "ramp(u, 0.4, 0.5)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "Winter!",
+       "x": 300,
+       "y": 345,
+       "size": 26,
+       "color": "ink",
+       "pill": "#CDEBFF",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      },
+      {
+       "op": "text",
+       "s": "leaning AWAY from the Sun",
+       "x": 200,
+       "y": 40,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      }
+     ],
+     "audio": "audio/seasons/winter.mp3",
+     "audioSeconds": 9.25
+    },
+    {
+     "id": "between",
+     "title": "In between",
+     "tint": "#F2F7E6",
+     "narration": "In between are spring and autumn, not too hot and not too cold. Flowers bloom in spring, and leaves fall in autumn. Round and round the seasons go, every year.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 200,
+       "h": 400,
+       "fill": "#E3F6DC",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": 200,
+       "y": 0,
+       "w": 200,
+       "h": 400,
+       "fill": "#FFE7C8",
+       "r": 0
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 0,
+       "x2": 200,
+       "y2": 400,
+       "color": "ink",
+       "w": 3
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 330,
+       "w": 420,
+       "h": 90,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 100,
+       "y": 335,
+       "scale": 1.5,
+       "do": [
+        {
+         "op": "rect",
+         "x": -7,
+         "y": -24,
+         "w": 14,
+         "h": 40,
+         "fill": "#B98B5E",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 30.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 28,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 335,
+       "scale": 1.5,
+       "do": [
+        {
+         "op": "rect",
+         "x": -7,
+         "y": -24,
+         "w": 14,
+         "h": 40,
+         "fill": "#B98B5E",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 30.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 28,
+         "fill": "#FF9F43"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 20,
+         "fill": "#FF9F43"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 20,
+         "fill": "#FF9F43"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 4,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "40 + i * 40",
+         "y": 345,
+         "r": 7,
+         "fill": "#FF9EC4",
+         "stroke": "ink",
+         "sw": 2
+        },
+        {
+         "op": "circle",
+         "x": "40 + i * 40",
+         "y": 345,
+         "r": 2.5,
+         "fill": "sun"
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 6,
+       "var": "i",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          "225 + hash(i, 1) * 150",
+          "((e * 0.3 + hash(i, 2)) % 1) * 320",
+          "233 + hash(i, 1) * 150",
+          "((e * 0.3 + hash(i, 2)) % 1) * 320 + 8",
+          "226 + hash(i, 1) * 150",
+          "((e * 0.3 + hash(i, 2)) % 1) * 320 + 14"
+         ],
+         "closed": true,
+         "fill": "coral",
+         "stroke": "#FF9F43",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "Spring",
+       "x": 100,
+       "y": 45,
+       "size": 26,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.15, 0.3)"
+      },
+      {
+       "op": "text",
+       "s": "Autumn",
+       "x": 300,
+       "y": 45,
+       "size": 26,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      },
+      {
+       "op": "text",
+       "s": "flowers bloom",
+       "x": 100,
+       "y": 100,
+       "size": 18,
+       "a": "ramp(u, 0.15, 0.3)"
+      },
+      {
+       "op": "text",
+       "s": "leaves fall",
+       "x": 300,
+       "y": 100,
+       "size": 18,
+       "a": "ramp(u, 0.5, 0.65)"
+      }
+     ],
+     "audio": "audio/seasons/between.mp3",
+     "audioSeconds": 11.2
+    }
+   ],
+   "quiz": [
+    {
+     "question": "Why do we have seasons?",
+     "options": [
+      "The Earth is tilted as it goes around the Sun",
+      "The Sun gets bigger and smaller",
+      "The Moon turns the lights down"
+     ],
+     "answer": 0,
+     "explanation": "The tilt changes how much sunshine each part of the Earth gets."
+    },
+    {
+     "question": "How long does the Earth take to go around the Sun?",
+     "options": [
+      "One day",
+      "One month",
+      "One year"
+     ],
+     "answer": 2,
+     "explanation": "One trip around the Sun is one whole year."
+    },
+    {
+     "question": "When your part of the Earth leans toward the Sun, it is...",
+     "options": [
+      "Summer",
+      "Winter",
+      "Night"
+     ],
+     "answer": 0,
+     "explanation": "Leaning toward the Sun brings long, warm days."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "मौसम क्यों बदलते हैं?",
+     "subtitle": "झुकी हुई धरती, लंबा सफ़र",
+     "quiz": [
+      {
+       "question": "मौसम क्यों बदलते हैं?",
+       "options": [
+        "धरती सूरज के चारों ओर घूमते हुए झुकी रहती है",
+        "सूरज बड़ा और छोटा हो जाता है",
+        "चाँद रोशनी कम कर देता है"
+       ],
+       "explanation": "झुकाव से तय होता है कि धरती के हर हिस्से को कितनी धूप मिलेगी।"
+      },
+      {
+       "question": "धरती को सूरज का एक चक्कर लगाने में कितना समय लगता है?",
+       "options": [
+        "एक दिन",
+        "एक महीना",
+        "एक साल"
+       ],
+       "explanation": "सूरज का एक पूरा चक्कर एक साल होता है।"
+      },
+      {
+       "question": "जब धरती का आपका हिस्सा सूरज की ओर झुकता है, तब क्या होता है?",
+       "options": [
+        "गर्मी",
+        "सर्दी",
+        "रात"
+       ],
+       "explanation": "सूरज की ओर झुकने से दिन लंबे और गरम होते हैं।"
+      }
+     ],
+     "scenes": {
+      "tilt": {
+       "narration": "धरती एक गेंद की तरह घूमती है, जिसमें से एक डंडा निकला हो। लेकिन यह सीधी खड़ी नहीं है! यह थोड़ी झुकी हुई है, जैसे लट्टू झुककर घूमता है, और हमेशा एक ही तरफ़ झुकी रहती है।",
+       "audio": "audio/hi/seasons/tilt.mp3",
+       "audioSeconds": 17.23
+      },
+      "trip": {
+       "narration": "धरती सूरज के चारों ओर भी चलती है। एक पूरा चक्कर एक साल लेता है। पूरे रास्ते यह झुकाव अंतरिक्ष में एक ही दिशा में बना रहता है।",
+       "audio": "audio/hi/seasons/trip.mp3",
+       "audioSeconds": 13.83
+      },
+      "summer": {
+       "narration": "जब धरती का आपका हिस्सा सूरज की ओर झुकता है, तो धूप आप पर सीधी पड़ती है। दिन लंबे और गरम होते हैं। यही गर्मी है!",
+       "audio": "audio/hi/seasons/summer.mp3",
+       "audioSeconds": 11.38
+      },
+      "winter": {
+       "narration": "साल के दूसरे हिस्से में आपका हिस्सा सूरज से दूर झुक जाता है। धूप तिरछी और कमज़ोर आती है। दिन छोटे और ठंडे होते हैं। यही सर्दी है!",
+       "audio": "audio/hi/seasons/winter.mp3",
+       "audioSeconds": 13.65
+      },
+      "between": {
+       "narration": "बीच में बसंत और पतझड़ आते हैं — न ज़्यादा गरम, न ज़्यादा ठंडे। बसंत में फूल खिलते हैं, और पतझड़ में पत्ते गिरते हैं। मौसम हर साल गोल-गोल घूमते रहते हैं।",
+       "audio": "audio/hi/seasons/between.mp3",
+       "audioSeconds": 15.47
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "moon",
+   "title": "Why does the Moon change shape?",
+   "subtitle": "A ball of rock and a flashlight Sun",
+   "category": "Space",
+   "emoji": "🌙",
+   "accent": "#5E60CE",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "rock",
+     "title": "A giant rock",
+     "tint": "#2B2E63",
+     "narration": "The Moon is a giant ball of rock floating in space, and it travels around our Earth. It does not make any light of its own.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#1E2147",
+       "r": 0
+      },
+      {
+       "op": "sparkle",
+       "x": 95,
+       "y": 45,
+       "r": "6.9 * (0.75 + 0.25 * wave(e, 0.7, 0.37))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 96,
+       "y": 8,
+       "r": "8.2 * (0.75 + 0.25 * wave(e, 0.7, 0.6))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 261,
+       "y": 2,
+       "r": "6.2 * (0.75 + 0.25 * wave(e, 0.7, 0.2))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 140,
+       "y": 181,
+       "r": "6.2 * (0.75 + 0.25 * wave(e, 0.7, 0.55))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 276,
+       "y": 359,
+       "r": "8.2 * (0.75 + 0.25 * wave(e, 0.7, 0.62))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 207,
+       "y": 110,
+       "r": "9.1 * (0.75 + 0.25 * wave(e, 0.7, 0.32))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 8,
+       "y": 329,
+       "r": "4.9 * (0.75 + 0.25 * wave(e, 0.7, 0.13))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 342,
+       "y": 368,
+       "r": "7.4 * (0.75 + 0.25 * wave(e, 0.7, 0.62))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 280,
+       "y": 318,
+       "r": "5.3 * (0.75 + 0.25 * wave(e, 0.7, 0.93))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 267,
+       "y": 262,
+       "r": "8.8 * (0.75 + 0.25 * wave(e, 0.7, 0.77))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 31,
+       "y": 291,
+       "r": "7.6 * (0.75 + 0.25 * wave(e, 0.7, 0.44))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 225,
+       "y": 74,
+       "r": "9.4 * (0.75 + 0.25 * wave(e, 0.7, 0.74))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 145,
+       "y": 315,
+       "r": "9.3 * (0.75 + 0.25 * wave(e, 0.7, 0.65))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 77,
+       "y": 106,
+       "r": "7.8 * (0.75 + 0.25 * wave(e, 0.7, 0.88))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 345,
+       "y": 207,
+       "r": "7.1 * (0.75 + 0.25 * wave(e, 0.7, 0.9))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 223,
+       "y": 326,
+       "r": "8.8 * (0.75 + 0.25 * wave(e, 0.7, 0.06))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 366,
+       "y": 133,
+       "r": "4.4 * (0.75 + 0.25 * wave(e, 0.7, 0.12))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 200,
+       "y": 373,
+       "r": "8.6 * (0.75 + 0.25 * wave(e, 0.7, 0.57))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 147,
+       "y": 199,
+       "r": "5.6 * (0.75 + 0.25 * wave(e, 0.7, 0.83))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 396,
+       "y": 117,
+       "r": "6.7 * (0.75 + 0.25 * wave(e, 0.7, 0.29))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 224,
+       "y": 48,
+       "r": "8.3 * (0.75 + 0.25 * wave(e, 0.7, 0.57))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 92,
+       "y": 40,
+       "r": "4.5 * (0.75 + 0.25 * wave(e, 0.7, 0.77))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 43,
+       "y": 9,
+       "r": "6.1 * (0.75 + 0.25 * wave(e, 0.7, 0.7))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 109,
+       "y": 3,
+       "r": "8.1 * (0.75 + 0.25 * wave(e, 0.7, 0.9))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 159,
+       "y": 301,
+       "r": "4.7 * (0.75 + 0.25 * wave(e, 0.7, 0.59))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 188,
+       "y": 112,
+       "r": "8.3 * (0.75 + 0.25 * wave(e, 0.7, 0.74))",
+       "color": "white"
+      },
+      {
+       "op": "group",
+       "x": 110,
+       "y": 270,
+       "scale": 0.87,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 60,
+         "fill": "water"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -40,
+          -22,
+          -18,
+          -42,
+          4,
+          -30,
+          -4,
+          -8,
+          -28,
+          4,
+          -46,
+          -4
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          16,
+          4,
+          40,
+          -8,
+          52,
+          14,
+          34,
+          42,
+          14,
+          34
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -30,
+          26,
+          -12,
+          20,
+          -8,
+          42,
+          -26,
+          46
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 60,
+         "stroke": "ink",
+         "sw": 4.62
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 110,
+       "y": 270,
+       "r": 112,
+       "stroke": "#5A5F8F",
+       "sw": 2.5
+      },
+      {
+       "op": "group",
+       "x": "110 + cos(e * 0.5 - 1) * 112",
+       "y": "270 + sin(e * 0.5 - 1) * 112",
+       "scale": 0.65,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 40,
+         "fill": "#F4EFD8",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "circle",
+         "x": -14,
+         "y": -10,
+         "r": 8,
+         "fill": "#DCD5B5"
+        },
+        {
+         "op": "circle",
+         "x": 14,
+         "y": 12,
+         "r": 10,
+         "fill": "#DCD5B5"
+        },
+        {
+         "op": "circle",
+         "x": 10,
+         "y": -18,
+         "r": 5,
+         "fill": "#DCD5B5"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "The Moon is a giant ball of rock",
+       "x": 200,
+       "y": 45,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "no light of its own!",
+       "x": 280,
+       "y": 330,
+       "size": 19,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.7)"
+      }
+     ],
+     "audio": "audio/moon/rock.mp3",
+     "audioSeconds": 7.95
+    },
+    {
+     "id": "lit",
+     "title": "Borrowed sunshine",
+     "tint": "#2B2E63",
+     "narration": "The Moon only shines because the Sun lights it up, like a ball in the beam of a flashlight. The half facing the Sun is bright, and the other half is dark.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#1E2147",
+       "r": 0
+      },
+      {
+       "op": "sparkle",
+       "x": 221,
+       "y": 69,
+       "r": "8.2 * (0.75 + 0.25 * wave(e, 0.7, 0.95))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 72,
+       "y": 326,
+       "r": "7.2 * (0.75 + 0.25 * wave(e, 0.7, 0.14))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 295,
+       "y": 1,
+       "r": "8.1 * (0.75 + 0.25 * wave(e, 0.7, 0.47))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 339,
+       "y": 61,
+       "r": "8.0 * (0.75 + 0.25 * wave(e, 0.7, 0.93))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 167,
+       "y": 201,
+       "r": "7.2 * (0.75 + 0.25 * wave(e, 0.7, 0.01))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 197,
+       "y": 368,
+       "r": "6.5 * (0.75 + 0.25 * wave(e, 0.7, 0.0))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 323,
+       "y": 112,
+       "r": "7.5 * (0.75 + 0.25 * wave(e, 0.7, 0.18))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 240,
+       "y": 372,
+       "r": "7.0 * (0.75 + 0.25 * wave(e, 0.7, 0.63))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 336,
+       "y": 62,
+       "r": "6.0 * (0.75 + 0.25 * wave(e, 0.7, 0.61))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 336,
+       "y": 38,
+       "r": "6.9 * (0.75 + 0.25 * wave(e, 0.7, 0.76))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 167,
+       "y": 344,
+       "r": "4.4 * (0.75 + 0.25 * wave(e, 0.7, 0.63))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 307,
+       "y": 275,
+       "r": "5.7 * (0.75 + 0.25 * wave(e, 0.7, 0.09))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 364,
+       "y": 149,
+       "r": "5.7 * (0.75 + 0.25 * wave(e, 0.7, 0.94))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 175,
+       "y": 210,
+       "r": "5.4 * (0.75 + 0.25 * wave(e, 0.7, 0.07))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 152,
+       "y": 392,
+       "r": "5.9 * (0.75 + 0.25 * wave(e, 0.7, 0.0))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 30,
+       "y": 325,
+       "r": "6.2 * (0.75 + 0.25 * wave(e, 0.7, 0.21))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 387,
+       "y": 83,
+       "r": "6.7 * (0.75 + 0.25 * wave(e, 0.7, 0.28))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 327,
+       "y": 219,
+       "r": "4.2 * (0.75 + 0.25 * wave(e, 0.7, 0.14))",
+       "color": "white"
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "40 + cos(i * 0.5236 + e * 0.2) * 42.5",
+         "y1": "200 + sin(i * 0.5236 + e * 0.2) * 42.5",
+         "x2": "40 + cos(i * 0.5236 + e * 0.2) * 52.7 + wave(e, 0.8, i * 0.1) * 3.4000000000000004",
+         "y2": "200 + sin(i * 0.5236 + e * 0.2) * 52.7 + wave(e, 0.8, i * 0.1) * 3.4000000000000004",
+         "color": "electric",
+         "w": 4.08
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 40,
+       "y": 200,
+       "r": 34,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 27.76,
+       "y": 193.88,
+       "r": 3.4,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 52.24,
+       "y": 193.88,
+       "r": 3.4,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        51.04,
+        206.82,
+        49.42,
+        210.1,
+        46.86,
+        212.7,
+        43.61,
+        214.38,
+        40.0,
+        214.96,
+        36.39,
+        214.38,
+        33.14,
+        212.7,
+        30.58,
+        210.1,
+        28.96,
+        206.82
+       ],
+       "stroke": "ink",
+       "sw": 2.72
+      },
+      {
+       "op": "circle",
+       "x": 18.92,
+       "y": 205.44,
+       "r": 4.42,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 61.08,
+       "y": 205.44,
+       "r": 4.42,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.1, 0.25)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 95,
+         "y1": 140,
+         "x2": 150,
+         "y2": 140,
+         "color": "#FFE08A",
+         "w": 7
+        },
+        {
+         "op": "line",
+         "x1": 95,
+         "y1": 200,
+         "x2": 150,
+         "y2": 200,
+         "color": "#FFE08A",
+         "w": 7
+        },
+        {
+         "op": "line",
+         "x1": 95,
+         "y1": 260,
+         "x2": 150,
+         "y2": 260,
+         "color": "#FFE08A",
+         "w": 7
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 260,
+       "y": 200,
+       "r": 80,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "arc",
+       "x": 260,
+       "y": 200,
+       "r": 80,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "circle",
+       "x": 260,
+       "y": 200,
+       "r": 80,
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "text",
+       "s": "lit by the Sun",
+       "x": 240,
+       "y": 320,
+       "size": 19,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "dark side",
+       "x": 320,
+       "y": 90,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.55)"
+      }
+     ],
+     "audio": "audio/moon/lit.mp3",
+     "audioSeconds": 9.45
+    },
+    {
+     "id": "orbit",
+     "title": "A trip around Earth",
+     "tint": "#2B2E63",
+     "narration": "The Moon takes about one month to go all the way around the Earth. As it travels, we see its bright half from a different angle each night.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#1E2147",
+       "r": 0
+      },
+      {
+       "op": "sparkle",
+       "x": 245,
+       "y": 112,
+       "r": "6.1 * (0.75 + 0.25 * wave(e, 0.7, 0.07))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 384,
+       "y": 354,
+       "r": "6.9 * (0.75 + 0.25 * wave(e, 0.7, 0.52))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 54,
+       "y": 157,
+       "r": "4.3 * (0.75 + 0.25 * wave(e, 0.7, 0.93))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 333,
+       "y": 144,
+       "r": "5.2 * (0.75 + 0.25 * wave(e, 0.7, 0.49))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 48,
+       "y": 46,
+       "r": "6.3 * (0.75 + 0.25 * wave(e, 0.7, 0.28))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 301,
+       "y": 151,
+       "r": "6.9 * (0.75 + 0.25 * wave(e, 0.7, 0.84))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 262,
+       "y": 229,
+       "r": "6.9 * (0.75 + 0.25 * wave(e, 0.7, 0.87))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 135,
+       "y": 313,
+       "r": "3.1 * (0.75 + 0.25 * wave(e, 0.7, 0.84))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 126,
+       "y": 65,
+       "r": "4.7 * (0.75 + 0.25 * wave(e, 0.7, 0.85))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 66,
+       "y": 92,
+       "r": "3.1 * (0.75 + 0.25 * wave(e, 0.7, 0.1))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 67,
+       "y": 336,
+       "r": "3.5 * (0.75 + 0.25 * wave(e, 0.7, 0.39))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 46,
+       "y": 204,
+       "r": "5.5 * (0.75 + 0.25 * wave(e, 0.7, 0.65))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 54,
+       "y": 181,
+       "r": "5.8 * (0.75 + 0.25 * wave(e, 0.7, 0.44))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 385,
+       "y": 139,
+       "r": "6.7 * (0.75 + 0.25 * wave(e, 0.7, 0.63))",
+       "color": "white"
+      },
+      {
+       "op": "repeat",
+       "n": 8,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "25 + cos(i * 0.7854 + e * 0.2) * 25.0",
+         "y1": "200 + sin(i * 0.7854 + e * 0.2) * 25.0",
+         "x2": "25 + cos(i * 0.7854 + e * 0.2) * 31.0 + wave(e, 0.8, i * 0.1) * 2.0",
+         "y2": "200 + sin(i * 0.7854 + e * 0.2) * 31.0 + wave(e, 0.8, i * 0.1) * 2.0",
+         "color": "electric",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 25,
+       "y": 200,
+       "r": 20,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 120,
+       "stroke": "#5A5F8F",
+       "sw": 2.5
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 200,
+       "scale": 0.73,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 60,
+         "fill": "water"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -40,
+          -22,
+          -18,
+          -42,
+          4,
+          -30,
+          -4,
+          -8,
+          -28,
+          4,
+          -46,
+          -4
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          16,
+          4,
+          40,
+          -8,
+          52,
+          14,
+          34,
+          42,
+          14,
+          34
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -30,
+          26,
+          -12,
+          20,
+          -8,
+          42,
+          -26,
+          46
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 60,
+         "stroke": "ink",
+         "sw": 5.45
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 320.0,
+       "y": 200.0,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.2, 0.3)"
+      },
+      {
+       "op": "arc",
+       "x": 320.0,
+       "y": 200.0,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.2, 0.3)"
+      },
+      {
+       "op": "circle",
+       "x": 284.9,
+       "y": 284.9,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.25, 0.35)"
+      },
+      {
+       "op": "arc",
+       "x": 284.9,
+       "y": 284.9,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.25, 0.35)"
+      },
+      {
+       "op": "circle",
+       "x": 200.0,
+       "y": 320.0,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.30000000000000004, 0.4)"
+      },
+      {
+       "op": "arc",
+       "x": 200.0,
+       "y": 320.0,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.30000000000000004, 0.4)"
+      },
+      {
+       "op": "circle",
+       "x": 115.1,
+       "y": 284.9,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.35000000000000003, 0.45)"
+      },
+      {
+       "op": "arc",
+       "x": 115.1,
+       "y": 284.9,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.35000000000000003, 0.45)"
+      },
+      {
+       "op": "circle",
+       "x": 80.0,
+       "y": 200.0,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.4, 0.5)"
+      },
+      {
+       "op": "arc",
+       "x": 80.0,
+       "y": 200.0,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.4, 0.5)"
+      },
+      {
+       "op": "circle",
+       "x": 115.1,
+       "y": 115.1,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.45, 0.55)"
+      },
+      {
+       "op": "arc",
+       "x": 115.1,
+       "y": 115.1,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.45, 0.55)"
+      },
+      {
+       "op": "circle",
+       "x": 200.0,
+       "y": 80.0,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.5, 0.6000000000000001)"
+      },
+      {
+       "op": "arc",
+       "x": 200.0,
+       "y": 80.0,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.5, 0.6000000000000001)"
+      },
+      {
+       "op": "circle",
+       "x": 284.9,
+       "y": 115.1,
+       "r": 17,
+       "fill": "#3A3F66",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.55, 0.65)"
+      },
+      {
+       "op": "arc",
+       "x": 284.9,
+       "y": 115.1,
+       "r": 17,
+       "from": 1.57,
+       "to": 4.71,
+       "fill": "#F6F0D4",
+       "a": "ramp(u, 0.55, 0.65)"
+      },
+      {
+       "op": "text",
+       "s": "one trip = about one month",
+       "x": 200,
+       "y": 372,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.65, 0.8)"
+      }
+     ],
+     "audio": "audio/moon/orbit.mp3",
+     "audioSeconds": 8.57
+    },
+    {
+     "id": "phases",
+     "title": "The phases",
+     "tint": "#2B2E63",
+     "narration": "Sometimes we see the whole bright face, a full Moon. Sometimes only a thin curl, a crescent. Sometimes none at all, a new Moon. The Moon is not changing, only our view of it.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#1E2147",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 48,
+       "y": 190,
+       "a": "ramp(u, 0.05, 0.17)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "fill": "#3A3F66"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 124,
+       "y": 190,
+       "a": "ramp(u, 0.18, 0.30000000000000004)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "fill": "#3A3F66"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -29.0,
+          5.66,
+          -28.44,
+          11.1,
+          -26.79,
+          16.11,
+          -24.11,
+          20.51,
+          -20.51,
+          24.11,
+          -16.11,
+          26.79,
+          -11.1,
+          28.44,
+          -5.66,
+          29.0,
+          0.0,
+          28.44,
+          5.66,
+          26.79,
+          11.1,
+          24.11,
+          16.11,
+          20.51,
+          20.51,
+          16.11,
+          24.11,
+          11.1,
+          26.79,
+          5.66,
+          28.44,
+          0.0,
+          29.0,
+          0.0,
+          29.0,
+          3.39,
+          28.44,
+          6.66,
+          26.79,
+          9.67,
+          24.11,
+          12.3,
+          20.51,
+          14.47,
+          16.11,
+          16.08,
+          11.1,
+          17.07,
+          5.66,
+          17.4,
+          0.0,
+          17.07,
+          -5.66,
+          16.08,
+          -11.1,
+          14.47,
+          -16.11,
+          12.3,
+          -20.51,
+          9.67,
+          -24.11,
+          6.66,
+          -26.79,
+          3.39,
+          -28.44,
+          0.0,
+          -29.0
+         ],
+         "closed": true,
+         "fill": "#F6F0D4"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 190,
+       "a": "ramp(u, 0.31, 0.43000000000000005)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "fill": "#3A3F66"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -29.0,
+          5.66,
+          -28.44,
+          11.1,
+          -26.79,
+          16.11,
+          -24.11,
+          20.51,
+          -20.51,
+          24.11,
+          -16.11,
+          26.79,
+          -11.1,
+          28.44,
+          -5.66,
+          29.0,
+          0.0,
+          28.44,
+          5.66,
+          26.79,
+          11.1,
+          24.11,
+          16.11,
+          20.51,
+          20.51,
+          16.11,
+          24.11,
+          11.1,
+          26.79,
+          5.66,
+          28.44,
+          0.0,
+          29.0,
+          0.0,
+          29.0,
+          0.0,
+          28.44,
+          0.0,
+          26.79,
+          0.0,
+          24.11,
+          0.0,
+          20.51,
+          0.0,
+          16.11,
+          0.0,
+          11.1,
+          0.0,
+          5.66,
+          0.0,
+          0.0,
+          0.0,
+          -5.66,
+          0.0,
+          -11.1,
+          0.0,
+          -16.11,
+          0.0,
+          -20.51,
+          0.0,
+          -24.11,
+          0.0,
+          -26.79,
+          0.0,
+          -28.44,
+          0.0,
+          -29.0
+         ],
+         "closed": true,
+         "fill": "#F6F0D4"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 276,
+       "y": 190,
+       "a": "ramp(u, 0.44, 0.56)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "fill": "#3A3F66"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -29.0,
+          5.66,
+          -28.44,
+          11.1,
+          -26.79,
+          16.11,
+          -24.11,
+          20.51,
+          -20.51,
+          24.11,
+          -16.11,
+          26.79,
+          -11.1,
+          28.44,
+          -5.66,
+          29.0,
+          0.0,
+          28.44,
+          5.66,
+          26.79,
+          11.1,
+          24.11,
+          16.11,
+          20.51,
+          20.51,
+          16.11,
+          24.11,
+          11.1,
+          26.79,
+          5.66,
+          28.44,
+          0.0,
+          29.0,
+          -0.0,
+          29.0,
+          -3.39,
+          28.44,
+          -6.66,
+          26.79,
+          -9.67,
+          24.11,
+          -12.3,
+          20.51,
+          -14.47,
+          16.11,
+          -16.08,
+          11.1,
+          -17.07,
+          5.66,
+          -17.4,
+          0.0,
+          -17.07,
+          -5.66,
+          -16.08,
+          -11.1,
+          -14.47,
+          -16.11,
+          -12.3,
+          -20.51,
+          -9.67,
+          -24.11,
+          -6.66,
+          -26.79,
+          -3.39,
+          -28.44,
+          -0.0,
+          -29.0
+         ],
+         "closed": true,
+         "fill": "#F6F0D4"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 352,
+       "y": 190,
+       "a": "ramp(u, 0.5700000000000001, 0.6900000000000001)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "fill": "#3A3F66"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -29.0,
+          5.66,
+          -28.44,
+          11.1,
+          -26.79,
+          16.11,
+          -24.11,
+          20.51,
+          -20.51,
+          24.11,
+          -16.11,
+          26.79,
+          -11.1,
+          28.44,
+          -5.66,
+          29.0,
+          0.0,
+          28.44,
+          5.66,
+          26.79,
+          11.1,
+          24.11,
+          16.11,
+          20.51,
+          20.51,
+          16.11,
+          24.11,
+          11.1,
+          26.79,
+          5.66,
+          28.44,
+          0.0,
+          29.0,
+          -0.0,
+          29.0,
+          -5.66,
+          28.44,
+          -11.1,
+          26.79,
+          -16.11,
+          24.11,
+          -20.51,
+          20.51,
+          -24.11,
+          16.11,
+          -26.79,
+          11.1,
+          -28.44,
+          5.66,
+          -29.0,
+          0.0,
+          -28.44,
+          -5.66,
+          -26.79,
+          -11.1,
+          -24.11,
+          -16.11,
+          -20.51,
+          -20.51,
+          -16.11,
+          -24.11,
+          -11.1,
+          -26.79,
+          -5.66,
+          -28.44,
+          -0.0,
+          -29.0
+         ],
+         "closed": true,
+         "fill": "#F6F0D4"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 29,
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "New",
+       "x": 48,
+       "y": 245,
+       "size": 15,
+       "color": "white",
+       "a": "ramp(u, 0.1, 0.2)"
+      },
+      {
+       "op": "text",
+       "s": "Crescent",
+       "x": 124,
+       "y": 245,
+       "size": 15,
+       "color": "white",
+       "a": "ramp(u, 0.23, 0.33)"
+      },
+      {
+       "op": "text",
+       "s": "Half",
+       "x": 200,
+       "y": 245,
+       "size": 15,
+       "color": "white",
+       "a": "ramp(u, 0.36, 0.46)"
+      },
+      {
+       "op": "text",
+       "s": "Gibbous",
+       "x": 276,
+       "y": 245,
+       "size": 15,
+       "color": "white",
+       "a": "ramp(u, 0.49, 0.5900000000000001)"
+      },
+      {
+       "op": "text",
+       "s": "Full",
+       "x": 352,
+       "y": 245,
+       "size": 15,
+       "color": "white",
+       "a": "ramp(u, 0.62, 0.72)"
+      },
+      {
+       "op": "text",
+       "s": "the shape we see keeps changing",
+       "x": 200,
+       "y": 80,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.7, 0.85)"
+      },
+      {
+       "op": "text",
+       "s": "...but the Moon itself never changes",
+       "x": 200,
+       "y": 330,
+       "size": 17,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.8, 0.92)"
+      }
+     ],
+     "audio": "audio/moon/phases.mp3",
+     "audioSeconds": 11.8
+    },
+    {
+     "id": "face",
+     "title": "The same face",
+     "tint": "#2B2E63",
+     "narration": "Here is a funny thing. The Moon turns just once on each trip around us, so we always see the same face. Its smiling craters are always looking right at the Earth!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#1E2147",
+       "r": 0
+      },
+      {
+       "op": "sparkle",
+       "x": 51,
+       "y": 4,
+       "r": "7.7 * (0.75 + 0.25 * wave(e, 0.7, 0.5))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 103,
+       "y": 193,
+       "r": "8.2 * (0.75 + 0.25 * wave(e, 0.7, 0.58))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 7,
+       "y": 238,
+       "r": "4.8 * (0.75 + 0.25 * wave(e, 0.7, 0.92))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 237,
+       "y": 43,
+       "r": "6.9 * (0.75 + 0.25 * wave(e, 0.7, 0.49))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 392,
+       "y": 294,
+       "r": "6.7 * (0.75 + 0.25 * wave(e, 0.7, 0.15))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 132,
+       "y": 315,
+       "r": "6.8 * (0.75 + 0.25 * wave(e, 0.7, 0.36))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 249,
+       "y": 386,
+       "r": "4.2 * (0.75 + 0.25 * wave(e, 0.7, 0.82))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 200,
+       "y": 253,
+       "r": "3.7 * (0.75 + 0.25 * wave(e, 0.7, 0.02))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 153,
+       "y": 193,
+       "r": "7.0 * (0.75 + 0.25 * wave(e, 0.7, 0.43))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 80,
+       "y": 307,
+       "r": "4.0 * (0.75 + 0.25 * wave(e, 0.7, 0.3))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 253,
+       "y": 378,
+       "r": "7.9 * (0.75 + 0.25 * wave(e, 0.7, 0.48))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 376,
+       "y": 38,
+       "r": "5.5 * (0.75 + 0.25 * wave(e, 0.7, 0.94))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 213,
+       "y": 147,
+       "r": "6.2 * (0.75 + 0.25 * wave(e, 0.7, 0.02))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 134,
+       "y": 372,
+       "r": "4.7 * (0.75 + 0.25 * wave(e, 0.7, 0.4))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 5,
+       "y": 291,
+       "r": "7.5 * (0.75 + 0.25 * wave(e, 0.7, 0.78))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 18,
+       "y": 348,
+       "r": "3.9 * (0.75 + 0.25 * wave(e, 0.7, 0.24))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 379,
+       "y": 351,
+       "r": "5.1 * (0.75 + 0.25 * wave(e, 0.7, 0.73))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 205,
+       "y": 87,
+       "r": "4.0 * (0.75 + 0.25 * wave(e, 0.7, 0.42))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 273,
+       "y": 74,
+       "r": "5.2 * (0.75 + 0.25 * wave(e, 0.7, 0.25))",
+       "color": "white"
+      },
+      {
+       "op": "sparkle",
+       "x": 97,
+       "y": 26,
+       "r": "4.3 * (0.75 + 0.25 * wave(e, 0.7, 0.92))",
+       "color": "white"
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 200,
+       "scale": 0.83,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 60,
+         "fill": "water"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -40,
+          -22,
+          -18,
+          -42,
+          4,
+          -30,
+          -4,
+          -8,
+          -28,
+          4,
+          -46,
+          -4
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          16,
+          4,
+          40,
+          -8,
+          52,
+          14,
+          34,
+          42,
+          14,
+          34
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -30,
+          26,
+          -12,
+          20,
+          -8,
+          42,
+          -26,
+          46
+         ],
+         "closed": true,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 60,
+         "stroke": "ink",
+         "sw": 4.8
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 130,
+       "stroke": "#5A5F8F",
+       "sw": 2.5
+      },
+      {
+       "op": "group",
+       "x": "200 + cos(e * 0.5) * 130",
+       "y": "200 + sin(e * 0.5) * 130",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 36,
+         "fill": "#F6F0D4",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "group",
+         "x": "-cos(e * 0.5) * 12",
+         "y": "-sin(e * 0.5) * 12",
+         "do": [
+          {
+           "op": "circle",
+           "x": -6.48,
+           "y": -3.24,
+           "r": 2.2,
+           "fill": "ink"
+          },
+          {
+           "op": "circle",
+           "x": 6.48,
+           "y": -3.24,
+           "r": 2.2,
+           "fill": "ink"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            5.85,
+            3.61,
+            4.99,
+            5.34,
+            3.63,
+            6.73,
+            1.91,
+            7.61,
+            -0.0,
+            7.92,
+            -1.91,
+            7.61,
+            -3.63,
+            6.73,
+            -4.99,
+            5.34,
+            -5.85,
+            3.61
+           ],
+           "stroke": "ink",
+           "sw": 2.5
+          },
+          {
+           "op": "circle",
+           "x": -11.16,
+           "y": 2.88,
+           "r": 2.34,
+           "fill": "#FF9EC4",
+           "a": 0.7
+          },
+          {
+           "op": "circle",
+           "x": 11.16,
+           "y": 2.88,
+           "r": 2.34,
+           "fill": "#FF9EC4",
+           "a": 0.7
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "always the same face!",
+       "x": 200,
+       "y": 360,
+       "size": 21,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      }
+     ],
+     "audio": "audio/moon/face.mp3",
+     "audioSeconds": 10.4
+    }
+   ],
+   "quiz": [
+    {
+     "question": "Does the Moon make its own light?",
+     "options": [
+      "Yes, like a lamp",
+      "No, it reflects sunlight",
+      "Only on Sundays"
+     ],
+     "answer": 1,
+     "explanation": "The Moon shines because the Sun lights it up."
+    },
+    {
+     "question": "How long does the Moon take to go around the Earth?",
+     "options": [
+      "About one day",
+      "About one month",
+      "About one year"
+     ],
+     "answer": 1,
+     "explanation": "One trip takes about a month, and that is where the word 'month' comes from."
+    },
+    {
+     "question": "What do we call a Moon with no bright part facing us?",
+     "options": [
+      "Full Moon",
+      "Half Moon",
+      "New Moon"
+     ],
+     "answer": 2,
+     "explanation": "A new Moon has its bright side facing away from us."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "चाँद का आकार क्यों बदलता है?",
+     "subtitle": "पत्थर का गोला और टॉर्च-सा सूरज",
+     "quiz": [
+      {
+       "question": "क्या चाँद अपनी रोशनी बनाता है?",
+       "options": [
+        "हाँ, दीपक की तरह",
+        "नहीं, वह सूरज की रोशनी लौटाता है",
+        "सिर्फ़ रविवार को"
+       ],
+       "explanation": "चाँद इसलिए चमकता है क्योंकि सूरज उसे रोशन करता है।"
+      },
+      {
+       "question": "चाँद को धरती का एक चक्कर लगाने में कितना समय लगता है?",
+       "options": [
+        "क़रीब एक दिन",
+        "क़रीब एक महीना",
+        "क़रीब एक साल"
+       ],
+       "explanation": "एक चक्कर में क़रीब एक महीना लगता है, और महीना शब्द यहीं से आया है।"
+      },
+      {
+       "question": "जब चाँद का चमकीला हिस्सा हमारी ओर न हो, तब उसे क्या कहते हैं?",
+       "options": [
+        "पूर्णिमा",
+        "अर्धचंद्र",
+        "अमावस्या"
+       ],
+       "explanation": "अमावस्या में चाँद का चमकीला हिस्सा हमसे दूर होता है।"
+      }
+     ],
+     "scenes": {
+      "rock": {
+       "narration": "चाँद अंतरिक्ष में तैरता पत्थर का एक बड़ा गोला है, और वह हमारी धरती के चारों ओर चलता है। वह ख़ुद कोई रोशनी नहीं बनाता।",
+       "audio": "audio/hi/moon/rock.mp3",
+       "audioSeconds": 11.88
+      },
+      "lit": {
+       "narration": "चाँद सिर्फ़ इसलिए चमकता है क्योंकि सूरज उसे रोशन करता है — जैसे टॉर्च की रोशनी में पड़ी गेंद। सूरज की ओर वाला आधा हिस्सा चमकीला होता है, और दूसरा आधा अँधेरा।",
+       "audio": "audio/hi/moon/lit.mp3",
+       "audioSeconds": 14.93
+      },
+      "orbit": {
+       "narration": "चाँद को धरती का एक पूरा चक्कर लगाने में क़रीब एक महीना लगता है। चलते-चलते हमें उसका चमकीला आधा हिस्सा हर रात अलग कोण से दिखता है।",
+       "audio": "audio/hi/moon/orbit.mp3",
+       "audioSeconds": 13.35
+      },
+      "phases": {
+       "narration": "कभी पूरा चमकीला चेहरा दिखता है — पूर्णिमा। कभी सिर्फ़ पतली-सी किर्च — अर्धचंद्र। कभी कुछ भी नहीं — अमावस्या। चाँद बदलता नहीं, सिर्फ़ हमारा देखना बदलता है।",
+       "audio": "audio/hi/moon/phases.mp3",
+       "audioSeconds": 16.62
+      },
+      "face": {
+       "narration": "एक मज़ेदार बात। चाँद हमारे चारों ओर के हर चक्कर में सिर्फ़ एक बार घूमता है, इसलिए हमें हमेशा एक ही चेहरा दिखता है। उसके मुस्कुराते गड्ढे हमेशा धरती की ओर देखते रहते हैं!",
+       "audio": "audio/hi/moon/face.mp3",
+       "audioSeconds": 17.3
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "volcano",
+   "title": "Why do volcanoes erupt?",
+   "subtitle": "A mountain with a fizzy secret",
+   "category": "Earth",
+   "emoji": "🌋",
+   "accent": "#FF6B6B",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "inside",
+     "title": "Hot inside",
+     "tint": "#FFE9D2",
+     "narration": "Deep under our feet, the Earth is very, very hot. It has layers, a bit like a peach. Down below the hard crust, some rock is so hot that it melts into a thick, glowing goo called magma.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 160,
+       "fill": "#8D5B3B",
+       "stroke": "ink",
+       "sw": 5
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 135,
+       "fill": "#FF8A5B",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 200,
+       "r": 78,
+       "fill": "#FFD166",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "hard crust",
+       "x": 200,
+       "y": 38,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "hot melted rock",
+       "x": 200,
+       "y": 120,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "core",
+       "x": 200,
+       "y": 200,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.55)"
+      }
+     ],
+     "audio": "audio/volcano/inside.mp3",
+     "audioSeconds": 12.28
+    },
+    {
+     "id": "rises",
+     "title": "Magma rises",
+     "tint": "#FFE9D2",
+     "narration": "Magma is lighter than the hard rock around it, so it slowly floats upward, like a bubble rising in honey. It gathers in a big pocket right under a mountain.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 250,
+       "w": 420,
+       "h": 160,
+       "fill": "#9B6B43",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "poly",
+       "pts": [
+        80,
+        250,
+        170,
+        110,
+        230,
+        110,
+        320,
+        250
+       ],
+       "closed": true,
+       "fill": "#B98B5E",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        300.0,
+        330.0,
+        297.49,
+        340.24,
+        290.1,
+        349.96,
+        278.18,
+        358.68,
+        262.35,
+        365.96,
+        243.39,
+        371.44,
+        222.25,
+        374.85,
+        200.0,
+        376.0,
+        177.75,
+        374.85,
+        156.61,
+        371.44,
+        137.65,
+        365.96,
+        121.82,
+        358.68,
+        109.9,
+        349.96,
+        102.51,
+        340.24,
+        100.0,
+        330.0,
+        102.51,
+        319.76,
+        109.9,
+        310.04,
+        121.82,
+        301.32,
+        137.65,
+        294.04,
+        156.61,
+        288.56,
+        177.75,
+        285.15,
+        200.0,
+        284.0,
+        222.25,
+        285.15,
+        243.39,
+        288.56,
+        262.35,
+        294.04,
+        278.18,
+        301.32,
+        290.1,
+        310.04,
+        297.49,
+        319.76
+       ],
+       "closed": true,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "ramp(u, 0.05, 0.2)"
+      },
+      {
+       "op": "rect",
+       "x": 185,
+       "y": 160,
+       "w": 30,
+       "h": 150,
+       "fill": "coral",
+       "stroke": "ink",
+       "r": 6,
+       "sw": 3,
+       "a": "ramp(u, 0.3, 0.5)"
+      },
+      {
+       "op": "repeat",
+       "n": 6,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "160 + hash(i, 1) * 80",
+         "y": "350 - ((e * 0.25 + hash(i, 2)) % 1) * 60",
+         "r": "4 + hash(i, 3) * 5",
+         "fill": "#FFB199",
+         "stroke": "ink",
+         "sw": 2,
+         "a": "ramp(u, 0.15, 0.3)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "magma floats up",
+       "x": 200,
+       "y": 40,
+       "size": 22,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "a big pocket under the mountain",
+       "x": 200,
+       "y": 380,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.35, 0.5)"
+      }
+     ],
+     "audio": "audio/volcano/rises.mp3",
+     "audioSeconds": 10.43
+    },
+    {
+     "id": "pressure",
+     "title": "Pressure builds",
+     "tint": "#FFF0D9",
+     "narration": "The magma has gas trapped inside it, just like the fizz in a shaken soda bottle. The gas pushes harder and harder, and it needs a way out!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFF0D9",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": "95 + wave(e, 3) * 3",
+       "y": 210,
+       "rot": "wave(e, 3) * 0.08",
+       "do": [
+        {
+         "op": "rect",
+         "x": -22,
+         "y": 0,
+         "w": 44,
+         "h": 100,
+         "fill": "#6B3E26",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -10,
+         "y": -34,
+         "w": 20,
+         "h": 38,
+         "fill": "#6B3E26",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -42,
+         "w": 24,
+         "h": 10,
+         "fill": "coral",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 2.5
+        },
+        {
+         "op": "repeat",
+         "n": 5,
+         "var": "i",
+         "do": [
+          {
+           "op": "circle",
+           "x": "-14 + hash(i, 1) * 28",
+           "y": "10 + ((e * 0.7 + hash(i, 2)) % 1) * 80",
+           "r": 4,
+           "fill": "white",
+           "a": 0.9
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "shaken soda: fizz!",
+       "x": 110,
+       "y": 100,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.2)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        210,
+        330,
+        270,
+        190,
+        310,
+        190,
+        370,
+        330
+       ],
+       "closed": true,
+       "fill": "#B98B5E",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        352.0,
+        335.0,
+        350.45,
+        340.79,
+        345.86,
+        346.28,
+        338.47,
+        351.21,
+        328.66,
+        355.33,
+        316.9,
+        358.43,
+        303.8,
+        360.35,
+        290.0,
+        361.0,
+        276.2,
+        360.35,
+        263.1,
+        358.43,
+        251.34,
+        355.33,
+        241.53,
+        351.21,
+        234.14,
+        346.28,
+        229.55,
+        340.79,
+        228.0,
+        335.0,
+        229.55,
+        329.21,
+        234.14,
+        323.72,
+        241.53,
+        318.79,
+        251.34,
+        314.67,
+        263.1,
+        311.57,
+        276.2,
+        309.65,
+        290.0,
+        309.0,
+        303.8,
+        309.65,
+        316.9,
+        311.57,
+        328.66,
+        314.67,
+        338.47,
+        318.79,
+        345.86,
+        323.72,
+        350.45,
+        329.21
+       ],
+       "closed": true,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "a": "0.5 + 0.5 * wave(e, 1.2)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 290,
+         "y1": 310,
+         "x2": 290.0,
+         "y2": 232.0,
+         "color": "electric",
+         "w": 8
+        },
+        {
+         "op": "poly",
+         "pts": [
+          298.7,
+          238.01,
+          290,
+          220,
+          281.3,
+          238.01
+         ],
+         "closed": true,
+         "fill": "electric",
+         "stroke": "electric",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "gas pushes up",
+       "x": 290,
+       "y": 160,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.55)"
+      },
+      {
+       "op": "text",
+       "s": "pressure!",
+       "x": 200,
+       "y": 370,
+       "size": 26,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      }
+     ],
+     "audio": "audio/volcano/pressure.mp3",
+     "audioSeconds": 9.25
+    },
+    {
+     "id": "erupt",
+     "title": "Eruption!",
+     "tint": "#D9E3F5",
+     "narration": "Then WHOOSH! The magma bursts out of the top, with smoke, ash and flying sparks. Once magma comes out of the ground, it gets a new name: lava.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#8FA3C8",
+       "r": 0
+      },
+      {
+       "op": "circle",
+       "x": "200 + wave(e, 0.2, 0) * 20 + -36",
+       "y": "90 - ((e * 0.12 + 0.0) % 1) * 90",
+       "r": "34 + ((e * 0.12 + 0.0) % 1) * 30",
+       "fill": "#6F7A90",
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "circle",
+       "x": "200 + wave(e, 0.2, 1) * 20 + -18",
+       "y": "90 - ((e * 0.12 + 0.3) % 1) * 90",
+       "r": "34 + ((e * 0.12 + 0.3) % 1) * 30",
+       "fill": "#6F7A90",
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "circle",
+       "x": "200 + wave(e, 0.2, 2) * 20 + 0",
+       "y": "90 - ((e * 0.12 + 0.6) % 1) * 90",
+       "r": "34 + ((e * 0.12 + 0.6) % 1) * 30",
+       "fill": "#6F7A90",
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "circle",
+       "x": "200 + wave(e, 0.2, 3) * 20 + 18",
+       "y": "90 - ((e * 0.12 + 0.8999999999999999) % 1) * 90",
+       "r": "34 + ((e * 0.12 + 0.8999999999999999) % 1) * 30",
+       "fill": "#6F7A90",
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        70,
+        350,
+        170,
+        150,
+        230,
+        150,
+        330,
+        350
+       ],
+       "closed": true,
+       "fill": "#B98B5E",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        170,
+        150,
+        200,
+        175,
+        230,
+        150
+       ],
+       "closed": true,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 14,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "200 + (hash(i, 1) - 0.5) * 260 * ((e * 0.55 + hash(i, 2)) % 1)",
+         "y": "150 - 190 * ((e * 0.55 + hash(i, 2)) % 1) + 330 * ((e * 0.55 + hash(i, 2)) % 1) * ((e * 0.55 + hash(i, 2)) % 1)",
+         "r": "5 + hash(i, 3) * 5",
+         "fill": "#FF9F43",
+         "stroke": "coral",
+         "sw": 2,
+         "a": "ramp(u, 0.15, 0.3)"
+        }
+       ]
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 350,
+       "w": 420,
+       "h": 60,
+       "fill": "#6B8E4E",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "text",
+       "s": "WHOOSH!",
+       "x": 200,
+       "y": 60,
+       "size": 38,
+       "color": "coral",
+       "a": "window(u, 0.1, 0.9, 0.06)"
+      },
+      {
+       "op": "text",
+       "s": "magma that comes out is called LAVA",
+       "x": 200,
+       "y": 378,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      }
+     ],
+     "audio": "audio/volcano/erupt.mp3",
+     "audioSeconds": 9.6
+    },
+    {
+     "id": "new",
+     "title": "New land",
+     "tint": "#DDEEFF",
+     "narration": "The lava slides down the mountain, then cools and turns into hard new rock. After many eruptions, the mountain grows taller. Some islands, like Hawaii, were born this way!",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#CFE9FF",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 300,
+       "w": 420,
+       "h": 120,
+       "fill": "#6EB6F2",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "poly",
+       "pts": [
+        60,
+        320,
+        170,
+        130,
+        230,
+        130,
+        340,
+        320
+       ],
+       "closed": true,
+       "fill": "#8A6D5A",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        170,
+        130,
+        200,
+        150,
+        230,
+        130
+       ],
+       "closed": true,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        150,
+        190,
+        200,
+        210,
+        240,
+        196,
+        300,
+        224,
+        300,
+        226,
+        240,
+        212,
+        200
+       ],
+       "closed": true,
+       "fill": "#FF9F43",
+       "stroke": "coral",
+       "sw": 3,
+       "a": "ramp(u, 0.05, 0.25)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        60,
+        320,
+        110,
+        235,
+        140,
+        290,
+        170,
+        320
+       ],
+       "closed": true,
+       "fill": "#4B3B31",
+       "a": "ramp(u, 0.5, 0.7)"
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 322,
+       "scale": 0.8,
+       "a": "ramp(u, 0.7, 0.85)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -7,
+         "y": -24,
+         "w": 14,
+         "h": 40,
+         "fill": "#B98B5E",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 30.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 28,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "cools into new rock",
+       "x": 200,
+       "y": 40,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "islands are born!",
+       "x": 200,
+       "y": 372,
+       "size": 22,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.7, 0.85)"
+      }
+     ],
+     "audio": "audio/volcano/new.mp3",
+     "audioSeconds": 11.47
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What is melted rock under the ground called?",
+     "options": [
+      "Magma",
+      "Mud",
+      "Milk"
+     ],
+     "answer": 0,
+     "explanation": "Magma is rock so hot that it melts."
+    },
+    {
+     "question": "What is magma called after it comes out?",
+     "options": [
+      "Lava",
+      "Soda",
+      "Steam"
+     ],
+     "answer": 0,
+     "explanation": "Magma that erupts out of a volcano is called lava."
+    },
+    {
+     "question": "What makes the magma burst out?",
+     "options": [
+      "Trapped gas pushing up",
+      "Someone shouting",
+      "Heavy rain"
+     ],
+     "answer": 0,
+     "explanation": "Like a shaken soda, the pressure of the gas pushes it out."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "ज्वालामुखी क्यों फटता है?",
+     "subtitle": "बुलबुलों वाला राज़ छिपाए पहाड़",
+     "quiz": [
+      {
+       "question": "ज़मीन के नीचे पिघले पत्थर को क्या कहते हैं?",
+       "options": [
+        "मैग्मा",
+        "कीचड़",
+        "दूध"
+       ],
+       "explanation": "मैग्मा वह पत्थर है जो इतना गरम होकर पिघल जाता है।"
+      },
+      {
+       "question": "बाहर निकलने के बाद मैग्मा को क्या कहते हैं?",
+       "options": [
+        "लावा",
+        "सोडा",
+        "भाप"
+       ],
+       "explanation": "ज्वालामुखी से बाहर निकले मैग्मा को लावा कहते हैं।"
+      },
+      {
+       "question": "मैग्मा को बाहर फूटने के लिए कौन मजबूर करता है?",
+       "options": [
+        "अंदर फँसी गैस का दबाव",
+        "कोई चिल्ला रहा है",
+        "तेज़ बारिश"
+       ],
+       "explanation": "झटके हुए सोडा की तरह गैस का दबाव उसे बाहर धकेलता है।"
+      }
+     ],
+     "scenes": {
+      "inside": {
+       "narration": "हमारे पैरों के बहुत नीचे धरती बहुत, बहुत गरम है। इसकी परतें हैं, आड़ू की तरह। कड़ी पपड़ी के नीचे कुछ पत्थर इतने गरम हैं कि पिघलकर गाढ़ा, चमकता लावा बन जाते हैं — जिसे मैग्मा कहते हैं।",
+       "audio": "audio/hi/volcano/inside.mp3",
+       "audioSeconds": 18.32
+      },
+      "rises": {
+       "narration": "मैग्मा आस-पास के कड़े पत्थर से हल्का होता है, इसलिए वह शहद में उठते बुलबुले की तरह धीरे-धीरे ऊपर चढ़ता है। पहाड़ के ठीक नीचे एक बड़ी थैली में जमा हो जाता है।",
+       "audio": "audio/hi/volcano/rises.mp3",
+       "audioSeconds": 15.25
+      },
+      "pressure": {
+       "narration": "मैग्मा के अंदर गैस फँसी होती है, बिल्कुल झटके हुए सोडा बोतल के फ़िज़ की तरह। गैस ज़ोर लगाती रहती है, और उसे बाहर निकलने का रास्ता चाहिए!",
+       "audio": "audio/hi/volcano/pressure.mp3",
+       "audioSeconds": 13.23
+      },
+      "erupt": {
+       "narration": "फिर वूश! मैग्मा ऊपर से बाहर फूट पड़ता है — धुएँ, राख और उड़ती चिंगारियों के साथ। ज़मीन से बाहर आते ही मैग्मा का नया नाम हो जाता है: लावा।",
+       "audio": "audio/hi/volcano/erupt.mp3",
+       "audioSeconds": 14.38
+      },
+      "new": {
+       "narration": "लावा पहाड़ से नीचे फिसलता है, फिर ठंडा होकर सख़्त नया पत्थर बन जाता है। कई बार फटने के बाद पहाड़ और ऊँचा हो जाता है। हवाई जैसे कुछ द्वीप ऐसे ही बने थे!",
+       "audio": "audio/hi/volcano/new.mp3",
+       "audioSeconds": 15.93
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "plants",
+   "title": "How do plants make food?",
+   "subtitle": "Cooking with sunlight",
+   "category": "Living things",
+   "emoji": "🌱",
+   "accent": "#52B788",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "own",
+     "title": "Their own food",
+     "tint": "#E9F8E7",
+     "narration": "Animals like us have to go and find food. But plants make their own! All they need is three simple things: sunlight, water and air.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#E9F8E7",
+       "r": 0
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "60 + cos(i * 0.5236 + e * 0.2) * 37.5",
+         "y1": "60 + sin(i * 0.5236 + e * 0.2) * 37.5",
+         "x2": "60 + cos(i * 0.5236 + e * 0.2) * 46.5 + wave(e, 0.8, i * 0.1) * 3.0",
+         "y2": "60 + sin(i * 0.5236 + e * 0.2) * 46.5 + wave(e, 0.8, i * 0.1) * 3.0",
+         "color": "electric",
+         "w": 3.6
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 60,
+       "y": 60,
+       "r": 30,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 49.2,
+       "y": 54.6,
+       "r": 3.0,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 70.8,
+       "y": 54.6,
+       "r": 3.0,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        69.74,
+        66.01,
+        68.32,
+        68.91,
+        66.05,
+        71.21,
+        63.19,
+        72.69,
+        60.0,
+        73.2,
+        56.81,
+        72.69,
+        53.95,
+        71.21,
+        51.68,
+        68.91,
+        50.26,
+        66.01
+       ],
+       "stroke": "ink",
+       "sw": 2.5
+      },
+      {
+       "op": "circle",
+       "x": 41.4,
+       "y": 64.8,
+       "r": 3.9,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 78.6,
+       "y": 64.8,
+       "r": 3.9,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "x": 335,
+       "y": 70,
+       "scale": 1.1,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 345,
+       "y": 190,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 20,
+         "fill": "white",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "text",
+         "s": "air",
+         "x": 0,
+         "y": 0,
+         "size": 15
+        }
+       ]
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 330,
+       "w": 420,
+       "h": 90,
+       "fill": "#B98B5E",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "rect",
+       "x": 194,
+       "y": 210,
+       "w": 12,
+       "h": 125,
+       "fill": "leaf",
+       "stroke": "ink",
+       "r": 4,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 260,
+       "rot": -1.0,
+       "scale": 0.9,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          0.0,
+          -6.12,
+          -8.1,
+          -10.88,
+          -16.4,
+          -14.28,
+          -24.9,
+          -16.32,
+          -33.6,
+          -17.0,
+          -42.5,
+          -16.32,
+          -51.6,
+          -14.28,
+          -60.9,
+          -10.88,
+          -70.4,
+          -6.12,
+          -80.1,
+          0.0,
+          -90.0,
+          6.12,
+          -80.1,
+          10.88,
+          -70.4,
+          14.28,
+          -60.9,
+          16.32,
+          -51.6,
+          17.0,
+          -42.5,
+          16.32,
+          -33.6,
+          14.28,
+          -24.9,
+          10.88,
+          -16.4,
+          6.12,
+          -8.1,
+          0.0,
+          0.0
+         ],
+         "closed": true,
+         "fill": "leaf",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -4,
+         "x2": 0,
+         "y2": -78,
+         "color": "#2D6A4F",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 240,
+       "rot": 1.0,
+       "scale": 0.9,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          0.0,
+          -6.12,
+          -8.1,
+          -10.88,
+          -16.4,
+          -14.28,
+          -24.9,
+          -16.32,
+          -33.6,
+          -17.0,
+          -42.5,
+          -16.32,
+          -51.6,
+          -14.28,
+          -60.9,
+          -10.88,
+          -70.4,
+          -6.12,
+          -80.1,
+          0.0,
+          -90.0,
+          6.12,
+          -80.1,
+          10.88,
+          -70.4,
+          14.28,
+          -60.9,
+          16.32,
+          -51.6,
+          17.0,
+          -42.5,
+          16.32,
+          -33.6,
+          14.28,
+          -24.9,
+          10.88,
+          -16.4,
+          6.12,
+          -8.1,
+          0.0,
+          0.0
+         ],
+         "closed": true,
+         "fill": "leaf",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -4,
+         "x2": 0,
+         "y2": -78,
+         "color": "#2D6A4F",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 190,
+       "r": 34,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 189.92,
+       "y": 184.96,
+       "r": 2.8,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 210.08,
+       "y": 184.96,
+       "r": 2.8,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        209.09,
+        195.61,
+        207.76,
+        198.31,
+        205.65,
+        200.46,
+        202.97,
+        201.84,
+        200.0,
+        202.32,
+        197.03,
+        201.84,
+        194.35,
+        200.46,
+        192.24,
+        198.31,
+        190.91,
+        195.61
+       ],
+       "stroke": "ink",
+       "sw": 2.5
+      },
+      {
+       "op": "circle",
+       "x": 182.64,
+       "y": 194.48,
+       "r": 3.64,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 217.36,
+       "y": 194.48,
+       "r": 3.64,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 95,
+       "y1": 90,
+       "x2": 158.21,
+       "y2": 153.21,
+       "color": "electric",
+       "w": 7,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        149.89,
+        154.73,
+        165,
+        160,
+        159.73,
+        144.89
+       ],
+       "closed": true,
+       "fill": "electric",
+       "stroke": "electric",
+       "sw": 2,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "line",
+       "x1": 315,
+       "y1": 100,
+       "x2": 247.5,
+       "y2": 154.0,
+       "color": "water",
+       "w": 7,
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        246.9,
+        145.57,
+        240,
+        160,
+        255.6,
+        156.43
+       ],
+       "closed": true,
+       "fill": "water",
+       "stroke": "water",
+       "sw": 2,
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "line",
+       "x1": 325,
+       "y1": 195,
+       "x2": 254.6,
+       "y2": 195.0,
+       "color": "metal",
+       "w": 7,
+       "a": "ramp(u, 0.4, 0.55)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        259.41,
+        188.04,
+        245,
+        195,
+        259.41,
+        201.96
+       ],
+       "closed": true,
+       "fill": "metal",
+       "stroke": "metal",
+       "sw": 2,
+       "a": "ramp(u, 0.4, 0.55)"
+      },
+      {
+       "op": "text",
+       "s": "plants make their own food!",
+       "x": 200,
+       "y": 372,
+       "size": 20,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.7)"
+      },
+      {
+       "op": "text",
+       "s": "sunlight",
+       "x": 70,
+       "y": 125,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "water",
+       "x": 335,
+       "y": 115,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      }
+     ],
+     "audio": "audio/plants/own.mp3",
+     "audioSeconds": 8.88
+    },
+    {
+     "id": "roots",
+     "title": "Roots drink",
+     "tint": "#EAF6FF",
+     "narration": "Roots grow down into the soil and drink up water, like tiny straws. The water travels up through the stem, all the way to the leaves.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#EAF6FF",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 215,
+       "w": 420,
+       "h": 200,
+       "fill": "#B98B5E",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "rect",
+       "x": 194,
+       "y": 90,
+       "w": 12,
+       "h": 130,
+       "fill": "leaf",
+       "stroke": "ink",
+       "r": 4,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 130,
+       "rot": -1.0,
+       "scale": 0.8,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          0.0,
+          -6.12,
+          -8.1,
+          -10.88,
+          -16.4,
+          -14.28,
+          -24.9,
+          -16.32,
+          -33.6,
+          -17.0,
+          -42.5,
+          -16.32,
+          -51.6,
+          -14.28,
+          -60.9,
+          -10.88,
+          -70.4,
+          -6.12,
+          -80.1,
+          0.0,
+          -90.0,
+          6.12,
+          -80.1,
+          10.88,
+          -70.4,
+          14.28,
+          -60.9,
+          16.32,
+          -51.6,
+          17.0,
+          -42.5,
+          16.32,
+          -33.6,
+          14.28,
+          -24.9,
+          10.88,
+          -16.4,
+          6.12,
+          -8.1,
+          0.0,
+          0.0
+         ],
+         "closed": true,
+         "fill": "leaf",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -4,
+         "x2": 0,
+         "y2": -78,
+         "color": "#2D6A4F",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 105,
+       "rot": 1.0,
+       "scale": 0.8,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          0.0,
+          -6.12,
+          -8.1,
+          -10.88,
+          -16.4,
+          -14.28,
+          -24.9,
+          -16.32,
+          -33.6,
+          -17.0,
+          -42.5,
+          -16.32,
+          -51.6,
+          -14.28,
+          -60.9,
+          -10.88,
+          -70.4,
+          -6.12,
+          -80.1,
+          0.0,
+          -90.0,
+          6.12,
+          -80.1,
+          10.88,
+          -70.4,
+          14.28,
+          -60.9,
+          16.32,
+          -51.6,
+          17.0,
+          -42.5,
+          16.32,
+          -33.6,
+          14.28,
+          -24.9,
+          10.88,
+          -16.4,
+          6.12,
+          -8.1,
+          0.0,
+          0.0
+         ],
+         "closed": true,
+         "fill": "leaf",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -4,
+         "x2": 0,
+         "y2": -78,
+         "color": "#2D6A4F",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        215,
+        160,
+        270,
+        130,
+        330
+       ],
+       "stroke": "#8D5B3B",
+       "sw": 5
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        215,
+        200,
+        285,
+        205,
+        370
+       ],
+       "stroke": "#8D5B3B",
+       "sw": 5
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        215,
+        240,
+        265,
+        275,
+        325
+       ],
+       "stroke": "#8D5B3B",
+       "sw": 5
+      },
+      {
+       "op": "poly",
+       "pts": [
+        160,
+        270,
+        120,
+        285
+       ],
+       "stroke": "#8D5B3B",
+       "sw": 5
+      },
+      {
+       "op": "poly",
+       "pts": [
+        240,
+        265,
+        285,
+        270
+       ],
+       "stroke": "#8D5B3B",
+       "sw": 5
+      },
+      {
+       "op": "group",
+       "x": "135 + wave(e, 0.5, 0) * 3",
+       "y": "330 - ((e * 0.25 + 0.0) % 1) * 100",
+       "scale": 0.35,
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "205 + wave(e, 0.5, 1) * 3",
+       "y": "370 - ((e * 0.25 + 0.2) % 1) * 220",
+       "scale": 0.35,
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "270 + wave(e, 0.5, 2) * 3",
+       "y": "322 - ((e * 0.25 + 0.4) % 1) * 100",
+       "scale": 0.35,
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "118 + wave(e, 0.5, 3) * 3",
+       "y": "287 - ((e * 0.25 + 0.6000000000000001) % 1) * 50",
+       "scale": 0.35,
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "284 + wave(e, 0.5, 4) * 3",
+       "y": "272 - ((e * 0.25 + 0.8) % 1) * 50",
+       "scale": 0.35,
+       "a": "ramp(u, 0.2, 0.35)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": "210 - ((e * 0.4) % 1) * 110",
+       "a": "ramp(u, 0.3, 0.45)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 7,
+         "fill": "water",
+         "stroke": "white",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "roots drink water like straws",
+       "x": 200,
+       "y": 36,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "...and it travels up the stem",
+       "x": 200,
+       "y": 375,
+       "size": 18,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.7)"
+      }
+     ],
+     "audio": "audio/plants/roots.mp3",
+     "audioSeconds": 8.57
+    },
+    {
+     "id": "leaves",
+     "title": "Leaves catch sunshine",
+     "tint": "#E9F8E7",
+     "narration": "The leaves are like little sunshine catchers. They are green because they hold a special green stuff that grabs sunlight. Tiny holes let air in.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#E9F8E7",
+       "r": 0
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "60 + cos(i * 0.5236 + e * 0.2) * 37.5",
+         "y1": "60 + sin(i * 0.5236 + e * 0.2) * 37.5",
+         "x2": "60 + cos(i * 0.5236 + e * 0.2) * 46.5 + wave(e, 0.8, i * 0.1) * 3.0",
+         "y2": "60 + sin(i * 0.5236 + e * 0.2) * 46.5 + wave(e, 0.8, i * 0.1) * 3.0",
+         "color": "electric",
+         "w": 3.6
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 60,
+       "y": 60,
+       "r": 30,
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 49.2,
+       "y": 54.6,
+       "r": 3.0,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 70.8,
+       "y": 54.6,
+       "r": 3.0,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        69.74,
+        66.01,
+        68.32,
+        68.91,
+        66.05,
+        71.21,
+        63.19,
+        72.69,
+        60.0,
+        73.2,
+        56.81,
+        72.69,
+        53.95,
+        71.21,
+        51.68,
+        68.91,
+        50.26,
+        66.01
+       ],
+       "stroke": "ink",
+       "sw": 2.5
+      },
+      {
+       "op": "circle",
+       "x": 41.4,
+       "y": 64.8,
+       "r": 3.9,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 78.6,
+       "y": 64.8,
+       "r": 3.9,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "a": "ramp(u, 0.1, 0.25)",
+       "do": [
+        {
+         "op": "line",
+         "x1": 95,
+         "y1": 95,
+         "x2": 150,
+         "y2": 150,
+         "color": "#FFE08A",
+         "w": 8
+        },
+        {
+         "op": "line",
+         "x1": 80,
+         "y1": 110,
+         "x2": 135,
+         "y2": 165,
+         "color": "#FFE08A",
+         "w": 8
+        },
+        {
+         "op": "line",
+         "x1": 110,
+         "y1": 85,
+         "x2": 165,
+         "y2": 140,
+         "color": "#FFE08A",
+         "w": 8
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 330,
+       "rot": 0.0,
+       "scale": 3.3,
+       "a": 1,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          0.0,
+          -6.12,
+          -8.1,
+          -10.88,
+          -16.4,
+          -14.28,
+          -24.9,
+          -16.32,
+          -33.6,
+          -17.0,
+          -42.5,
+          -16.32,
+          -51.6,
+          -14.28,
+          -60.9,
+          -10.88,
+          -70.4,
+          -6.12,
+          -80.1,
+          0.0,
+          -90.0,
+          6.12,
+          -80.1,
+          10.88,
+          -70.4,
+          14.28,
+          -60.9,
+          16.32,
+          -51.6,
+          17.0,
+          -42.5,
+          16.32,
+          -33.6,
+          14.28,
+          -24.9,
+          10.88,
+          -16.4,
+          6.12,
+          -8.1,
+          0.0,
+          0.0
+         ],
+         "closed": true,
+         "fill": "leaf",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -4,
+         "x2": 0,
+         "y2": -78,
+         "color": "#2D6A4F",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 165,
+       "y": 250,
+       "a": "ramp(u, 0.5, 0.6)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 5,
+         "fill": "#2D6A4F"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 235,
+       "y": 215,
+       "a": "ramp(u, 0.5, 0.6)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 5,
+         "fill": "#2D6A4F"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 210,
+       "y": 165,
+       "a": "ramp(u, 0.5, 0.6)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 5,
+         "fill": "#2D6A4F"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "320 - ((e * 0.3) % 1) * 100",
+       "y": "215 + ((e * 0.3) % 1) * 20",
+       "a": "ramp(u, 0.55, 0.7)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 14,
+         "fill": "white",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "text",
+         "s": "air",
+         "x": 0,
+         "y": 0,
+         "size": 11
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "green stuff catches sunshine",
+       "x": 200,
+       "y": 372,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "text",
+       "s": "tiny holes let air in",
+       "x": 305,
+       "y": 280,
+       "size": 15,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.7)"
+      }
+     ],
+     "audio": "audio/plants/leaves.mp3",
+     "audioSeconds": 9.15
+    },
+    {
+     "id": "cook",
+     "title": "Cooking sugar",
+     "tint": "#FFF6E0",
+     "narration": "Inside the leaf, the plant mixes sunlight, water and air, and cooks up sugar. That sugar is the plant's food! Grown-ups call this photosynthesis.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFF6E0",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 290,
+       "scale": 2.5,
+       "a": 1,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          0.0,
+          -6.12,
+          -8.1,
+          -10.88,
+          -16.4,
+          -14.28,
+          -24.9,
+          -16.32,
+          -33.6,
+          -17.0,
+          -42.5,
+          -16.32,
+          -51.6,
+          -14.28,
+          -60.9,
+          -10.88,
+          -70.4,
+          -6.12,
+          -80.1,
+          0.0,
+          -90.0,
+          6.12,
+          -80.1,
+          10.88,
+          -70.4,
+          14.28,
+          -60.9,
+          16.32,
+          -51.6,
+          17.0,
+          -42.5,
+          16.32,
+          -33.6,
+          14.28,
+          -24.9,
+          10.88,
+          -16.4,
+          6.12,
+          -8.1,
+          0.0,
+          0.0
+         ],
+         "closed": true,
+         "fill": "leaf",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "line",
+         "x1": 0,
+         "y1": -4,
+         "x2": 0,
+         "y2": -78,
+         "color": "#2D6A4F",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "poly",
+       "pts": [
+        165,
+        150,
+        165,
+        120,
+        180,
+        110,
+        190,
+        95,
+        210,
+        95,
+        220,
+        110,
+        235,
+        120,
+        235,
+        150
+       ],
+       "closed": true,
+       "fill": "white",
+       "stroke": "ink",
+       "sw": 3.5
+      },
+      {
+       "op": "circle",
+       "x": 185.6,
+       "y": 192.8,
+       "r": 4.0,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 214.4,
+       "y": 192.8,
+       "r": 4.0,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        216.28,
+        207.36,
+        214.63,
+        211.46,
+        211.96,
+        214.99,
+        208.47,
+        217.71,
+        204.39,
+        219.42,
+        200.0,
+        220.0,
+        195.61,
+        219.42,
+        191.53,
+        217.71,
+        188.04,
+        214.99,
+        185.37,
+        211.46,
+        183.72,
+        207.36
+       ],
+       "closed": true,
+       "fill": "ink",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "circle",
+       "x": 175.2,
+       "y": 206.4,
+       "r": 5.2,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 224.8,
+       "y": 206.4,
+       "r": 5.2,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "group",
+       "x": 60,
+       "y": 110,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 18,
+         "fill": "electric",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "text",
+         "s": "sun",
+         "x": 0,
+         "y": 0,
+         "size": 12
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 60,
+       "y": 200,
+       "do": [
+        {
+         "op": "group",
+         "x": 0,
+         "y": 0,
+         "scale": 0.6,
+         "do": [
+          {
+           "op": "poly",
+           "pts": [
+            0,
+            -30,
+            9,
+            -14,
+            12.61,
+            -2.09,
+            13.82,
+            1.75,
+            13.89,
+            5.78,
+            12.81,
+            9.66,
+            10.66,
+            13.07,
+            7.64,
+            15.73,
+            3.99,
+            17.42,
+            -0.0,
+            18.0,
+            -3.99,
+            17.42,
+            -7.64,
+            15.73,
+            -10.66,
+            13.07,
+            -12.81,
+            9.66,
+            -13.89,
+            5.78,
+            -13.82,
+            1.75,
+            -12.61,
+            -2.09,
+            -9,
+            -14
+           ],
+           "closed": true,
+           "fill": "water",
+           "stroke": "ink",
+           "sw": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 60,
+       "y": 290,
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 18,
+         "fill": "white",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "text",
+         "s": "air",
+         "x": 0,
+         "y": 0,
+         "size": 12
+        }
+       ]
+      },
+      {
+       "op": "line",
+       "x1": 90,
+       "y1": 110,
+       "x2": 145.86,
+       "y2": 168.66,
+       "color": "ink",
+       "w": 4,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        140.64,
+        169.48,
+        150,
+        173.0,
+        146.94,
+        163.48
+       ],
+       "closed": true,
+       "fill": "ink",
+       "stroke": "ink",
+       "sw": 2,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "line",
+       "x1": 90,
+       "y1": 200,
+       "x2": 144.0,
+       "y2": 200.0,
+       "color": "ink",
+       "w": 4,
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        141.0,
+        204.35,
+        150,
+        200.0,
+        141.0,
+        195.65
+       ],
+       "closed": true,
+       "fill": "ink",
+       "stroke": "ink",
+       "sw": 2,
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "line",
+       "x1": 90,
+       "y1": 290,
+       "x2": 145.86,
+       "y2": 231.34,
+       "color": "ink",
+       "w": 4,
+       "a": "ramp(u, 0.30000000000000004, 0.45)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        146.94,
+        236.52,
+        150,
+        227.0,
+        140.64,
+        230.52
+       ],
+       "closed": true,
+       "fill": "ink",
+       "stroke": "ink",
+       "sw": 2,
+       "a": "ramp(u, 0.30000000000000004, 0.45)"
+      },
+      {
+       "op": "group",
+       "x": "310 + ((e * 0.25 + 0.0) % 1) * 60",
+       "y": "150",
+       "a": "ramp(u, 0.55, 0.7)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -14,
+         "y": -14,
+         "w": 28,
+         "h": 28,
+         "fill": "white",
+         "stroke": "ink",
+         "r": 5,
+         "sw": 3
+        },
+        {
+         "op": "sparkle",
+         "x": 0,
+         "y": 0,
+         "r": 8,
+         "color": "#FFB4D1"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "310 + ((e * 0.25 + 0.3333333333333333) % 1) * 60",
+       "y": "200",
+       "a": "ramp(u, 0.55, 0.7)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -14,
+         "y": -14,
+         "w": 28,
+         "h": 28,
+         "fill": "white",
+         "stroke": "ink",
+         "r": 5,
+         "sw": 3
+        },
+        {
+         "op": "sparkle",
+         "x": 0,
+         "y": 0,
+         "r": 8,
+         "color": "#FFB4D1"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "310 + ((e * 0.25 + 0.6666666666666666) % 1) * 60",
+       "y": "250",
+       "a": "ramp(u, 0.55, 0.7)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -14,
+         "y": -14,
+         "w": 28,
+         "h": 28,
+         "fill": "white",
+         "stroke": "ink",
+         "r": 5,
+         "sw": 3
+        },
+        {
+         "op": "sparkle",
+         "x": 0,
+         "y": 0,
+         "r": 8,
+         "color": "#FFB4D1"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "it cooks sugar: food!",
+       "x": 250,
+       "y": 40,
+       "size": 18,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      },
+      {
+       "op": "text",
+       "s": "photosynthesis",
+       "x": 200,
+       "y": 372,
+       "size": 22,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.7, 0.85)"
+      }
+     ],
+     "audio": "audio/plants/cook.mp3",
+     "audioSeconds": 9.65
+    },
+    {
+     "id": "oxygen",
+     "title": "Fresh air for you",
+     "tint": "#DFF4FF",
+     "narration": "And here is the best part! While cooking, the plant lets out oxygen, the fresh air we need to breathe. Plants feed themselves, and they help us breathe too.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#DFF4FF",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 330,
+       "w": 420,
+       "h": 90,
+       "fill": "#7ED38C",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "group",
+       "x": 110,
+       "y": 340,
+       "scale": 2.0,
+       "do": [
+        {
+         "op": "rect",
+         "x": -7,
+         "y": -24,
+         "w": 14,
+         "h": 40,
+         "fill": "#B98B5E",
+         "stroke": "ink",
+         "r": 3,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 30.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 22.0,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -50,
+         "r": 28,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": -20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        },
+        {
+         "op": "circle",
+         "x": 20,
+         "y": -34,
+         "r": 20,
+         "fill": "leaf"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 350,
+       "scale": 0.95,
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "coral",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          6.5,
+          -93.99,
+          5.54,
+          -92.06,
+          4.04,
+          -90.53,
+          2.12,
+          -89.54,
+          -0.0,
+          -89.2,
+          -2.12,
+          -89.54,
+          -4.04,
+          -90.53,
+          -5.54,
+          -92.06,
+          -6.5,
+          -93.99
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": "lerp(130, 292, (e * 0.22 + i / 7) % 1) + wave(e, 0.5, i * 0.3) * 5",
+         "y": "lerp(130, 240, (e * 0.22 + i / 7) % 1) - sin(((e * 0.22 + i / 7) % 1) * 3.14) * 50",
+         "a": "ramp(u, 0.15, 0.3)",
+         "do": [
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 14,
+           "fill": "white",
+           "stroke": "water",
+           "sw": 2.5
+          },
+          {
+           "op": "text",
+           "s": "O2",
+           "x": 0,
+           "y": 0,
+           "size": 11,
+           "color": "water"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "plants breathe out oxygen",
+       "x": 200,
+       "y": 36,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "thank you, plants!",
+       "x": 200,
+       "y": 372,
+       "size": 22,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.7, 0.85)"
+      }
+     ],
+     "audio": "audio/plants/oxygen.mp3",
+     "audioSeconds": 9.85
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What three things do plants need to make food?",
+     "options": [
+      "Sunlight, water and air",
+      "Candy, milk and sand",
+      "Moonlight, soda and wind"
+     ],
+     "answer": 0,
+     "explanation": "Sunlight, water and air are the ingredients."
+    },
+    {
+     "question": "What do roots do?",
+     "options": [
+      "Drink water from the soil",
+      "Catch butterflies",
+      "Make noise"
+     ],
+     "answer": 0,
+     "explanation": "Roots soak up water, like straws."
+    },
+    {
+     "question": "What do plants give us to breathe?",
+     "options": [
+      "Oxygen",
+      "Smoke",
+      "Sugar"
+     ],
+     "answer": 0,
+     "explanation": "Plants let out oxygen while they make food."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "पौधे अपना खाना कैसे बनाते हैं?",
+     "subtitle": "धूप से पकाना",
+     "quiz": [
+      {
+       "question": "खाना बनाने के लिए पौधों को कौन सी तीन चीज़ें चाहिए?",
+       "options": [
+        "धूप, पानी और हवा",
+        "मिठाई, दूध और रेत",
+        "चाँदनी, सोडा और हवा"
+       ],
+       "explanation": "धूप, पानी और हवा इसके सामग्री हैं।"
+      },
+      {
+       "question": "जड़ें क्या करती हैं?",
+       "options": [
+        "ज़मीन से पानी पीती हैं",
+        "तितलियाँ पकड़ती हैं",
+        "शोर करती हैं"
+       ],
+       "explanation": "जड़ें पाइप की तरह पानी सोख लेती हैं।"
+      },
+      {
+       "question": "साँस लेने के लिए पौधे हमें क्या देते हैं?",
+       "options": [
+        "ऑक्सीजन",
+        "धुआँ",
+        "चीनी"
+       ],
+       "explanation": "खाना बनाते समय पौधे ऑक्सीजन बाहर छोड़ते हैं।"
+      }
+     ],
+     "scenes": {
+      "own": {
+       "narration": "हम जैसे जानवरों को खाना ढूँढने जाना पड़ता है। लेकिन पौधे अपना खाना ख़ुद बनाते हैं! उन्हें सिर्फ़ तीन चीज़ें चाहिए: धूप, पानी और हवा।",
+       "audio": "audio/hi/plants/own.mp3",
+       "audioSeconds": 13.75
+      },
+      "roots": {
+       "narration": "जड़ें ज़मीन में नीचे बढ़ती हैं और पानी पीती हैं, छोटी-छोटी पाइपों की तरह। पानी तने से होकर ऊपर पत्तों तक पहुँचता है।",
+       "audio": "audio/hi/plants/roots.mp3",
+       "audioSeconds": 11.4
+      },
+      "leaves": {
+       "narration": "पत्ते छोटे धूप-पकड़ने वाले जाल जैसे हैं। वे हरे हैं क्योंकि उनमें एक ख़ास हरा पदार्थ होता है जो धूप पकड़ लेता है। छोटे-छोटे छेद हवा को अंदर आने देते हैं।",
+       "audio": "audio/hi/plants/leaves.mp3",
+       "audioSeconds": 15.6
+      },
+      "cook": {
+       "narration": "पत्ते के अंदर पौधा धूप, पानी और हवा मिलाकर चीनी बनाता है। वही चीनी पौधे का खाना है! बड़े लोग इसे प्रकाश संश्लेषण कहते हैं।",
+       "audio": "audio/hi/plants/cook.mp3",
+       "audioSeconds": 13.72
+      },
+      "oxygen": {
+       "narration": "और सबसे अच्छी बात! खाना बनाते समय पौधा ऑक्सीजन बाहर छोड़ता है — वही ताज़ी हवा जिससे हम साँस लेते हैं। पौधे ख़ुद भी खाते हैं, और हमें साँस लेने में भी मदद करते हैं।",
+       "audio": "audio/hi/plants/oxygen.mp3",
+       "audioSeconds": 16.4
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "heart",
+   "title": "How does my heart work?",
+   "subtitle": "The pump that never rests",
+   "category": "Body",
+   "emoji": "❤️",
+   "accent": "#EF476F",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "pump",
+     "title": "A little pump",
+     "tint": "#FFE9EE",
+     "narration": "Right now, inside your chest, a strong muscle is hard at work. It is your heart! It is about as big as your fist, and its job is to pump.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFE9EE",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 160,
+       "y": 195,
+       "scale": "1 + 0.06 * max(0, wave(e, 1.3))",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -30.0,
+          0.71,
+          -34.56,
+          5.38,
+          -46.26,
+          16.46,
+          -59.96,
+          33.94,
+          -69.64,
+          55.18,
+          -70.83,
+          75.7,
+          -62.15,
+          90.57,
+          -45.36,
+          96.0,
+          -24.0,
+          90.57,
+          -1.59,
+          75.7,
+          19.72,
+          55.18,
+          39.38,
+          33.94,
+          57.64,
+          16.46,
+          74.43,
+          5.38,
+          88.68,
+          0.71,
+          98.48,
+          0.0,
+          102.0,
+          -0.71,
+          98.48,
+          -5.38,
+          88.68,
+          -16.46,
+          74.43,
+          -33.94,
+          57.64,
+          -55.18,
+          39.38,
+          -75.7,
+          19.72,
+          -90.57,
+          -1.59,
+          -96.0,
+          -24.0,
+          -90.57,
+          -45.36,
+          -75.7,
+          -62.15,
+          -55.18,
+          -70.83,
+          -33.94,
+          -69.64,
+          -16.46,
+          -59.96,
+          -5.38,
+          -46.26,
+          -0.71,
+          -34.56
+         ],
+         "closed": true,
+         "fill": "#EF476F",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "circle",
+         "x": -12.96,
+         "y": 5.52,
+         "r": 3.6,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 12.96,
+         "y": 5.52,
+         "r": 3.6,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          11.69,
+          19.22,
+          9.98,
+          22.69,
+          7.26,
+          25.45,
+          3.82,
+          27.23,
+          -0.0,
+          27.84,
+          -3.82,
+          27.23,
+          -7.26,
+          25.45,
+          -9.98,
+          22.69,
+          -11.69,
+          19.22
+         ],
+         "stroke": "ink",
+         "sw": 2.88
+        },
+        {
+         "op": "circle",
+         "x": -22.32,
+         "y": 17.76,
+         "r": 4.68,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 22.32,
+         "y": 17.76,
+         "r": 4.68,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 318,
+       "y": 195,
+       "a": "ramp(u, 0.3, 0.45)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -30,
+         "y": -26,
+         "w": 60,
+         "h": 52,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 18,
+         "sw": 4
+        },
+        {
+         "op": "line",
+         "x1": -18,
+         "y1": -8,
+         "x2": 18,
+         "y2": -8,
+         "color": "ink",
+         "w": 3
+        },
+        {
+         "op": "line",
+         "x1": -18,
+         "y1": 6,
+         "x2": 18,
+         "y2": 6,
+         "color": "ink",
+         "w": 3
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "about as big as your fist",
+       "x": 200,
+       "y": 322,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "your heart is a pump!",
+       "x": 200,
+       "y": 40,
+       "size": 22,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.05, 0.2)"
+      }
+     ],
+     "audio": "audio/heart/pump.mp3",
+     "audioSeconds": 9.22
+    },
+    {
+     "id": "beat",
+     "title": "Squeeze and relax",
+     "tint": "#FFE9EE",
+     "narration": "Your heart squeezes, then relaxes, again and again. Each squeeze is a heartbeat. Put your hand on your chest and feel it go thump-thump, thump-thump.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFE9EE",
+       "r": 0
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 190,
+       "scale": "1 + 0.12 * max(0, wave(e, 1.3))",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -32.5,
+          0.77,
+          -37.44,
+          5.83,
+          -50.11,
+          17.83,
+          -64.95,
+          36.77,
+          -75.44,
+          59.78,
+          -76.73,
+          82.01,
+          -67.33,
+          98.12,
+          -49.14,
+          104.0,
+          -26.0,
+          98.12,
+          -1.72,
+          82.01,
+          21.37,
+          59.78,
+          42.66,
+          36.77,
+          62.44,
+          17.83,
+          80.64,
+          5.83,
+          96.07,
+          0.77,
+          106.69,
+          0.0,
+          110.5,
+          -0.77,
+          106.69,
+          -5.83,
+          96.07,
+          -17.83,
+          80.64,
+          -36.77,
+          62.44,
+          -59.78,
+          42.66,
+          -82.01,
+          21.37,
+          -98.12,
+          -1.72,
+          -104.0,
+          -26.0,
+          -98.12,
+          -49.14,
+          -82.01,
+          -67.33,
+          -59.78,
+          -76.73,
+          -36.77,
+          -75.44,
+          -17.83,
+          -64.95,
+          -5.83,
+          -50.11,
+          -0.77,
+          -37.44
+         ],
+         "closed": true,
+         "fill": "#EF476F",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "circle",
+         "x": -14.04,
+         "y": 5.98,
+         "r": 3.9,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 14.04,
+         "y": 5.98,
+         "r": 3.9,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          12.67,
+          20.82,
+          10.81,
+          24.58,
+          7.87,
+          27.57,
+          4.14,
+          29.5,
+          -0.0,
+          30.16,
+          -4.14,
+          29.5,
+          -7.87,
+          27.57,
+          -10.81,
+          24.58,
+          -12.67,
+          20.82
+         ],
+         "stroke": "ink",
+         "sw": 3.12
+        },
+        {
+         "op": "circle",
+         "x": -24.18,
+         "y": 19.24,
+         "r": 5.07,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 24.18,
+         "y": 19.24,
+         "r": 5.07,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "if",
+       "cond": "wave(e, 1.3) > 0.4",
+       "do": [
+        {
+         "op": "text",
+         "s": "thump!",
+         "x": 70,
+         "y": 110,
+         "size": 26,
+         "color": "#EF476F"
+        }
+       ]
+      },
+      {
+       "op": "if",
+       "cond": "wave(e, 1.3) < -0.4",
+       "do": [
+        {
+         "op": "text",
+         "s": "thump!",
+         "x": 330,
+         "y": 110,
+         "size": 26,
+         "color": "#EF476F"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "squeeze... relax... squeeze... relax",
+       "x": 200,
+       "y": 335,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "each squeeze is a heartbeat",
+       "x": 200,
+       "y": 372,
+       "size": 18,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.65)"
+      }
+     ],
+     "audio": "audio/heart/beat.mp3",
+     "audioSeconds": 9.3
+    },
+    {
+     "id": "roads",
+     "title": "Roads for blood",
+     "tint": "#FFF3EA",
+     "narration": "With every squeeze, your heart pushes blood through tiny tubes that go all around your body. They are like little roads, from your head all the way to your toes.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFF3EA",
+       "r": 0
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 85,
+       "r": 42,
+       "fill": "#FFE3CF",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "circle",
+       "x": 188.48,
+       "y": 84.24,
+       "r": 3.2,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 211.52,
+       "y": 84.24,
+       "r": 3.2,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        210.39,
+        96.42,
+        208.87,
+        99.5,
+        206.46,
+        101.96,
+        203.4,
+        103.54,
+        200.0,
+        104.08,
+        196.6,
+        103.54,
+        193.54,
+        101.96,
+        191.13,
+        99.5,
+        189.61,
+        96.42
+       ],
+       "stroke": "ink",
+       "sw": 2.56
+      },
+      {
+       "op": "circle",
+       "x": 180.16,
+       "y": 95.12,
+       "r": 4.16,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 219.84,
+       "y": 95.12,
+       "r": 4.16,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "rect",
+       "x": 150,
+       "y": 125,
+       "w": 100,
+       "h": 130,
+       "fill": "#FFE3CF",
+       "stroke": "ink",
+       "r": 26,
+       "sw": 4
+      },
+      {
+       "op": "rect",
+       "x": 90,
+       "y": 135,
+       "w": 28,
+       "h": 110,
+       "fill": "#FFE3CF",
+       "stroke": "ink",
+       "r": 14,
+       "sw": 4
+      },
+      {
+       "op": "rect",
+       "x": 282,
+       "y": 135,
+       "w": 28,
+       "h": 110,
+       "fill": "#FFE3CF",
+       "stroke": "ink",
+       "r": 14,
+       "sw": 4
+      },
+      {
+       "op": "rect",
+       "x": 155,
+       "y": 250,
+       "w": 40,
+       "h": 125,
+       "fill": "#FFE3CF",
+       "stroke": "ink",
+       "r": 16,
+       "sw": 4
+      },
+      {
+       "op": "rect",
+       "x": 205,
+       "y": 250,
+       "w": 40,
+       "h": 125,
+       "fill": "#FFE3CF",
+       "stroke": "ink",
+       "r": 16,
+       "sw": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        175,
+        160,
+        160,
+        120,
+        190,
+        104,
+        240
+       ],
+       "stroke": "#EF476F",
+       "sw": 5,
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        175,
+        240,
+        160,
+        280,
+        190,
+        296,
+        240
+       ],
+       "stroke": "#EF476F",
+       "sw": 5,
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        185,
+        178,
+        260,
+        175,
+        330,
+        175,
+        368
+       ],
+       "stroke": "#EF476F",
+       "sw": 5,
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        200,
+        185,
+        222,
+        260,
+        225,
+        330,
+        225,
+        368
+       ],
+       "stroke": "#EF476F",
+       "sw": 5,
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 190,
+       "scale": "1 + 0.12 * max(0, wave(e, 1.3))",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -8.0,
+          0.19,
+          -9.22,
+          1.43,
+          -12.34,
+          4.39,
+          -15.99,
+          9.05,
+          -18.57,
+          14.72,
+          -18.89,
+          20.19,
+          -16.57,
+          24.15,
+          -12.1,
+          25.6,
+          -6.4,
+          24.15,
+          -0.42,
+          20.19,
+          5.26,
+          14.72,
+          10.5,
+          9.05,
+          15.37,
+          4.39,
+          19.85,
+          1.43,
+          23.65,
+          0.19,
+          26.26,
+          0.0,
+          27.2,
+          -0.19,
+          26.26,
+          -1.43,
+          23.65,
+          -4.39,
+          19.85,
+          -9.05,
+          15.37,
+          -14.72,
+          10.5,
+          -20.19,
+          5.26,
+          -24.15,
+          -0.42,
+          -25.6,
+          -6.4,
+          -24.15,
+          -12.1,
+          -20.19,
+          -16.57,
+          -14.72,
+          -18.89,
+          -9.05,
+          -18.57,
+          -4.39,
+          -15.99,
+          -1.43,
+          -12.34,
+          -0.19,
+          -9.22
+         ],
+         "closed": true,
+         "fill": "#EF476F",
+         "stroke": "ink",
+         "sw": 4
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 6,
+       "var": "i",
+       "do": [
+        {
+         "op": "circle",
+         "x": "200 + (hash(i, 1) - 0.5) * 90 * ((e * 0.3 + i / 6) % 1)",
+         "y": "190 + ((e * 0.3 + i / 6) % 1) * 160",
+         "r": 4,
+         "fill": "#EF476F",
+         "a": "ramp(u, 0.4, 0.55)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "blood travels in tiny tubes",
+       "x": 200,
+       "y": 28,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      }
+     ],
+     "audio": "audio/heart/roads.mp3",
+     "audioSeconds": 9.78
+    },
+    {
+     "id": "trucks",
+     "title": "Delivery trucks",
+     "tint": "#FFF3EA",
+     "narration": "Blood works like a delivery truck. It carries oxygen from the air you breathe and energy from the food you eat to every part of you. Then it takes the trash away.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFF3EA",
+       "r": 0
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 150,
+       "w": 420,
+       "h": 70,
+       "fill": "#FF9AA7",
+       "stroke": "ink",
+       "r": 0,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 5,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": "-20 + ((e * 0.18 + i / 5) % 1) * 440",
+         "y": "185",
+         "do": [
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 16,
+           "fill": "#EF476F",
+           "stroke": "ink",
+           "sw": 3
+          },
+          {
+           "op": "group",
+           "do": [
+            {
+             "op": "text",
+             "s": "O2",
+             "x": 0,
+             "y": 0,
+             "size": 11,
+             "color": "white"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 310,
+       "a": "ramp(u, 0.3, 0.45)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -70,
+         "y": -40,
+         "w": 140,
+         "h": 80,
+         "fill": "#FFD27A",
+         "stroke": "ink",
+         "r": 26,
+         "sw": 4
+        },
+        {
+         "op": "circle",
+         "x": -12.24,
+         "y": -2.12,
+         "r": 3.4,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 12.24,
+         "y": -2.12,
+         "r": 3.4,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          11.04,
+          10.82,
+          9.42,
+          14.1,
+          6.86,
+          16.7,
+          3.61,
+          18.38,
+          -0.0,
+          18.96,
+          -3.61,
+          18.38,
+          -6.86,
+          16.7,
+          -9.42,
+          14.1,
+          -11.04,
+          10.82
+         ],
+         "stroke": "ink",
+         "sw": 2.72
+        },
+        {
+         "op": "circle",
+         "x": -21.08,
+         "y": 9.44,
+         "r": 4.42,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 21.08,
+         "y": 9.44,
+         "r": 4.42,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": "lerp(225, 280, (e * 0.5) % 1)",
+       "a": "ramp(u, 0.4, 0.55)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 11,
+         "fill": "sky",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "text",
+         "s": "O2",
+         "x": 0,
+         "y": 0,
+         "size": 9
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "blood = delivery truck",
+       "x": 200,
+       "y": 40,
+       "size": 20,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.05, 0.2)"
+      },
+      {
+       "op": "text",
+       "s": "brings oxygen & food to every part of you",
+       "x": 200,
+       "y": 105,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.2, 0.35)"
+      },
+      {
+       "op": "text",
+       "s": "and takes the trash away",
+       "x": 200,
+       "y": 372,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.65, 0.8)"
+      }
+     ],
+     "audio": "audio/heart/trucks.mp3",
+     "audioSeconds": 10.3
+    },
+    {
+     "id": "fast",
+     "title": "Faster when you run",
+     "tint": "#FFE9EE",
+     "narration": "When you run and jump, your muscles need more deliveries, so your heart beats faster! It works day and night, even while you sleep, about a hundred thousand beats every day.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": 0,
+       "y": 0,
+       "w": 400,
+       "h": 400,
+       "fill": "#FFE9EE",
+       "r": 0
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 40,
+       "x2": 200,
+       "y2": 360,
+       "color": "#F2C5D0",
+       "w": 3
+      },
+      {
+       "op": "group",
+       "x": 100,
+       "y": 190,
+       "scale": "1 + 0.08 * max(0, wave(e, 1.0))",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -21.0,
+          0.5,
+          -24.2,
+          3.77,
+          -32.38,
+          11.52,
+          -41.97,
+          23.76,
+          -48.75,
+          38.63,
+          -49.58,
+          52.99,
+          -43.5,
+          63.4,
+          -31.75,
+          67.2,
+          -16.8,
+          63.4,
+          -1.11,
+          52.99,
+          13.81,
+          38.63,
+          27.57,
+          23.76,
+          40.35,
+          11.52,
+          52.1,
+          3.77,
+          62.08,
+          0.5,
+          68.94,
+          0.0,
+          71.4,
+          -0.5,
+          68.94,
+          -3.77,
+          62.08,
+          -11.52,
+          52.1,
+          -23.76,
+          40.35,
+          -38.63,
+          27.57,
+          -52.99,
+          13.81,
+          -63.4,
+          -1.11,
+          -67.2,
+          -16.8,
+          -63.4,
+          -31.75,
+          -52.99,
+          -43.5,
+          -38.63,
+          -49.58,
+          -23.76,
+          -48.75,
+          -11.52,
+          -41.97,
+          -3.77,
+          -32.38,
+          -0.5,
+          -24.2
+         ],
+         "closed": true,
+         "fill": "#EF476F",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "circle",
+         "x": -9.07,
+         "y": 3.86,
+         "r": 2.52,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.07,
+         "y": 3.86,
+         "r": 2.52,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          8.19,
+          13.45,
+          6.98,
+          15.88,
+          5.09,
+          17.82,
+          2.68,
+          19.06,
+          -0.0,
+          19.49,
+          -2.68,
+          19.06,
+          -5.09,
+          17.82,
+          -6.98,
+          15.88,
+          -8.19,
+          13.45
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -15.62,
+         "y": 12.43,
+         "r": 3.28,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 15.62,
+         "y": 12.43,
+         "r": 3.28,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 300,
+       "y": 190,
+       "scale": "1 + 0.12 * max(0, wave(e, 2.6))",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0.0,
+          -21.0,
+          0.5,
+          -24.2,
+          3.77,
+          -32.38,
+          11.52,
+          -41.97,
+          23.76,
+          -48.75,
+          38.63,
+          -49.58,
+          52.99,
+          -43.5,
+          63.4,
+          -31.75,
+          67.2,
+          -16.8,
+          63.4,
+          -1.11,
+          52.99,
+          13.81,
+          38.63,
+          27.57,
+          23.76,
+          40.35,
+          11.52,
+          52.1,
+          3.77,
+          62.08,
+          0.5,
+          68.94,
+          0.0,
+          71.4,
+          -0.5,
+          68.94,
+          -3.77,
+          62.08,
+          -11.52,
+          52.1,
+          -23.76,
+          40.35,
+          -38.63,
+          27.57,
+          -52.99,
+          13.81,
+          -63.4,
+          -1.11,
+          -67.2,
+          -16.8,
+          -63.4,
+          -31.75,
+          -52.99,
+          -43.5,
+          -38.63,
+          -49.58,
+          -23.76,
+          -48.75,
+          -11.52,
+          -41.97,
+          -3.77,
+          -32.38,
+          -0.5,
+          -24.2
+         ],
+         "closed": true,
+         "fill": "#EF476F",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "circle",
+         "x": -9.07,
+         "y": 3.86,
+         "r": 2.52,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 9.07,
+         "y": 3.86,
+         "r": 2.52,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          8.19,
+          13.45,
+          6.98,
+          15.88,
+          5.09,
+          17.82,
+          2.68,
+          19.06,
+          -0.0,
+          19.49,
+          -2.68,
+          19.06,
+          -5.09,
+          17.82,
+          -6.98,
+          15.88,
+          -8.19,
+          13.45
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -15.62,
+         "y": 12.43,
+         "r": 3.28,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 15.62,
+         "y": 12.43,
+         "r": 3.28,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "resting: slow",
+       "x": 100,
+       "y": 85,
+       "size": 19,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "running: FAST!",
+       "x": 300,
+       "y": 85,
+       "size": 19,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "about 100,000 beats every day",
+       "x": 200,
+       "y": 335,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.7)"
+      },
+      {
+       "op": "text",
+       "s": "even while you sleep!",
+       "x": 200,
+       "y": 372,
+       "size": 18,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.7, 0.85)"
+      }
+     ],
+     "audio": "audio/heart/fast.mp3",
+     "audioSeconds": 10.78
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What is your heart?",
+     "options": [
+      "A muscle that pumps blood",
+      "A kind of bone",
+      "A tiny brain"
+     ],
+     "answer": 0,
+     "explanation": "The heart is a strong muscle that works like a pump."
+    },
+    {
+     "question": "What does blood carry around your body?",
+     "options": [
+      "Oxygen and food",
+      "Toys",
+      "Sounds"
+     ],
+     "answer": 0,
+     "explanation": "Blood delivers oxygen and energy to every part of you."
+    },
+    {
+     "question": "When you run, your heart beats...",
+     "options": [
+      "Faster",
+      "Slower",
+      "Not at all"
+     ],
+     "answer": 0,
+     "explanation": "Your muscles need more deliveries, so the heart speeds up."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "मेरा हृदय कैसे काम करता है?",
+     "subtitle": "वह पंप जो कभी आराम नहीं करता",
+     "quiz": [
+      {
+       "question": "आपका हृदय क्या है?",
+       "options": [
+        "एक मांसपेशी जो ख़ून पंप करती है",
+        "एक तरह की हड्डी",
+        "छोटा-सा दिमाग़"
+       ],
+       "explanation": "हृदय एक मज़बूत मांसपेशी है जो पंप की तरह काम करती है।"
+      },
+      {
+       "question": "ख़ून आपके शरीर में क्या-क्या ले जाता है?",
+       "options": [
+        "ऑक्सीजन और खाना",
+        "खिलौने",
+        "आवाज़ें"
+       ],
+       "explanation": "ख़ून हर हिस्से तक ऑक्सीजन और ऊर्जा पहुँचाता है।"
+      },
+      {
+       "question": "जब आप दौड़ते हैं, आपका हृदय धड़कता है...",
+       "options": [
+        "तेज़",
+        "धीमा",
+        "बिल्कुल नहीं"
+       ],
+       "explanation": "मांसपेशियों को ज़्यादा डिलीवरी चाहिए, इसलिए हृदय तेज़ हो जाता है।"
+      }
+     ],
+     "scenes": {
+      "pump": {
+       "narration": "इसी वक़्त, आपके सीने के अंदर एक मज़बूत मांसपेशी काम कर रही है। यह आपका हृदय है! यह आपकी मुट्ठी जितना बड़ा होता है, और इसका काम है पंप करना।",
+       "audio": "audio/hi/heart/pump.mp3",
+       "audioSeconds": 15.05
+      },
+      "beat": {
+       "narration": "आपका हृदय सिकुड़ता है, फिर ढीला होता है — बार-बार। हर सिकुड़न एक धड़कन है। हाथ सीने पर रखो और धक-धक, धक-धक महसूस करो।",
+       "audio": "audio/hi/heart/beat.mp3",
+       "audioSeconds": 13.35
+      },
+      "roads": {
+       "narration": "हर सिकुड़न के साथ हृदय ख़ून को छोटी-छोटी नलियों में धकेलता है, जो पूरे शरीर में जाती हैं। वे छोटी सड़कों जैसी हैं — सिर से लेकर पैर के अंगूठों तक।",
+       "audio": "audio/hi/heart/roads.mp3",
+       "audioSeconds": 13.57
+      },
+      "trucks": {
+       "narration": "ख़ून डिलीवरी वाले ट्रक की तरह काम करता है। यह आपकी साँस की ऑक्सीजन और खाने की ऊर्जा शरीर के हर हिस्से तक पहुँचाता है। फिर कचरा भी ले जाता है।",
+       "audio": "audio/hi/heart/trucks.mp3",
+       "audioSeconds": 14.95
+      },
+      "fast": {
+       "narration": "जब आप दौड़ते और कूदते हैं, आपकी मांसपेशियों को ज़्यादा डिलीवरी चाहिए, इसलिए हृदय तेज़ धड़कता है! यह दिन-रात काम करता है, सोते समय भी — रोज़ क़रीब एक लाख धड़कनें।",
+       "audio": "audio/hi/heart/fast.mp3",
+       "audioSeconds": 15.38
+      }
+     }
+    }
+   }
+  }
+ ]
+}

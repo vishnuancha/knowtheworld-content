@@ -1,0 +1,1052 @@
+{
+ "date": "2026-10-14",
+ "lessons": [
+  {
+   "id": "daynight",
+   "title": "Why do we have day and night?",
+   "subtitle": "A giant lamp and a spinning planet",
+   "category": "Space",
+   "emoji": "🌗",
+   "accent": "#7B2CBF",
+   "available": true,
+   "minRenderer": 1,
+   "scenes": [
+    {
+     "id": "lamp",
+     "title": "Our giant lamp",
+     "tint": "#E8F1FF",
+     "narration": "Far away in space shines a giant, glowing ball called the Sun. It is like a big lamp, and its light travels all the way to our home, the Earth.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "fill": "water",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "rampBack(u, 0.05, 0.25)"
+      },
+      {
+       "op": "circle",
+       "x": 240,
+       "y": 170,
+       "r": 24,
+       "fill": "leaf",
+       "a": "rampBack(u, 0.05, 0.25)"
+      },
+      {
+       "op": "circle",
+       "x": 300,
+       "y": 225,
+       "r": 20,
+       "fill": "leaf",
+       "a": "rampBack(u, 0.05, 0.25)"
+      },
+      {
+       "op": "circle",
+       "x": 245,
+       "y": 240,
+       "r": 14,
+       "fill": "leaf",
+       "a": "rampBack(u, 0.05, 0.25)"
+      },
+      {
+       "op": "arc",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "from": -1.5708,
+       "to": 1.5708,
+       "fill": "#2B2D42",
+       "a": "0.55 * (0)"
+      },
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "stroke": "ink",
+       "sw": 4,
+       "a": "rampBack(u, 0.05, 0.25)"
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 200,
+       "r": "46 + wave(e, 0.4) * 2",
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "ramp(u, 0, 0.15)"
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "70 + cos(i * 0.5236) * 58",
+         "y1": "200 + sin(i * 0.5236) * 58",
+         "x2": "70 + cos(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "y2": "200 + sin(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "color": "electric",
+         "w": 5,
+         "a": "ramp(u, 0, 0.15)"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 56,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "ramp(u, 0, 0.15)"
+      },
+      {
+       "op": "circle",
+       "x": 84,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "ramp(u, 0, 0.15)"
+      },
+      {
+       "op": "arc",
+       "x": 70,
+       "y": 206,
+       "r": 16,
+       "from": 0.2,
+       "to": 2.94,
+       "stroke": "ink",
+       "sw": 4,
+       "a": "ramp(u, 0, 0.15)"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 150,
+       "x2": 195,
+       "y2": 150,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "ramp(u, 0.3, 0.5) * 0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 200,
+       "x2": 195,
+       "y2": 200,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "ramp(u, 0.3, 0.5) * 0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 250,
+       "x2": 195,
+       "y2": 250,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "ramp(u, 0.3, 0.5) * 0.9"
+      },
+      {
+       "op": "text",
+       "s": "Sun",
+       "x": 70,
+       "y": 300,
+       "size": 24,
+       "a": "ramp(u, 0.2, 0.3)"
+      },
+      {
+       "op": "text",
+       "s": "Earth",
+       "x": 270,
+       "y": 320,
+       "size": 24,
+       "a": "ramp(u, 0.3, 0.4)"
+      }
+     ],
+     "audio": "audio/daynight/lamp.mp3",
+     "audioSeconds": 9.5
+    },
+    {
+     "id": "half",
+     "title": "Only half is bright",
+     "tint": "#DDE4F7",
+     "narration": "But the Sun can only light up one half of the Earth at a time. The side facing the Sun has daytime. The side facing away is in the shadow, and that is night.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "fill": "water",
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 240,
+       "y": 170,
+       "r": 24,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 300,
+       "y": 225,
+       "r": 20,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 245,
+       "y": 240,
+       "r": 14,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "arc",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "from": -1.5708,
+       "to": 1.5708,
+       "fill": "#2B2D42",
+       "a": "0.55 * (ramp(u, 0.15, 0.4))"
+      },
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 200,
+       "r": "46 + wave(e, 0.4) * 2",
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "70 + cos(i * 0.5236) * 58",
+         "y1": "200 + sin(i * 0.5236) * 58",
+         "x2": "70 + cos(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "y2": "200 + sin(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "color": "electric",
+         "w": 5,
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 56,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "circle",
+       "x": 84,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "arc",
+       "x": 70,
+       "y": 206,
+       "r": 16,
+       "from": 0.2,
+       "to": 2.94,
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 150,
+       "x2": 195,
+       "y2": 150,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 200,
+       "x2": 195,
+       "y2": 200,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 250,
+       "x2": 195,
+       "y2": 250,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "sparkle",
+         "x": "292 + hash(i, 1) * 70",
+         "y": "130 + hash(i, 2) * 140",
+         "r": "4 + hash(i, 3) * 4 + wave(e, 1, i * 0.3) * 1.5",
+         "color": "white",
+         "a": "ramp(u, 0.45, 0.6)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "Day",
+       "x": 225,
+       "y": 200,
+       "size": 28,
+       "a": "ramp(u, 0.25, 0.4)",
+       "pill": "sun",
+       "pillStroke": "ink"
+      },
+      {
+       "op": "text",
+       "s": "Night",
+       "x": 320,
+       "y": 200,
+       "size": 28,
+       "color": "white",
+       "a": "ramp(u, 0.45, 0.6)",
+       "pill": "#2B2D42"
+      }
+     ],
+     "audio": "audio/daynight/half.mp3",
+     "audioSeconds": 10.4
+    },
+    {
+     "id": "spin",
+     "title": "The Earth spins",
+     "tint": "#EAE0FF",
+     "narration": "And the Earth is spinning, slowly, like a merry-go-round. One whole spin takes a day, which is twenty-four hours. Watch this little traveller go around.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "fill": "water",
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 240,
+       "y": 170,
+       "r": 24,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 300,
+       "y": 225,
+       "r": 20,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 245,
+       "y": 240,
+       "r": 14,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "arc",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "from": -1.5708,
+       "to": 1.5708,
+       "fill": "#2B2D42",
+       "a": "0.55 * (1)"
+      },
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 200,
+       "r": "46 + wave(e, 0.4) * 2",
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "70 + cos(i * 0.5236) * 58",
+         "y1": "200 + sin(i * 0.5236) * 58",
+         "x2": "70 + cos(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "y2": "200 + sin(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "color": "electric",
+         "w": 5,
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 56,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "circle",
+       "x": 84,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "arc",
+       "x": 70,
+       "y": 206,
+       "r": 16,
+       "from": 0.2,
+       "to": 2.94,
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 150,
+       "x2": 195,
+       "y2": 150,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 200,
+       "x2": 195,
+       "y2": 200,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 250,
+       "x2": 195,
+       "y2": 250,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "sparkle",
+         "x": "292 + hash(i, 1) * 70",
+         "y": "130 + hash(i, 2) * 140",
+         "r": "4 + hash(i, 3) * 4 + wave(e, 1, i * 0.3) * 1.5",
+         "color": "white",
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": "270 + cos(e * 0.9) * 90",
+       "y": "200 + sin(e * 0.9) * 90",
+       "r": 11,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "you",
+       "x": "270 + cos(e * 0.9) * 118",
+       "y": "200 + sin(e * 0.9) * 118",
+       "size": 16,
+       "a": "ramp(u, 0.1, 0.25)"
+      },
+      {
+       "op": "text",
+       "s": "one spin = one day",
+       "x": 200,
+       "y": 360,
+       "size": 24,
+       "a": "ramp(u, 0.5, 0.65)",
+       "pill": "white",
+       "pillStroke": "ink"
+      }
+     ],
+     "audio": "audio/daynight/spin.mp3",
+     "audioSeconds": 9.8
+    },
+    {
+     "id": "rise",
+     "title": "Sunrise and sunset",
+     "tint": "#FFF1D6",
+     "narration": "When you spin into the light, the Sun seems to rise, and it is morning. When you spin out of the light, the Sun seems to set, and the stars come out.",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "fill": "water",
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 240,
+       "y": 170,
+       "r": 24,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 300,
+       "y": 225,
+       "r": 20,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 245,
+       "y": 240,
+       "r": 14,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "arc",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "from": -1.5708,
+       "to": 1.5708,
+       "fill": "#2B2D42",
+       "a": "0.55 * (1)"
+      },
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 200,
+       "r": "46 + wave(e, 0.4) * 2",
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "70 + cos(i * 0.5236) * 58",
+         "y1": "200 + sin(i * 0.5236) * 58",
+         "x2": "70 + cos(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "y2": "200 + sin(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "color": "electric",
+         "w": 5,
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 56,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "circle",
+       "x": 84,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "arc",
+       "x": 70,
+       "y": 206,
+       "r": 16,
+       "from": 0.2,
+       "to": 2.94,
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 150,
+       "x2": 195,
+       "y2": 150,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 200,
+       "x2": 195,
+       "y2": 200,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 250,
+       "x2": 195,
+       "y2": 250,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "sparkle",
+         "x": "292 + hash(i, 1) * 70",
+         "y": "130 + hash(i, 2) * 140",
+         "r": "4 + hash(i, 3) * 4 + wave(e, 1, i * 0.3) * 1.5",
+         "color": "white",
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": "270 + cos(e * 0.9) * 90",
+       "y": "200 + sin(e * 0.9) * 90",
+       "r": 11,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "1"
+      },
+      {
+       "op": "text",
+       "s": "you",
+       "x": "270 + cos(e * 0.9) * 118",
+       "y": "200 + sin(e * 0.9) * 118",
+       "size": 16,
+       "a": "1"
+      },
+      {
+       "op": "text",
+       "s": "sunrise!",
+       "x": 270,
+       "y": 318,
+       "size": 26,
+       "color": "#B45F06",
+       "a": "clamp01((sin(e * 0.9) - 0.4) * 2.5)",
+       "pill": "sun",
+       "pillStroke": "ink"
+      },
+      {
+       "op": "text",
+       "s": "sunset",
+       "x": 270,
+       "y": 82,
+       "size": 26,
+       "color": "white",
+       "a": "clamp01((-sin(e * 0.9) - 0.4) * 2.5)",
+       "pill": "#7B2CBF"
+      }
+     ],
+     "audio": "audio/daynight/rise.mp3",
+     "audioSeconds": 8.82
+    },
+    {
+     "id": "you",
+     "title": "You are the one moving",
+     "tint": "#E0F7F4",
+     "narration": "So the Sun is not really moving across the sky. You are riding on a spinning planet, and every single day you get a turn in the light and a turn in the dark!",
+     "draw": [
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "fill": "water",
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 240,
+       "y": 170,
+       "r": 24,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 300,
+       "y": 225,
+       "r": 20,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 245,
+       "y": 240,
+       "r": 14,
+       "fill": "leaf",
+       "a": 1
+      },
+      {
+       "op": "arc",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "from": -1.5708,
+       "to": 1.5708,
+       "fill": "#2B2D42",
+       "a": "0.55 * (1)"
+      },
+      {
+       "op": "circle",
+       "x": 270,
+       "y": 200,
+       "r": 86,
+       "stroke": "ink",
+       "sw": 4,
+       "a": 1
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 200,
+       "r": "46 + wave(e, 0.4) * 2",
+       "fill": "sun",
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "repeat",
+       "n": 12,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "70 + cos(i * 0.5236) * 58",
+         "y1": "200 + sin(i * 0.5236) * 58",
+         "x2": "70 + cos(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "y2": "200 + sin(i * 0.5236) * (70 + wave(e, 0.8, i * 0.1) * 5)",
+         "color": "electric",
+         "w": 5,
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 56,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "circle",
+       "x": 84,
+       "y": 190,
+       "r": 5,
+       "fill": "ink",
+       "a": "1"
+      },
+      {
+       "op": "arc",
+       "x": 70,
+       "y": 206,
+       "r": 16,
+       "from": 0.2,
+       "to": 2.94,
+       "stroke": "ink",
+       "sw": 4,
+       "a": "1"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 150,
+       "x2": 195,
+       "y2": 150,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 200,
+       "x2": 195,
+       "y2": 200,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "line",
+       "x1": 125,
+       "y1": 250,
+       "x2": 195,
+       "y2": 250,
+       "color": "#FFE08A",
+       "w": 6,
+       "a": "0.9"
+      },
+      {
+       "op": "repeat",
+       "n": 7,
+       "var": "i",
+       "do": [
+        {
+         "op": "sparkle",
+         "x": "292 + hash(i, 1) * 70",
+         "y": "130 + hash(i, 2) * 140",
+         "r": "4 + hash(i, 3) * 4 + wave(e, 1, i * 0.3) * 1.5",
+         "color": "white",
+         "a": "1"
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": "270 + cos(e * 0.9) * 90",
+       "y": "200 + sin(e * 0.9) * 90",
+       "r": 11,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 3,
+       "a": "1"
+      },
+      {
+       "op": "text",
+       "s": "you",
+       "x": "270 + cos(e * 0.9) * 118",
+       "y": "200 + sin(e * 0.9) * 118",
+       "size": 16,
+       "a": "1"
+      },
+      {
+       "op": "text",
+       "s": "You ride a spinning planet!",
+       "x": 200,
+       "y": 362,
+       "size": 24,
+       "a": "ramp(u, 0.3, 0.5)",
+       "pill": "white",
+       "pillStroke": "ink"
+      },
+      {
+       "op": "repeat",
+       "n": 14,
+       "var": "i",
+       "do": [
+        {
+         "op": "sparkle",
+         "x": "hash(i, 1) * 400",
+         "y": "(e * 30 + hash(i, 2) * 420) % 440 - 20",
+         "r": "5 + hash(i, 3) * 6",
+         "color": "sun",
+         "a": "ramp(u, 0.6, 0.8)"
+        }
+       ]
+      }
+     ],
+     "audio": "audio/daynight/you.mp3",
+     "audioSeconds": 9.65
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What makes day and night?",
+     "options": [
+      "The Sun goes around the Earth",
+      "The Earth spins around",
+      "The Moon covers the Sun"
+     ],
+     "answer": 1,
+     "explanation": "The Earth spins, so each place turns into the Sunlight and then away from it."
+    },
+    {
+     "question": "How long does one full spin of the Earth take?",
+     "options": [
+      "One hour",
+      "One day (24 hours)",
+      "One year"
+     ],
+     "answer": 1,
+     "explanation": "One spin is one day, about twenty-four hours."
+    },
+    {
+     "question": "Your side of the Earth spins away from the Sun. What is it?",
+     "options": [
+      "Night",
+      "Morning",
+      "Summer"
+     ],
+     "answer": 0,
+     "explanation": "Away from the light is night, and the stars come out."
+    }
+   ],
+   "i18n": {
+    "hi": {
+     "title": "दिन और रात क्यों होते हैं?",
+     "subtitle": "एक बड़ा दीपक और घूमती धरती",
+     "quiz": [
+      {
+       "question": "दिन और रात किससे होते हैं?",
+       "options": [
+        "सूरज धरती के चारों ओर घूमता है",
+        "धरती अपने अक्ष पर घूमती है",
+        "चाँद सूरज को ढक लेता है"
+       ],
+       "explanation": "धरती घूमती है, इसलिए हर जगह बारी-बारी रोशनी में आती है और रोशनी से दूर जाती है।"
+      },
+      {
+       "question": "धरती का एक पूरा घुमाव कितना समय लेता है?",
+       "options": [
+        "एक घंटा",
+        "एक दिन (24 घंटे)",
+        "एक साल"
+       ],
+       "explanation": "एक घुमाव एक दिन होता है, क़रीब चौबीस घंटे।"
+      },
+      {
+       "question": "धरती का आपका हिस्सा सूरज से दूर घूम गया। तब क्या होता है?",
+       "options": [
+        "रात",
+        "सुबह",
+        "गर्मी"
+       ],
+       "explanation": "रोशनी से दूर होना रात है, और तब तारे निकल आते हैं।"
+      }
+     ],
+     "scenes": {
+      "lamp": {
+       "narration": "अंतरिक्ष में बहुत दूर एक बड़ा चमकता गोला जलता है, जिसे सूरज कहते हैं। यह एक बड़े दीपक जैसा है, और इसकी रोशनी हमारे घर धरती तक पहुँचती है।",
+       "audio": "audio/hi/daynight/lamp.mp3",
+       "audioSeconds": 13.6
+      },
+      "half": {
+       "narration": "लेकिन सूरज एक बार में धरती का सिर्फ़ आधा हिस्सा ही रोशन कर सकता है। सूरज की ओर वाले हिस्से में दिन होता है। दूसरी ओर छाया रहती है, वहाँ रात होती है।",
+       "audio": "audio/hi/daynight/half.mp3",
+       "audioSeconds": 15.4
+      },
+      "spin": {
+       "narration": "और धरती झूले की तरह धीरे-धीरे घूम रही है। एक पूरा घुमाव एक दिन लेता है, यानी चौबीस घंटे। देखो, यह छोटा यात्री कैसे चक्कर लगाता है।",
+       "audio": "audio/hi/daynight/spin.mp3",
+       "audioSeconds": 14.7
+      },
+      "rise": {
+       "narration": "जब आप घूमकर रोशनी में आते हैं, सूरज उगता दिखता है और सुबह होती है। जब आप घूमकर रोशनी से दूर जाते हैं, सूरज डूबता दिखता है और तारे निकल आते हैं।",
+       "audio": "audio/hi/daynight/rise.mp3",
+       "audioSeconds": 14.32
+      },
+      "you": {
+       "narration": "तो सूरज असल में आसमान में नहीं चलता। आप एक घूमती धरती पर सवार हैं, और हर दिन आपकी बारी आती है — एक बार रोशनी में, एक बार अँधेरे में!",
+       "audio": "audio/hi/daynight/you.mp3",
+       "audioSeconds": 12.95
+      }
+     }
+    }
+   }
+  }
+ ]
+}

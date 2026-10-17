@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T02:38:08Z",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "media": "media.json",
+  "days": [
+    {
+      "date": "2026-10-16",
+      "url": "days/2026-10-16.json",
+      "sha256": "151d7eb46a0da5eb2af33835e30f6b513e07fa1688497526a8d9da8d08a306c2",
+      "bytes": 164123
+    },
+    {
+      "date": "2026-10-15",
+      "url": "days/2026-10-15.json",
+      "sha256": "eaabf95b6cfdd54b5a134654dbc0b614d618157e274e5bc8422722d7965a7d94",
+      "bytes": 108041
+    },
+    {
+      "date": "2026-10-14",
+      "url": "days/2026-10-14.json",
+      "sha256": "ad992b971dbaa922d3cd0f3879a543d19a83d602615a9946966ab3c8ed30c4bb",
+      "bytes": 23936
+    },
+    {
+      "date": "2026-10-13",
+      "url": "days/2026-10-13.json",
+      "sha256": "3425b636fb72d6c5db556118bba5c09098b4fc1caa5307c8c3755711b4b122a3",
+      "bytes": 15342
+    },
+    {
+      "date": "2026-10-12",
+      "url": "days/2026-10-12.json",
+      "sha256": "43f81da11d2e68af84967da29da1fe20ca98f849a090354c6c314b4310cb1119",
+      "bytes": 121748
+    }
+  ]
+}
