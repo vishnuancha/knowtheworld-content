@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T03:04:36Z",
+  "generatedAt": "2026-10-18T09:01:56Z",
   "files": [
     {
       "path": "audio/airplane/engines.mp3",
@@ -915,6 +915,31 @@
       "path": "audio/sky/white.mp3",
       "bytes": 81644,
       "sha256": "b5e173144d7fd0aa7a9778dbf1a79b2c6f3ae661a28d9f087e2ecbe562b3972c"
+    },
+    {
+      "path": "audio/tides/inout.mp3",
+      "bytes": 119468,
+      "sha256": "e8cb84e627ba42f6c59187c76f89f3638ff7bed94258dada02e1f549f5b6c1a9"
+    },
+    {
+      "path": "audio/tides/lemon.mp3",
+      "bytes": 101036,
+      "sha256": "5138fb6983a84af0dab38fa775f0ecf4d7a07cc7701058d4c66a858f4992fae4"
+    },
+    {
+      "path": "audio/tides/moon.mp3",
+      "bytes": 119852,
+      "sha256": "7b798e9b0280f2c7acfa569bf578a6f2a986608478418147830af83e886dd8bb"
+    },
+    {
+      "path": "audio/tides/spin.mp3",
+      "bytes": 124076,
+      "sha256": "5f163f5c20a2620c69708480665cfa505952acc040cccdc767f4d3cffe3fd58e"
+    },
+    {
+      "path": "audio/tides/sun.mp3",
+      "bytes": 114476,
+      "sha256": "684c62900f031af5c7da5863ebda0a6524472da853efb03b4b9c9387991437f4"
     },
     {
       "path": "audio/transistor/billions.mp3",
