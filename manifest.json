@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T09:04:10Z",
+  "generatedAt": "2026-10-20T20:37:10Z",
   "schemaVersion": 2,
   "languages": [
     "en",
@@ -7,6 +7,12 @@
   ],
   "media": "media.json",
   "days": [
+    {
+      "date": "2026-10-20",
+      "url": "days/2026-10-20.json",
+      "sha256": "fce5e9b339f56ac2afea0480a216eb15ef6e6d75af7c8a9a07a48ff102b2970d",
+      "bytes": 103685
+    },
     {
       "date": "2026-10-18",
       "url": "days/2026-10-18.json",
@@ -16,14 +22,14 @@
     {
       "date": "2026-10-16",
       "url": "days/2026-10-16.json",
-      "sha256": "8ddf25f43241a432be3e3483932511a3a6d24ab473658967a83d94767e02761d",
-      "bytes": 313632
+      "sha256": "850f8c07cc20730869e145062f35bc43fa9ed1692f39df910ca341038cf5e20a",
+      "bytes": 276250
     },
     {
       "date": "2026-10-15",
       "url": "days/2026-10-15.json",
-      "sha256": "eaabf95b6cfdd54b5a134654dbc0b614d618157e274e5bc8422722d7965a7d94",
-      "bytes": 108041
+      "sha256": "0ae44e86666c6a1c917326e76fd80f54d2cd90fa3a8e93c9306ca1e5274f95bd",
+      "bytes": 91150
     },
     {
       "date": "2026-10-14",
@@ -40,8 +46,8 @@
     {
       "date": "2026-10-12",
       "url": "days/2026-10-12.json",
-      "sha256": "43f81da11d2e68af84967da29da1fe20ca98f849a090354c6c314b4310cb1119",
-      "bytes": 121748
+      "sha256": "933ef605dc0f3ee7900b4939f9dd7e3aa4620dae042cdcee83068470cb8496d0",
+      "bytes": 104898
     }
   ]
 }

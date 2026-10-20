@@ -1,0 +1,5530 @@
+{
+ "date": "2026-10-20",
+ "lessons": [
+  {
+   "id": "touchscreen",
+   "title": "How does a touchscreen know where I touched?",
+   "subtitle": "Electricity at your fingertip",
+   "category": "Technology",
+   "emoji": "📱",
+   "accent": "#6C63FF",
+   "available": true,
+   "minRenderer": 2,
+   "scenes": [
+    {
+     "id": "glass",
+     "title": "Glass with a secret",
+     "tint": "#EAF2FF",
+     "narration": "Your phone's screen looks like a plain piece of glass, but it is hiding a secret. Under the glass there is a grid of very thin wires, so thin you cannot see them. They are switched on all the time, waiting. Touch the screen with your finger, and something changes right under your skin.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF2FF"
+         ],
+         [
+          1.0,
+          "#CFE3FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 188,
+       "scale": 1.0,
+       "do": [
+        {
+         "op": "rect",
+         "x": -108,
+         "y": -168,
+         "w": 216,
+         "h": 336,
+         "fill": "#2B2D42",
+         "stroke": "ink",
+         "r": 28,
+         "sw": 4
+        },
+        {
+         "op": "rect",
+         "x": -96,
+         "y": -148,
+         "w": 192,
+         "h": 288,
+         "fill": "#DDF2FF",
+         "r": 12
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 158,
+         "r": 8,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 210,
+       "y": 238,
+       "rot": -0.25,
+       "scale": 1.0,
+       "a": "ramp(u, 0.15, 0.3)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -10,
+         "y": -96,
+         "w": 20,
+         "h": 86,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3.5
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -4,
+         "r": 13,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3.5
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 196,
+       "y": 196,
+       "r": "12 + (e * 26 % 46)",
+       "stroke": "electric",
+       "sw": 3.5,
+       "a": "window(0.05, 0.35, 0.1) * (1 - (e * 26 % 46) / 60)"
+      },
+      {
+       "op": "circle",
+       "x": 196,
+       "y": 196,
+       "r": 9,
+       "fill": "electric",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "text",
+       "s": "tap!",
+       "x": 300,
+       "y": 92,
+       "size": 20,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "window(u, 0.2, 0.45, 0.06)"
+      },
+      {
+       "op": "text",
+       "s": "a grid of wires hides under the glass",
+       "x": 200,
+       "y": 372,
+       "size": 17,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.7)"
+      }
+     ],
+     "audio": "audio/touchscreen/glass.mp3",
+     "audioSeconds": 17.57
+    },
+    {
+     "id": "grid",
+     "title": "A grid of tiny wires",
+     "tint": "#EAF2FF",
+     "narration": "The wires run across and up the screen, like the lines in a maths book. Where one across wire crosses one up wire, the phone knows exactly one spot. When your finger touches, it feels the change at that crossing. That is how it knows where you touched.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF2FF"
+         ],
+         [
+          1.0,
+          "#CFE3FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 188,
+       "scale": 1.0,
+       "do": [
+        {
+         "op": "rect",
+         "x": -108,
+         "y": -168,
+         "w": 216,
+         "h": 336,
+         "fill": "#2B2D42",
+         "stroke": "ink",
+         "r": 28,
+         "sw": 4
+        },
+        {
+         "op": "rect",
+         "x": -96,
+         "y": -148,
+         "w": 192,
+         "h": 288,
+         "fill": "#DDF2FF",
+         "r": 12
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 158,
+         "r": 8,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 188,
+       "do": [
+        {
+         "op": "repeat",
+         "n": 7,
+         "var": "i",
+         "do": [
+          {
+           "op": "line",
+           "x1": "-96 + i * 32",
+           "y1": -148,
+           "x2": "-96 + i * 32",
+           "y2": 140,
+           "color": "#7FB6D9",
+           "w": 1.6,
+           "a": 0.75
+          }
+         ]
+        },
+        {
+         "op": "repeat",
+         "n": 9,
+         "var": "i",
+         "do": [
+          {
+           "op": "line",
+           "x1": -96,
+           "y1": "-148 + i * 32",
+           "x2": 96,
+           "y2": "-148 + i * 32",
+           "color": "#7FB6D9",
+           "w": 1.6,
+           "a": 0.75
+          }
+         ]
+        },
+        {
+         "op": "circle",
+         "x": -32,
+         "y": -20,
+         "r": 7,
+         "fill": "coral",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -32,
+         "y": -20,
+         "r": "14 + (e * 22 % 40)",
+         "stroke": "coral",
+         "sw": 2,
+         "a": "0.8 * (1 - (e * 22 % 40) / 44)"
+        },
+        {
+         "op": "text",
+         "s": "one exact spot",
+         "x": -32,
+         "y": 34,
+         "size": 12,
+         "color": "coral",
+         "a": "ramp(u, 0.6, 0.75)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "where they cross, the phone knows",
+       "x": 200,
+       "y": 372,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.65)"
+      }
+     ],
+     "audio": "audio/touchscreen/grid.mp3",
+     "audioSeconds": 16.7
+    },
+    {
+     "id": "change",
+     "title": "Your finger is electric",
+     "tint": "#FFF6E5",
+     "narration": "Your body is full of tiny electric charges. When your finger comes close, it steals a little electricity from the wires underneath. The phone notices that tiny dip. It is not pressure, and it is not heat — it is your own electricity saying I am here.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#FFF6E5"
+         ],
+         [
+          1.0,
+          "#FFE0C2"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 260,
+       "w": 420,
+       "h": 150,
+       "fill": "#C8ECFF",
+       "r": 0
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 260,
+       "x2": 400,
+       "y2": 260,
+       "color": "ink",
+       "w": 4
+      },
+      {
+       "op": "group",
+       "do": [
+        {
+         "op": "repeat",
+         "n": 5,
+         "var": "i",
+         "do": [
+          {
+           "op": "line",
+           "x1": "-120 + i * 60",
+           "y1": 268,
+           "x2": "-120 + i * 60",
+           "y2": 300,
+           "color": "#5AA9D6",
+           "w": 3,
+           "a": 0.8
+          }
+         ]
+        },
+        {
+         "op": "repeat",
+         "n": 5,
+         "var": "i",
+         "do": [
+          {
+           "op": "text",
+           "s": "-",
+           "x": "-120 + i * 60",
+           "y": 290,
+           "size": 16,
+           "color": "#2C6E9B"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 300,
+       "r": 10,
+       "fill": "#5AA9D6",
+       "stroke": "ink",
+       "sw": 2.5
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 214,
+       "rot": 0,
+       "scale": 2.0,
+       "a": "ramp(u, 0.1, 0.25)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -10,
+         "y": -96,
+         "w": 20,
+         "h": 86,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3.5
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -4,
+         "r": 13,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3.5
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 154,
+       "y": 268,
+       "r": 4,
+       "fill": "electric",
+       "stroke": "ink",
+       "sw": 1.5,
+       "a": "0.5 + 0.5 * wave(e, 1.4, 0)"
+      },
+      {
+       "op": "circle",
+       "x": 182,
+       "y": 268,
+       "r": 4,
+       "fill": "electric",
+       "stroke": "ink",
+       "sw": 1.5,
+       "a": "0.5 + 0.5 * wave(e, 1.4, 1)"
+      },
+      {
+       "op": "circle",
+       "x": 214,
+       "y": 268,
+       "r": 4,
+       "fill": "electric",
+       "stroke": "ink",
+       "sw": 1.5,
+       "a": "0.5 + 0.5 * wave(e, 1.4, 2)"
+      },
+      {
+       "op": "circle",
+       "x": 244,
+       "y": 268,
+       "r": 4,
+       "fill": "electric",
+       "stroke": "ink",
+       "sw": 1.5,
+       "a": "0.5 + 0.5 * wave(e, 1.4, 3)"
+      },
+      {
+       "op": "text",
+       "s": "your electricity",
+       "x": 78,
+       "y": 120,
+       "size": 15,
+       "color": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "line",
+       "x1": 98,
+       "y1": 138,
+       "x2": 154.49,
+       "y2": 203.9,
+       "color": "ink",
+       "w": 3,
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        149.75,
+        204.39,
+        158,
+        208,
+        155.7,
+        199.3
+       ],
+       "closed": true,
+       "fill": "ink",
+       "stroke": "ink",
+       "sw": 2,
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "a tiny dip in the wires",
+       "x": 200,
+       "y": 366,
+       "size": 17,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.72)"
+      }
+     ],
+     "audio": "audio/touchscreen/change.mp3",
+     "audioSeconds": 16.9
+    },
+    {
+     "id": "chip",
+     "title": "The chip reads the spot",
+     "tint": "#EAF2FF",
+     "narration": "A tiny chip at the edge of the screen checks every crossing, thousands of times a second. The moment one changes, it sends two numbers to the phone: this far across, this far up. The phone turns those numbers into a tap, a swipe or a letter.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF2FF"
+         ],
+         [
+          1.0,
+          "#D5E8FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "rect",
+       "x": 150,
+       "y": 110,
+       "w": 130,
+       "h": 90,
+       "fill": "#3D405B",
+       "stroke": "ink",
+       "r": 10,
+       "sw": 4
+      },
+      {
+       "op": "text",
+       "s": "chip",
+       "x": 215,
+       "y": 162,
+       "size": 20,
+       "color": "white"
+      },
+      {
+       "op": "repeat",
+       "n": 5,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "162 + i * 24",
+         "y1": 110,
+         "x2": "162 + i * 24",
+         "y2": 86,
+         "color": "metal",
+         "w": 4
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 5,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "162 + i * 24",
+         "y1": 200,
+         "x2": "162 + i * 24",
+         "y2": 224,
+         "color": "metal",
+         "w": 4
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 150,
+       "r": 6,
+       "fill": "coral",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "line",
+       "x1": 80,
+       "y1": 150,
+       "x2": 138.07,
+       "y2": 140.93,
+       "color": "coral",
+       "w": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        135.77,
+        145.69,
+        144,
+        140,
+        134.43,
+        137.09
+       ],
+       "closed": true,
+       "fill": "coral",
+       "stroke": "coral",
+       "sw": 2
+      },
+      {
+       "op": "text",
+       "s": "row 7",
+       "x": 22,
+       "y": 128,
+       "size": 13,
+       "color": "ink",
+       "align": "left"
+      },
+      {
+       "op": "circle",
+       "x": 70,
+       "y": 250,
+       "r": 6,
+       "fill": "leaf",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "line",
+       "x1": 80,
+       "y1": 250,
+       "x2": 138.22,
+       "y2": 233.62,
+       "color": "leaf",
+       "w": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        136.51,
+        238.63,
+        144,
+        232,
+        134.15,
+        230.25
+       ],
+       "closed": true,
+       "fill": "leaf",
+       "stroke": "leaf",
+       "sw": 2
+      },
+      {
+       "op": "text",
+       "s": "column 4",
+       "x": 22,
+       "y": 274,
+       "size": 13,
+       "color": "ink",
+       "align": "left"
+      },
+      {
+       "op": "text",
+       "s": "two numbers: across and up",
+       "x": 200,
+       "y": 320,
+       "size": 17,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "x = 4    y = 7",
+       "x": 200,
+       "y": 358,
+       "size": 20,
+       "color": "ink",
+       "a": "ramp(u, 0.5, 0.7)"
+      }
+     ],
+     "audio": "audio/touchscreen/chip.mp3",
+     "audioSeconds": 15.88
+    },
+    {
+     "id": "gloves",
+     "title": "Why gloves do not work",
+     "tint": "#EAF2FF",
+     "narration": "That is also why a touchscreen ignores a pencil, or your finger in thick winter gloves. They do not carry your electricity. Your skin does. So the next time you tap, remember: you are not pressing a button, you are completing a tiny electric conversation.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF2FF"
+         ],
+         [
+          1.0,
+          "#CFE3FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "group",
+       "x": 140,
+       "y": 180,
+       "scale": 0.82,
+       "do": [
+        {
+         "op": "rect",
+         "x": -108,
+         "y": -168,
+         "w": 216,
+         "h": 336,
+         "fill": "#2B2D42",
+         "stroke": "ink",
+         "r": 28,
+         "sw": 4
+        },
+        {
+         "op": "rect",
+         "x": -96,
+         "y": -148,
+         "w": 192,
+         "h": 288,
+         "fill": "#DDF2FF",
+         "r": 12
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 158,
+         "r": 8,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 112,
+       "y": 196,
+       "a": "ramp(u, 0.15, 0.3)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -18,
+         "y": -34,
+         "w": 36,
+         "h": 64,
+         "fill": "#9AA5B1",
+         "stroke": "ink",
+         "r": 16,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": -24,
+         "y": 6,
+         "r": 13,
+         "fill": "#9AA5B1",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "line",
+         "x1": -12,
+         "y1": -22,
+         "x2": 12,
+         "y2": -22,
+         "color": "#7B8794",
+         "w": 2,
+         "a": 0.8
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "glove",
+       "x": 100,
+       "y": 260,
+       "size": 13,
+       "color": "ink",
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "group",
+       "x": 182,
+       "y": 168,
+       "rot": 0.22,
+       "a": "ramp(u, 0.4, 0.55)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -7,
+         "y": -64,
+         "w": 14,
+         "h": 74,
+         "fill": "#E8C77E",
+         "stroke": "ink",
+         "r": 7,
+         "sw": 3
+        },
+        {
+         "op": "poly",
+         "pts": [
+          -7,
+          10,
+          7,
+          10,
+          0,
+          26
+         ],
+         "closed": true,
+         "fill": "#3D405B",
+         "stroke": "ink",
+         "sw": 2
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "pencil",
+       "x": 232,
+       "y": 118,
+       "size": 13,
+       "color": "ink",
+       "a": "ramp(u, 0.45, 0.6)"
+      },
+      {
+       "op": "text",
+       "s": "no tingle",
+       "x": 176,
+       "y": 62,
+       "size": 15,
+       "color": "coral",
+       "a": "ramp(u, 0.3, 0.5)"
+      },
+      {
+       "op": "text",
+       "s": "your skin carries the electricity",
+       "x": 200,
+       "y": 372,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.6, 0.8)"
+      }
+     ],
+     "audio": "audio/touchscreen/gloves.mp3",
+     "audioSeconds": 16.5
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What does a touchscreen feel when your finger touches it?",
+     "options": [
+      "A tiny change in electricity",
+      "How hard you press",
+      "Your body heat"
+     ],
+     "answer": 0,
+     "explanation": "The wires notice a small dip in electricity caused by your finger."
+    },
+    {
+     "question": "Why does a pencil not work on a touchscreen?",
+     "options": [
+      "It is too thin",
+      "It does not carry your electricity",
+      "It is too cold"
+     ],
+     "answer": 1,
+     "explanation": "The screen needs your body's electricity to notice a touch."
+    },
+    {
+     "question": "What does the chip send to the phone?",
+     "options": [
+      "A photo",
+      "Two numbers for the spot",
+      "A sound"
+     ],
+     "answer": 1,
+     "explanation": "One number for across and one for up tells the phone exactly where you touched."
+    }
+   ]
+  },
+  {
+   "id": "soap",
+   "title": "How does soap wash dirt away?",
+   "subtitle": "A tadpole that hugs grease",
+   "category": "Everyday",
+   "emoji": "🧼",
+   "accent": "#4CC9F0",
+   "available": true,
+   "minRenderer": 2,
+   "scenes": [
+    {
+     "id": "dirty",
+     "title": "Water alone is not enough",
+     "tint": "#EAF7FF",
+     "narration": "Wash your hands with water alone and something odd happens. The water rolls over the dirt instead of grabbing it, because oil and water refuse to mix. Your skin makes oil, and dirt sticks to that oil. Water slides past both of them. Soap is the clever thing that introduces them.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF7FF"
+         ],
+         [
+          1.0,
+          "#CDEBFF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "group",
+       "x": 232,
+       "y": 250,
+       "scale": 1.15,
+       "a": 0.98,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          42.0,
+          0.0,
+          40.95,
+          10.68,
+          37.84,
+          20.83,
+          32.84,
+          29.93,
+          26.19,
+          37.53,
+          18.22,
+          43.25,
+          9.35,
+          46.8,
+          0.0,
+          48.0,
+          -9.35,
+          46.8,
+          -18.22,
+          43.25,
+          -26.19,
+          37.53,
+          -32.84,
+          29.93,
+          -37.84,
+          20.83,
+          -40.95,
+          10.68,
+          -42.0,
+          0.0,
+          -40.95,
+          -10.68,
+          -37.84,
+          -20.83,
+          -32.84,
+          -29.93,
+          -26.19,
+          -37.53,
+          -18.22,
+          -43.25,
+          -9.35,
+          -46.8,
+          -0.0,
+          -48.0,
+          9.35,
+          -46.8,
+          18.22,
+          -43.25,
+          26.19,
+          -37.53,
+          32.84,
+          -29.93,
+          37.84,
+          -20.83,
+          40.95,
+          -10.68
+         ],
+         "closed": true,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3.5
+        },
+        {
+         "op": "rect",
+         "x": -36,
+         "y": -70,
+         "w": 17,
+         "h": 48,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 8,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -14,
+         "y": -82,
+         "w": 17,
+         "h": 60,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 8,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 8,
+         "y": -84,
+         "w": 17,
+         "h": 62,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 8,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 30,
+         "y": -74,
+         "w": 17,
+         "h": 52,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 8,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -58,
+         "y": -30,
+         "w": 19,
+         "h": 40,
+         "fill": "skin",
+         "stroke": "ink",
+         "r": 9,
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": 6,
+         "r": 22,
+         "from": 0.35,
+         "to": 2.79,
+         "stroke": "#E0A98A",
+         "sw": 2.5
+        }
+       ]
+      },
+      {
+       "op": "circle",
+       "x": 214,
+       "y": 226,
+       "r": 8,
+       "fill": "#8B5E3C",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "circle",
+       "x": 246,
+       "y": 244,
+       "r": 8,
+       "fill": "#8B5E3C",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "circle",
+       "x": 228,
+       "y": 268,
+       "r": 8,
+       "fill": "#8B5E3C",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "circle",
+       "x": 258,
+       "y": 276,
+       "r": 8,
+       "fill": "#8B5E3C",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 250,
+       "r": 8,
+       "fill": "#8B5E3C",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "text",
+       "s": "grease",
+       "x": 306,
+       "y": 300,
+       "size": 13,
+       "color": "#5C4033",
+       "a": "ramp(u, 0.15, 0.3)"
+      },
+      {
+       "op": "group",
+       "x": 96,
+       "y": "140 + (e * 46 + 0) % 90",
+       "scale": 0.85,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 136,
+       "y": "140 + (e * 46 + 34) % 90",
+       "scale": 0.85,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "water",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "line",
+       "x1": 120,
+       "y1": 196,
+       "x2": 167.48,
+       "y2": 227.04,
+       "color": "#7FB6D9",
+       "w": 3,
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        163.07,
+        228.84,
+        172,
+        230,
+        167.36,
+        222.29
+       ],
+       "closed": true,
+       "fill": "#7FB6D9",
+       "stroke": "#7FB6D9",
+       "sw": 2,
+       "a": "ramp(u, 0.25, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "bounce!",
+       "x": 108,
+       "y": 178,
+       "size": 13,
+       "color": "#2C6E9B",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "water slides right past the grease",
+       "x": 200,
+       "y": 372,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.65)"
+      }
+     ],
+     "audio": "audio/soap/dirty.mp3",
+     "audioSeconds": 19.25
+    },
+    {
+     "id": "twoparts",
+     "title": "A tadpole with two ends",
+     "tint": "#FFF7E8",
+     "narration": "A soap molecule is tiny, and it has two ends. One end loves water. The other end loves oil and grease. Imagine a tadpole with a water-loving head and an oil-loving tail. When you rub soap on wet hands, millions of these tadpoles swim towards the dirt.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#FFF7E8"
+         ],
+         [
+          1.0,
+          "#FFE8C7"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "group",
+       "x": 210,
+       "y": 170,
+       "a": "ramp(u, 0.1, 0.3)",
+       "do": [
+        {
+         "op": "circle",
+         "x": -90,
+         "y": 0,
+         "r": 26,
+         "fill": "#4CC9F0",
+         "stroke": "ink",
+         "sw": 4
+        },
+        {
+         "op": "text",
+         "s": "water",
+         "x": -90,
+         "y": 0,
+         "size": 12,
+         "color": "ink"
+        },
+        {
+         "op": "path",
+         "d": [
+          "M",
+          -62,
+          6,
+          "C",
+          -56.67,
+          2.67,
+          -40.33,
+          -14.67,
+          -30,
+          -14,
+          "C",
+          -19.67,
+          -13.33,
+          -10.0,
+          9.67,
+          0,
+          10,
+          "C",
+          10.0,
+          10.33,
+          20.0,
+          -11.67,
+          30,
+          -12,
+          "C",
+          40.0,
+          -12.33,
+          49.67,
+          7.0,
+          60,
+          8,
+          "C",
+          70.33,
+          9.0,
+          86.67,
+          -3.67,
+          92,
+          -6
+         ],
+         "stroke": "#F4A261",
+         "sw": 10
+        },
+        {
+         "op": "circle",
+         "x": 100,
+         "y": -8,
+         "r": 14,
+         "fill": "#8B5E3C",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "head loves water",
+       "x": 210,
+       "y": 96,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.45)"
+      },
+      {
+       "op": "text",
+       "s": "tail loves oil",
+       "x": 210,
+       "y": 268,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.6)"
+      },
+      {
+       "op": "text",
+       "s": "one tiny soap molecule",
+       "x": 200,
+       "y": 330,
+       "size": 15,
+       "color": "ink",
+       "a": "ramp(u, 0.6, 0.75)"
+      },
+      {
+       "op": "text",
+       "s": "millions of these are in one drop",
+       "x": 200,
+       "y": 360,
+       "size": 13,
+       "color": "#6B7280",
+       "a": "ramp(u, 0.7, 0.85)"
+      }
+     ],
+     "audio": "audio/soap/twoparts.mp3",
+     "audioSeconds": 17.48
+    },
+    {
+     "id": "ball",
+     "title": "They wrap up the grease",
+     "tint": "#EAF7FF",
+     "narration": "The tails dive into the grease and hold on. The heads stay out in the water. Together they wrap the grease into a tiny ball, with the dirt trapped inside and the water-friendly heads on the outside. Now the water is happy to carry it.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF7FF"
+         ],
+         [
+          1.0,
+          "#CDEBFF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 190,
+       "r": 36,
+       "fill": "#8B5E3C",
+       "stroke": "ink",
+       "sw": 3.5
+      },
+      {
+       "op": "text",
+       "s": "grease",
+       "x": 200,
+       "y": 192,
+       "size": 13,
+       "color": "white"
+      },
+      {
+       "op": "repeat",
+       "n": 10,
+       "var": "i",
+       "do": [
+        {
+         "op": "group",
+         "x": "200 + cos(i * 0.6283) * 66",
+         "y": "190 + sin(i * 0.6283) * 66",
+         "rot": "i * 0.6283 + 1.5708",
+         "a": 1,
+         "do": [
+          {
+           "op": "circle",
+           "x": 0,
+           "y": 0,
+           "r": 9,
+           "fill": "#4CC9F0",
+           "stroke": "ink",
+           "sw": 2
+          },
+          {
+           "op": "line",
+           "x1": 0,
+           "y1": 8,
+           "x2": 0,
+           "y2": 32,
+           "color": "#F4A261",
+           "w": 5
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        278.0,
+        190.0,
+        "C",
+        278.0,
+        195.79,
+        277.33,
+        201.72,
+        276.04,
+        207.36,
+        "C",
+        274.76,
+        213.0,
+        272.79,
+        218.63,
+        270.28,
+        223.84,
+        "C",
+        267.77,
+        229.06,
+        264.59,
+        234.11,
+        260.98,
+        238.63,
+        "C",
+        257.38,
+        243.16,
+        253.16,
+        247.38,
+        248.63,
+        250.98,
+        "C",
+        244.11,
+        254.59,
+        239.06,
+        257.77,
+        233.84,
+        260.28,
+        "C",
+        228.63,
+        262.79,
+        223.0,
+        264.76,
+        217.36,
+        266.04,
+        "C",
+        211.72,
+        267.33,
+        205.79,
+        268.0,
+        200.0,
+        268.0,
+        "C",
+        194.21,
+        268.0,
+        188.28,
+        267.33,
+        182.64,
+        266.04,
+        "C",
+        177.0,
+        264.76,
+        171.37,
+        262.79,
+        166.16,
+        260.28,
+        "C",
+        160.94,
+        257.77,
+        155.89,
+        254.59,
+        151.37,
+        250.98,
+        "C",
+        146.84,
+        247.38,
+        142.62,
+        243.16,
+        139.02,
+        238.63,
+        "C",
+        135.41,
+        234.11,
+        132.23,
+        229.06,
+        129.72,
+        223.84,
+        "C",
+        127.21,
+        218.63,
+        125.24,
+        213.0,
+        123.96,
+        207.36,
+        "C",
+        122.67,
+        201.72,
+        122.0,
+        195.79,
+        122.0,
+        190.0,
+        "C",
+        122.0,
+        184.21,
+        122.67,
+        178.28,
+        123.96,
+        172.64,
+        "C",
+        125.24,
+        167.0,
+        127.21,
+        161.37,
+        129.72,
+        156.16,
+        "C",
+        132.23,
+        150.94,
+        135.41,
+        145.89,
+        139.02,
+        141.37,
+        "C",
+        142.62,
+        136.84,
+        146.84,
+        132.62,
+        151.37,
+        129.02,
+        "C",
+        155.89,
+        125.41,
+        160.94,
+        122.23,
+        166.16,
+        119.72,
+        "C",
+        171.37,
+        117.21,
+        177.0,
+        115.24,
+        182.64,
+        113.96,
+        "C",
+        188.28,
+        112.67,
+        194.21,
+        112.0,
+        200.0,
+        112.0,
+        "C",
+        205.79,
+        112.0,
+        211.72,
+        112.67,
+        217.36,
+        113.96,
+        "C",
+        223.0,
+        115.24,
+        228.63,
+        117.21,
+        233.84,
+        119.72,
+        "C",
+        239.06,
+        122.23,
+        244.11,
+        125.41,
+        248.63,
+        129.02,
+        "C",
+        253.16,
+        132.62,
+        257.38,
+        136.84,
+        260.98,
+        141.37,
+        "C",
+        264.59,
+        145.89,
+        267.77,
+        150.94,
+        270.28,
+        156.16,
+        "C",
+        272.79,
+        161.37,
+        274.76,
+        167.0,
+        276.04,
+        172.64,
+        "C",
+        277.33,
+        178.28,
+        278.0,
+        184.21,
+        278.0,
+        190.0,
+        "Z"
+       ],
+       "stroke": "#7FB6D9",
+       "sw": 2,
+       "a": 0.7,
+       "dash": [
+        5,
+        6
+       ]
+      },
+      {
+       "op": "text",
+       "s": "a ball with clean water outside",
+       "x": 200,
+       "y": 344,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.68)"
+      }
+     ],
+     "audio": "audio/soap/ball.mp3",
+     "audioSeconds": 15.2
+    },
+    {
+     "id": "rinse",
+     "title": "Water carries it away",
+     "tint": "#EAF7FF",
+     "narration": "When you rinse, the water grabs those little balls and washes them down the drain. The grease goes with them, even though water and grease still do not like each other. The soap did the introductions.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF7FF"
+         ],
+         [
+          1.0,
+          "#BFE3FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "rect",
+       "x": 44,
+       "y": 42,
+       "w": 58,
+       "h": 16,
+       "fill": "metal",
+       "stroke": "ink",
+       "r": 6,
+       "sw": 3
+      },
+      {
+       "op": "rect",
+       "x": 88,
+       "y": 42,
+       "w": 18,
+       "h": 46,
+       "fill": "metal",
+       "stroke": "ink",
+       "r": 6,
+       "sw": 3
+      },
+      {
+       "op": "repeat",
+       "n": 3,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": 97,
+         "y1": 92,
+         "x2": 97,
+         "y2": 108,
+         "color": "#7FD0F0",
+         "w": 3,
+         "a": 0.85
+        }
+       ]
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        -10,
+        120,
+        "C",
+        120,
+        96,
+        260,
+        150,
+        410,
+        110,
+        "L",
+        410,
+        400,
+        "L",
+        -10,
+        400,
+        "Z"
+       ],
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 110,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#9BD8F5"
+         ],
+         [
+          1.0,
+          "#2F7BC8"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "group",
+       "x": "90 + 0 + wave(e, 0.4, 0) * 8",
+       "y": "210",
+       "a": "ramp(u, 0.1, 0.3)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 17,
+         "fill": "#4CC9F0",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 7,
+         "fill": "#8B5E3C"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "90 + 78 + wave(e, 0.4, 1) * 8",
+       "y": "244",
+       "a": "ramp(u, 0.18, 0.38)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 17,
+         "fill": "#4CC9F0",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 7,
+         "fill": "#8B5E3C"
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": "90 + 156 + wave(e, 0.4, 2) * 8",
+       "y": "278",
+       "a": "ramp(u, 0.26, 0.45999999999999996)",
+       "do": [
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 17,
+         "fill": "#4CC9F0",
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": 0,
+         "r": 7,
+         "fill": "#8B5E3C"
+        }
+       ]
+      },
+      {
+       "op": "line",
+       "x1": 120,
+       "y1": 160,
+       "x2": 155.47,
+       "y2": 183.06,
+       "color": "white",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        151.07,
+        184.87,
+        160,
+        186,
+        155.34,
+        178.3
+       ],
+       "closed": true,
+       "fill": "white",
+       "stroke": "white",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "line",
+       "x1": 190,
+       "y1": 160,
+       "x2": 225.47,
+       "y2": 183.06,
+       "color": "white",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        221.07,
+        184.87,
+        230,
+        186,
+        225.34,
+        178.3
+       ],
+       "closed": true,
+       "fill": "white",
+       "stroke": "white",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "text",
+       "s": "rinse: the grease rides away",
+       "x": 200,
+       "y": 350,
+       "size": 17,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.65)"
+      }
+     ],
+     "audio": "audio/soap/rinse.mp3",
+     "audioSeconds": 12.57
+    },
+    {
+     "id": "bubbles",
+     "title": "Bubbles are a bonus",
+     "tint": "#E8F6FF",
+     "narration": "Soap also traps air, which is why you get bubbles — thin skins of soap with air inside. But the real job is smaller than a bubble: it is millions of tiny tadpoles, carrying dirt away.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#E8F6FF"
+         ],
+         [
+          1.0,
+          "#CFE9FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "circle",
+       "x": 130,
+       "y": 150,
+       "r": 44,
+       "fill": "white",
+       "stroke": "#8ED6F2",
+       "sw": 3,
+       "a": 0.95
+      },
+      {
+       "op": "circle",
+       "x": 250,
+       "y": 120,
+       "r": 32,
+       "fill": "white",
+       "stroke": "#8ED6F2",
+       "sw": 3,
+       "a": 0.95
+      },
+      {
+       "op": "circle",
+       "x": 310,
+       "y": 210,
+       "r": 24,
+       "fill": "white",
+       "stroke": "#8ED6F2",
+       "sw": 3,
+       "a": 0.95
+      },
+      {
+       "op": "circle",
+       "x": 190,
+       "y": 250,
+       "r": 36,
+       "fill": "white",
+       "stroke": "#8ED6F2",
+       "sw": 3,
+       "a": 0.95
+      },
+      {
+       "op": "circle",
+       "x": 90,
+       "y": 268,
+       "r": 20,
+       "fill": "white",
+       "stroke": "#8ED6F2",
+       "sw": 3,
+       "a": 0.95
+      },
+      {
+       "op": "sparkle",
+       "x": 114.6,
+       "y": 132.4,
+       "r": 7.04,
+       "color": "white",
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "sparkle",
+       "x": 238.8,
+       "y": 107.2,
+       "r": 5.12,
+       "color": "white",
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "sparkle",
+       "x": 177.4,
+       "y": 235.6,
+       "r": 5.76,
+       "color": "white",
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "soap also traps air",
+       "x": 200,
+       "y": 340,
+       "size": 18,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.5)"
+      },
+      {
+       "op": "text",
+       "s": "but the real work is too small to see",
+       "x": 200,
+       "y": 372,
+       "size": 13,
+       "color": "ink",
+       "a": "ramp(u, 0.55, 0.75)"
+      }
+     ],
+     "audio": "audio/soap/bubbles.mp3",
+     "audioSeconds": 12.85
+    }
+   ],
+   "quiz": [
+    {
+     "question": "Why does water alone not clean greasy hands?",
+     "options": [
+      "Water and oil do not mix",
+      "Water is too cold",
+      "Water is too heavy"
+     ],
+     "answer": 0,
+     "explanation": "Oil and water push each other away, so the water cannot grab the grease."
+    },
+    {
+     "question": "What are the two ends of a soap molecule like?",
+     "options": [
+      "Two water-loving heads",
+      "A water-loving head and an oil-loving tail",
+      "Two oil-loving tails"
+     ],
+     "answer": 1,
+     "explanation": "One end holds water, the other holds grease — that is what joins them."
+    },
+    {
+     "question": "What happens when you rinse?",
+     "options": [
+      "The grease stays on your hands",
+      "Water carries the soap balls away",
+      "The soap turns into air"
+     ],
+     "answer": 1,
+     "explanation": "The water-friendly outsides let water carry the grease down the drain."
+    }
+   ]
+  },
+  {
+   "id": "popcorn",
+   "title": "Why does popcorn pop?",
+   "subtitle": "A pressure cooker the size of a seed",
+   "category": "Kitchen science",
+   "emoji": "🍿",
+   "accent": "#F2C14E",
+   "available": true,
+   "minRenderer": 2,
+   "scenes": [
+    {
+     "id": "kernel",
+     "title": "Water in a hard shell",
+     "tint": "#FFF6E0",
+     "narration": "A popcorn kernel looks like a hard little seed. Inside it there is a tiny plant, and around the plant there is a drop of water. The outside is a shell so tough that the water cannot get out, even when it gets hot.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#FFF6E0"
+         ],
+         [
+          1.0,
+          "#FFE2B8"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "poly",
+       "pts": [
+        278.0,
+        200.0,
+        276.04,
+        220.47,
+        270.28,
+        239.92,
+        260.98,
+        257.36,
+        248.63,
+        271.93,
+        233.84,
+        282.89,
+        217.36,
+        289.69,
+        200.0,
+        292.0,
+        182.64,
+        289.69,
+        166.16,
+        282.89,
+        151.37,
+        271.93,
+        139.02,
+        257.36,
+        129.72,
+        239.92,
+        123.96,
+        220.47,
+        122.0,
+        200.0,
+        123.96,
+        179.53,
+        129.72,
+        160.08,
+        139.02,
+        142.64,
+        151.37,
+        128.07,
+        166.16,
+        117.11,
+        182.64,
+        110.31,
+        200.0,
+        108.0,
+        217.36,
+        110.31,
+        233.84,
+        117.11,
+        248.63,
+        128.07,
+        260.98,
+        142.64,
+        270.28,
+        160.08,
+        276.04,
+        179.53
+       ],
+       "closed": true,
+       "fill": "#F2C14E",
+       "stroke": "ink",
+       "sw": 5
+      },
+      {
+       "op": "poly",
+       "pts": [
+        254.0,
+        200.0,
+        252.65,
+        214.69,
+        248.65,
+        228.64,
+        242.22,
+        241.15,
+        233.67,
+        251.6,
+        223.43,
+        259.46,
+        212.02,
+        264.35,
+        200.0,
+        266.0,
+        187.98,
+        264.35,
+        176.57,
+        259.46,
+        166.33,
+        251.6,
+        157.78,
+        241.15,
+        151.35,
+        228.64,
+        147.35,
+        214.69,
+        146.0,
+        200.0,
+        147.35,
+        185.31,
+        151.35,
+        171.36,
+        157.78,
+        158.85,
+        166.33,
+        148.4,
+        176.57,
+        140.54,
+        187.98,
+        135.65,
+        200.0,
+        134.0,
+        212.02,
+        135.65,
+        223.43,
+        140.54,
+        233.67,
+        148.4,
+        242.22,
+        158.85,
+        248.65,
+        171.36,
+        252.65,
+        185.31
+       ],
+       "closed": true,
+       "fill": "#FFE9A8",
+       "stroke": "#C9971C",
+       "sw": 2
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 190,
+       "scale": 1.3,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "#7FD0F0",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "water",
+       "x": 200,
+       "y": 214,
+       "size": 12,
+       "color": "ink"
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 120,
+       "x2": 168,
+       "y2": 138,
+       "color": "#C9971C",
+       "w": 3,
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 250,
+       "y1": 280,
+       "x2": 232,
+       "y2": 262,
+       "color": "#C9971C",
+       "w": 3,
+       "a": 0.7
+      },
+      {
+       "op": "text",
+       "s": "a tough shell keeps it in",
+       "x": 200,
+       "y": 350,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.35, 0.55)"
+      }
+     ],
+     "audio": "audio/popcorn/kernel.mp3",
+     "audioSeconds": 14.22
+    },
+    {
+     "id": "heat",
+     "title": "The steam pushes",
+     "tint": "#FFE8D6",
+     "narration": "Put the kernel in a hot pan. The water inside turns into steam, and steam takes up much more room than water. The steam pushes and pushes against the shell. The shell holds on, and the pressure builds like a tiny balloon inside a suit of armour.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#FFE8D6"
+         ],
+         [
+          1.0,
+          "#FFC9A8"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "poly",
+       "pts": [
+        0.0,
+        "330 + 8 * sin(0.0 - e * 7.54)",
+        14.3,
+        "330 + 8 * sin(0.898 - e * 7.54)",
+        28.6,
+        "330 + 8 * sin(1.795 - e * 7.54)",
+        42.9,
+        "330 + 8 * sin(2.693 - e * 7.54)",
+        57.1,
+        "330 + 8 * sin(3.59 - e * 7.54)",
+        71.4,
+        "330 + 8 * sin(4.488 - e * 7.54)",
+        85.7,
+        "330 + 8 * sin(5.386 - e * 7.54)",
+        100.0,
+        "330 + 8 * sin(6.283 - e * 7.54)",
+        114.3,
+        "330 + 8 * sin(7.181 - e * 7.54)",
+        128.6,
+        "330 + 8 * sin(8.078 - e * 7.54)",
+        142.9,
+        "330 + 8 * sin(8.976 - e * 7.54)",
+        157.1,
+        "330 + 8 * sin(9.874 - e * 7.54)",
+        171.4,
+        "330 + 8 * sin(10.771 - e * 7.54)",
+        185.7,
+        "330 + 8 * sin(11.669 - e * 7.54)",
+        200.0,
+        "330 + 8 * sin(12.566 - e * 7.54)",
+        214.3,
+        "330 + 8 * sin(13.464 - e * 7.54)",
+        228.6,
+        "330 + 8 * sin(14.362 - e * 7.54)",
+        242.9,
+        "330 + 8 * sin(15.259 - e * 7.54)",
+        257.1,
+        "330 + 8 * sin(16.157 - e * 7.54)",
+        271.4,
+        "330 + 8 * sin(17.054 - e * 7.54)",
+        285.7,
+        "330 + 8 * sin(17.952 - e * 7.54)",
+        300.0,
+        "330 + 8 * sin(18.85 - e * 7.54)",
+        314.3,
+        "330 + 8 * sin(19.747 - e * 7.54)",
+        328.6,
+        "330 + 8 * sin(20.645 - e * 7.54)",
+        342.9,
+        "330 + 8 * sin(21.542 - e * 7.54)",
+        357.1,
+        "330 + 8 * sin(22.44 - e * 7.54)",
+        371.4,
+        "330 + 8 * sin(23.338 - e * 7.54)",
+        385.7,
+        "330 + 8 * sin(24.235 - e * 7.54)",
+        400.0,
+        "330 + 8 * sin(25.133 - e * 7.54)"
+       ],
+       "stroke": "#E76F51",
+       "sw": 5,
+       "a": 0.8
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 330,
+       "r": 40,
+       "fill": "#E76F51",
+       "stroke": "ink",
+       "sw": 3,
+       "a": 0.25
+      },
+      {
+       "op": "particles",
+       "x": 200,
+       "y": 300,
+       "n": 14,
+       "life": 1.6,
+       "angle": -1.57,
+       "spread": 0.9,
+       "speed": 46,
+       "gravity": -18,
+       "size": 6,
+       "sizeEnd": 13,
+       "color": "#DCEBF7",
+       "a": 0.9,
+       "seed": 4
+      },
+      {
+       "op": "group",
+       "x": 200,
+       "y": 210,
+       "a": 0.95,
+       "sx": "1 + 0.02 * sin(e * 3)",
+       "sy": "1 + 0.03 * sin(e * 2.4)",
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          78.0,
+          0.0,
+          76.04,
+          20.47,
+          70.28,
+          39.92,
+          60.98,
+          57.36,
+          48.63,
+          71.93,
+          33.84,
+          82.89,
+          17.36,
+          89.69,
+          0.0,
+          92.0,
+          -17.36,
+          89.69,
+          -33.84,
+          82.89,
+          -48.63,
+          71.93,
+          -60.98,
+          57.36,
+          -70.28,
+          39.92,
+          -76.04,
+          20.47,
+          -78.0,
+          0.0,
+          -76.04,
+          -20.47,
+          -70.28,
+          -39.92,
+          -60.98,
+          -57.36,
+          -48.63,
+          -71.93,
+          -33.84,
+          -82.89,
+          -17.36,
+          -89.69,
+          -0.0,
+          -92.0,
+          17.36,
+          -89.69,
+          33.84,
+          -82.89,
+          48.63,
+          -71.93,
+          60.98,
+          -57.36,
+          70.28,
+          -39.92,
+          76.04,
+          -20.47
+         ],
+         "closed": true,
+         "fill": "#F2C14E",
+         "stroke": "ink",
+         "sw": 5
+        }
+       ]
+      },
+      {
+       "op": "repeat",
+       "n": 6,
+       "var": "i",
+       "do": [
+        {
+         "op": "line",
+         "x1": "200 + cos(i * 1.047) * 34",
+         "y1": "210 + sin(i * 1.047) * 34",
+         "x2": "200 + cos(i * 1.047) * 62",
+         "y2": "210 + sin(i * 1.047) * 62",
+         "color": "#B5452B",
+         "w": 4,
+         "a": "0.35 + 0.35 * wave(e, 1.2, i)"
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "steam",
+       "x": 200,
+       "y": 86,
+       "size": 18,
+       "color": "#B5452B",
+       "a": "ramp(u, 0.3, 0.5)"
+      },
+      {
+       "op": "text",
+       "s": "the steam pushes outward",
+       "x": 200,
+       "y": 366,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.68)"
+      }
+     ],
+     "audio": "audio/popcorn/heat.mp3",
+     "audioSeconds": 16.52
+    },
+    {
+     "id": "burst",
+     "title": "The shell cracks open",
+     "tint": "#FFF9EC",
+     "narration": "Then the shell cracks! The steam escapes all at once, and the soft starch inside puffs out and turns crispy. That is the pop you hear — it is steam breaking free. The white part is the plant's food, cooked in a second.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "radial",
+        "x": 200,
+        "y": 190,
+        "r": 230,
+        "stops": [
+         [
+          0.0,
+          "#FFF9EC"
+         ],
+         [
+          1.0,
+          "#FFD9A8"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        269.08,
+        185.0,
+        "C",
+        266.78,
+        193.76,
+        258.74,
+        199.09,
+        256.57,
+        208.43,
+        "C",
+        254.39,
+        217.77,
+        260.67,
+        233.35,
+        256.05,
+        241.05,
+        "C",
+        251.43,
+        248.75,
+        238.18,
+        250.99,
+        228.84,
+        254.62,
+        "C",
+        219.49,
+        258.24,
+        209.27,
+        263.6,
+        200.0,
+        262.79,
+        "C",
+        190.73,
+        261.97,
+        182.29,
+        253.59,
+        173.19,
+        249.72,
+        "C",
+        164.09,
+        245.86,
+        150.11,
+        246.58,
+        145.41,
+        239.59,
+        "C",
+        140.7,
+        232.61,
+        148.93,
+        216.9,
+        144.96,
+        207.8,
+        "C",
+        140.99,
+        198.7,
+        125.99,
+        194.42,
+        121.58,
+        185.0,
+        "C",
+        117.18,
+        175.58,
+        113.65,
+        159.44,
+        118.54,
+        151.26,
+        "C",
+        123.43,
+        143.08,
+        142.93,
+        143.78,
+        150.92,
+        135.92,
+        "C",
+        158.92,
+        128.07,
+        158.33,
+        107.44,
+        166.51,
+        104.15,
+        "C",
+        174.69,
+        100.86,
+        189.64,
+        114.27,
+        200.0,
+        116.21,
+        "C",
+        210.36,
+        118.15,
+        219.33,
+        113.66,
+        228.67,
+        115.78,
+        "C",
+        238.02,
+        117.89,
+        249.13,
+        122.24,
+        256.07,
+        128.93,
+        "C",
+        263.02,
+        135.61,
+        268.18,
+        146.51,
+        270.35,
+        155.86,
+        "C",
+        272.52,
+        165.21,
+        271.38,
+        176.24,
+        269.08,
+        185.0,
+        "Z"
+       ],
+       "fill": "white",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        196.34,
+        160.0,
+        "C",
+        195.51,
+        165.24,
+        195.08,
+        170.16,
+        192.73,
+        174.28,
+        "C",
+        190.39,
+        178.4,
+        186.39,
+        180.88,
+        182.27,
+        184.71,
+        "C",
+        178.15,
+        188.54,
+        172.95,
+        196.93,
+        168.0,
+        197.26,
+        "C",
+        163.05,
+        197.59,
+        157.96,
+        189.82,
+        152.58,
+        186.72,
+        "C",
+        147.19,
+        183.61,
+        138.34,
+        183.11,
+        135.68,
+        178.66,
+        "C",
+        133.03,
+        174.21,
+        134.6,
+        165.04,
+        136.65,
+        160.0,
+        "C",
+        138.69,
+        154.96,
+        145.41,
+        153.1,
+        147.93,
+        148.41,
+        "C",
+        150.45,
+        143.72,
+        148.41,
+        133.62,
+        151.76,
+        131.87,
+        "C",
+        155.1,
+        130.13,
+        162.92,
+        137.36,
+        168.0,
+        137.94,
+        "C",
+        173.08,
+        138.52,
+        177.27,
+        134.54,
+        182.23,
+        135.35,
+        "C",
+        187.19,
+        136.17,
+        195.39,
+        138.72,
+        197.74,
+        142.83,
+        "C",
+        200.09,
+        146.94,
+        197.17,
+        154.76,
+        196.34,
+        160.0,
+        "Z"
+       ],
+       "fill": "#FFFDF5",
+       "stroke": "#E0C9A6",
+       "sw": 2
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        249.23,
+        205.0,
+        "C",
+        248.39,
+        208.92,
+        245.77,
+        211.91,
+        243.87,
+        215.31,
+        "C",
+        241.96,
+        218.72,
+        240.77,
+        222.0,
+        237.79,
+        225.42,
+        "C",
+        234.81,
+        228.84,
+        229.97,
+        235.76,
+        226.0,
+        235.84,
+        "C",
+        222.03,
+        235.92,
+        216.99,
+        229.27,
+        213.94,
+        225.89,
+        "C",
+        210.89,
+        222.51,
+        210.21,
+        219.05,
+        207.7,
+        215.57,
+        "C",
+        205.19,
+        212.08,
+        200.55,
+        209.49,
+        198.88,
+        205.0,
+        "C",
+        197.2,
+        200.51,
+        195.39,
+        192.54,
+        197.65,
+        188.63,
+        "C",
+        199.92,
+        184.73,
+        207.74,
+        184.4,
+        212.46,
+        181.55,
+        "C",
+        217.19,
+        178.71,
+        221.38,
+        171.77,
+        226.0,
+        171.59,
+        "C",
+        230.62,
+        171.41,
+        236.34,
+        177.11,
+        240.16,
+        180.47,
+        "C",
+        243.97,
+        183.84,
+        247.38,
+        187.7,
+        248.89,
+        191.78,
+        "C",
+        250.4,
+        195.87,
+        250.07,
+        201.08,
+        249.23,
+        205.0,
+        "Z"
+       ],
+       "fill": "#FFFDF5",
+       "stroke": "#E0C9A6",
+       "sw": 2
+      },
+      {
+       "op": "poly",
+       "pts": [
+        120,
+        250,
+        146,
+        226,
+        150,
+        268
+       ],
+       "fill": "#F2C14E",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "poly",
+       "pts": [
+        286,
+        246,
+        262,
+        222,
+        256,
+        266
+       ],
+       "fill": "#F2C14E",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "line",
+       "x1": 158,
+       "y1": 142,
+       "x2": 176,
+       "y2": 168,
+       "color": "ink",
+       "w": 3,
+       "a": 0.55
+      },
+      {
+       "op": "line",
+       "x1": 236,
+       "y1": 232,
+       "x2": 220,
+       "y2": 210,
+       "color": "ink",
+       "w": 3,
+       "a": 0.55
+      },
+      {
+       "op": "particles",
+       "x": 200,
+       "y": 190,
+       "n": 26,
+       "life": 0.9,
+       "angle": -1.57,
+       "spread": 6.28,
+       "speed": 150,
+       "speedVar": 80,
+       "gravity": 40,
+       "size": 5,
+       "sizeEnd": 1,
+       "color": "#FFD9A8",
+       "shape": "spark",
+       "a": "ramp(u, 0.15, 0.3)",
+       "seed": 9,
+       "t": "e - 0.4",
+       "loop": false,
+       "stagger": 0.02
+      },
+      {
+       "op": "text",
+       "s": "POP!",
+       "x": 200,
+       "y": 66,
+       "size": 34,
+       "color": "ink",
+       "pill": "coral",
+       "pillStroke": "ink",
+       "a": "window(u, 0.1, 0.3, 0.06)"
+      },
+      {
+       "op": "text",
+       "s": "starch puffs into a fluffy cloud",
+       "x": 200,
+       "y": 350,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.62)"
+      }
+     ],
+     "audio": "audio/popcorn/burst.mp3",
+     "audioSeconds": 14.35
+    },
+    {
+     "id": "others",
+     "title": "Why rice does not pop",
+     "tint": "#F2F7FF",
+     "narration": "Rice and wheat have shells that are too strong, or not enough water inside, so they do not explode. Popcorn is special: just the right shell and just the right amount of water.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#F2F7FF"
+         ],
+         [
+          1.0,
+          "#D8E6F7"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "poly",
+       "pts": [
+        144.0,
+        210.0,
+        143.15,
+        222.02,
+        140.63,
+        233.43,
+        136.58,
+        243.67,
+        131.2,
+        252.22,
+        124.75,
+        258.65,
+        117.57,
+        262.65,
+        110.0,
+        264.0,
+        102.43,
+        262.65,
+        95.25,
+        258.65,
+        88.8,
+        252.22,
+        83.42,
+        243.67,
+        79.37,
+        233.43,
+        76.85,
+        222.02,
+        76.0,
+        210.0,
+        76.85,
+        197.98,
+        79.37,
+        186.57,
+        83.42,
+        176.33,
+        88.8,
+        167.78,
+        95.25,
+        161.35,
+        102.43,
+        157.35,
+        110.0,
+        156.0,
+        117.57,
+        157.35,
+        124.75,
+        161.35,
+        131.2,
+        167.78,
+        136.58,
+        176.33,
+        140.63,
+        186.57,
+        143.15,
+        197.98
+       ],
+       "closed": true,
+       "fill": "#F4EBD0",
+       "stroke": "ink",
+       "sw": 3.5
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        136.0,
+        210.0,
+        "C",
+        136.0,
+        213.26,
+        135.78,
+        216.61,
+        135.35,
+        219.79,
+        "C",
+        134.92,
+        222.97,
+        134.26,
+        226.15,
+        133.43,
+        229.09,
+        "C",
+        132.59,
+        232.03,
+        131.53,
+        234.88,
+        130.33,
+        237.43,
+        "C",
+        129.13,
+        239.99,
+        127.72,
+        242.37,
+        126.21,
+        244.4,
+        "C",
+        124.7,
+        246.44,
+        123.02,
+        248.23,
+        121.28,
+        249.64,
+        "C",
+        119.54,
+        251.06,
+        117.67,
+        252.17,
+        115.79,
+        252.9,
+        "C",
+        113.91,
+        253.62,
+        111.93,
+        254.0,
+        110.0,
+        254.0,
+        "C",
+        108.07,
+        254.0,
+        106.09,
+        253.62,
+        104.21,
+        252.9,
+        "C",
+        102.33,
+        252.17,
+        100.46,
+        251.06,
+        98.72,
+        249.64,
+        "C",
+        96.98,
+        248.23,
+        95.3,
+        246.44,
+        93.79,
+        244.4,
+        "C",
+        92.28,
+        242.37,
+        90.87,
+        239.99,
+        89.67,
+        237.43,
+        "C",
+        88.47,
+        234.88,
+        87.41,
+        232.03,
+        86.57,
+        229.09,
+        "C",
+        85.74,
+        226.15,
+        85.08,
+        222.97,
+        84.65,
+        219.79,
+        "C",
+        84.22,
+        216.61,
+        84.0,
+        213.26,
+        84.0,
+        210.0,
+        "C",
+        84.0,
+        206.74,
+        84.22,
+        203.39,
+        84.65,
+        200.21,
+        "C",
+        85.08,
+        197.03,
+        85.74,
+        193.85,
+        86.57,
+        190.91,
+        "C",
+        87.41,
+        187.97,
+        88.47,
+        185.12,
+        89.67,
+        182.57,
+        "C",
+        90.87,
+        180.01,
+        92.28,
+        177.63,
+        93.79,
+        175.6,
+        "C",
+        95.3,
+        173.56,
+        96.98,
+        171.77,
+        98.72,
+        170.36,
+        "C",
+        100.46,
+        168.94,
+        102.33,
+        167.83,
+        104.21,
+        167.1,
+        "C",
+        106.09,
+        166.38,
+        108.07,
+        166.0,
+        110.0,
+        166.0,
+        "C",
+        111.93,
+        166.0,
+        113.91,
+        166.38,
+        115.79,
+        167.1,
+        "C",
+        117.67,
+        167.83,
+        119.54,
+        168.94,
+        121.28,
+        170.36,
+        "C",
+        123.02,
+        171.77,
+        124.7,
+        173.56,
+        126.21,
+        175.6,
+        "C",
+        127.72,
+        177.63,
+        129.13,
+        180.01,
+        130.33,
+        182.57,
+        "C",
+        131.53,
+        185.12,
+        132.59,
+        187.97,
+        133.43,
+        190.91,
+        "C",
+        134.26,
+        193.85,
+        134.92,
+        197.03,
+        135.35,
+        200.21,
+        "C",
+        135.78,
+        203.39,
+        136.0,
+        206.74,
+        136.0,
+        210.0,
+        "Z"
+       ],
+       "stroke": "#D9C99F",
+       "sw": 2,
+       "dash": [
+        4,
+        4
+       ]
+      },
+      {
+       "op": "text",
+       "s": "rice",
+       "x": 110,
+       "y": 216,
+       "size": 13,
+       "color": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        230.0,
+        216.0,
+        229.25,
+        227.13,
+        227.03,
+        237.69,
+        223.45,
+        247.17,
+        218.7,
+        255.09,
+        213.02,
+        261.05,
+        206.68,
+        264.75,
+        200.0,
+        266.0,
+        193.32,
+        264.75,
+        186.98,
+        261.05,
+        181.3,
+        255.09,
+        176.55,
+        247.17,
+        172.97,
+        237.69,
+        170.75,
+        227.13,
+        170.0,
+        216.0,
+        170.75,
+        204.87,
+        172.97,
+        194.31,
+        176.55,
+        184.83,
+        181.3,
+        176.91,
+        186.98,
+        170.95,
+        193.32,
+        167.25,
+        200.0,
+        166.0,
+        206.68,
+        167.25,
+        213.02,
+        170.95,
+        218.7,
+        176.91,
+        223.45,
+        184.83,
+        227.03,
+        194.31,
+        229.25,
+        204.87
+       ],
+       "closed": true,
+       "fill": "#E8C77E",
+       "stroke": "ink",
+       "sw": 3.5
+      },
+      {
+       "op": "text",
+       "s": "wheat",
+       "x": 200,
+       "y": 222,
+       "size": 13,
+       "color": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        332.0,
+        208.0,
+        331.0,
+        220.91,
+        328.04,
+        233.17,
+        323.27,
+        244.16,
+        316.94,
+        253.35,
+        309.36,
+        260.26,
+        300.9,
+        264.55,
+        292.0,
+        266.0,
+        283.1,
+        264.55,
+        274.64,
+        260.26,
+        267.06,
+        253.35,
+        260.73,
+        244.16,
+        255.96,
+        233.17,
+        253.0,
+        220.91,
+        252.0,
+        208.0,
+        253.0,
+        195.09,
+        255.96,
+        182.83,
+        260.73,
+        171.84,
+        267.06,
+        162.65,
+        274.64,
+        155.74,
+        283.1,
+        151.45,
+        292.0,
+        150.0,
+        300.9,
+        151.45,
+        309.36,
+        155.74,
+        316.94,
+        162.65,
+        323.27,
+        171.84,
+        328.04,
+        182.83,
+        331.0,
+        195.09
+       ],
+       "closed": true,
+       "fill": "#F2C14E",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "text",
+       "s": "popcorn",
+       "x": 292,
+       "y": 214,
+       "size": 12,
+       "color": "ink"
+      },
+      {
+       "op": "group",
+       "x": 292,
+       "y": 210,
+       "scale": 0.45,
+       "do": [
+        {
+         "op": "poly",
+         "pts": [
+          0,
+          -30,
+          9,
+          -14,
+          12.61,
+          -2.09,
+          13.82,
+          1.75,
+          13.89,
+          5.78,
+          12.81,
+          9.66,
+          10.66,
+          13.07,
+          7.64,
+          15.73,
+          3.99,
+          17.42,
+          -0.0,
+          18.0,
+          -3.99,
+          17.42,
+          -7.64,
+          15.73,
+          -10.66,
+          13.07,
+          -12.81,
+          9.66,
+          -13.89,
+          5.78,
+          -13.82,
+          1.75,
+          -12.61,
+          -2.09,
+          -9,
+          -14
+         ],
+         "closed": true,
+         "fill": "#7FD0F0",
+         "stroke": "ink",
+         "sw": 3
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "too tough",
+       "x": 110,
+       "y": 128,
+       "size": 13,
+       "color": "coral"
+      },
+      {
+       "op": "text",
+       "s": "too tough",
+       "x": 200,
+       "y": 134,
+       "size": 13,
+       "color": "coral"
+      },
+      {
+       "op": "text",
+       "s": "just right",
+       "x": 292,
+       "y": 118,
+       "size": 13,
+       "color": "#2A9D8F"
+      },
+      {
+       "op": "text",
+       "s": "the right shell, the right water",
+       "x": 200,
+       "y": 340,
+       "size": 17,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.3, 0.55)"
+      }
+     ],
+     "audio": "audio/popcorn/others.mp3",
+     "audioSeconds": 11.53
+    },
+    {
+     "id": "sound",
+     "title": "The pop is steam",
+     "tint": "#FFF3DC",
+     "narration": "So a popcorn kernel is a tiny pressure cooker. Heat the water, trap the steam, and wait for the shell to give up. The pop is not the kernel shouting — it is steam saying hello.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "radial",
+        "x": 200,
+        "y": 200,
+        "r": 240,
+        "stops": [
+         [
+          0.0,
+          "#FFF3DC"
+         ],
+         [
+          1.0,
+          "#FFCF8F"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        252.71,
+        210.0,
+        "C",
+        249.75,
+        216.57,
+        238.43,
+        220.35,
+        235.29,
+        226.48,
+        "C",
+        232.15,
+        232.62,
+        235.95,
+        240.1,
+        233.85,
+        246.8,
+        "C",
+        231.76,
+        253.5,
+        228.21,
+        262.46,
+        222.73,
+        266.69,
+        "C",
+        217.25,
+        270.93,
+        208.5,
+        269.89,
+        200.97,
+        272.21,
+        "C",
+        193.44,
+        274.54,
+        184.4,
+        282.31,
+        177.54,
+        280.65,
+        "C",
+        170.69,
+        278.98,
+        165.89,
+        267.18,
+        159.86,
+        262.21,
+        "C",
+        153.82,
+        257.24,
+        146.46,
+        255.84,
+        141.35,
+        250.82,
+        "C",
+        136.25,
+        245.8,
+        131.49,
+        238.92,
+        129.23,
+        232.12,
+        "C",
+        126.97,
+        225.31,
+        127.06,
+        217.11,
+        127.79,
+        210.0,
+        "C",
+        128.52,
+        202.89,
+        130.46,
+        195.53,
+        133.61,
+        189.47,
+        "C",
+        136.75,
+        183.41,
+        142.53,
+        179.33,
+        146.67,
+        173.64,
+        "C",
+        150.81,
+        167.96,
+        153.06,
+        159.64,
+        158.46,
+        155.38,
+        "C",
+        163.86,
+        151.11,
+        172.0,
+        149.27,
+        179.08,
+        148.06,
+        "C",
+        186.15,
+        146.84,
+        193.35,
+        147.72,
+        200.92,
+        148.08,
+        "C",
+        208.49,
+        148.44,
+        218.71,
+        146.3,
+        224.52,
+        150.22,
+        "C",
+        230.32,
+        154.14,
+        231.0,
+        165.47,
+        235.75,
+        171.61,
+        "C",
+        240.5,
+        177.75,
+        250.2,
+        180.66,
+        253.02,
+        187.06,
+        "C",
+        255.85,
+        193.46,
+        255.66,
+        203.43,
+        252.71,
+        210.0,
+        "Z"
+       ],
+       "fill": "white",
+       "stroke": "ink",
+       "sw": 4
+      },
+      {
+       "op": "poly",
+       "pts": [
+        250.0,
+        "150 + 6 * sin(0.0 - e * 9.425)",
+        254.6,
+        "150 + 6 * sin(0.673 - e * 9.425)",
+        259.3,
+        "150 + 6 * sin(1.346 - e * 9.425)",
+        263.9,
+        "150 + 6 * sin(2.02 - e * 9.425)",
+        268.6,
+        "150 + 6 * sin(2.693 - e * 9.425)",
+        273.2,
+        "150 + 6 * sin(3.366 - e * 9.425)",
+        277.9,
+        "150 + 6 * sin(4.039 - e * 9.425)",
+        282.5,
+        "150 + 6 * sin(4.712 - e * 9.425)",
+        287.1,
+        "150 + 6 * sin(5.386 - e * 9.425)",
+        291.8,
+        "150 + 6 * sin(6.059 - e * 9.425)",
+        296.4,
+        "150 + 6 * sin(6.732 - e * 9.425)",
+        301.1,
+        "150 + 6 * sin(7.405 - e * 9.425)",
+        305.7,
+        "150 + 6 * sin(8.078 - e * 9.425)",
+        310.4,
+        "150 + 6 * sin(8.752 - e * 9.425)",
+        315.0,
+        "150 + 6 * sin(9.425 - e * 9.425)",
+        319.6,
+        "150 + 6 * sin(10.098 - e * 9.425)",
+        324.3,
+        "150 + 6 * sin(10.771 - e * 9.425)",
+        328.9,
+        "150 + 6 * sin(11.444 - e * 9.425)",
+        333.6,
+        "150 + 6 * sin(12.118 - e * 9.425)",
+        338.2,
+        "150 + 6 * sin(12.791 - e * 9.425)",
+        342.9,
+        "150 + 6 * sin(13.464 - e * 9.425)",
+        347.5,
+        "150 + 6 * sin(14.137 - e * 9.425)",
+        352.1,
+        "150 + 6 * sin(14.81 - e * 9.425)",
+        356.8,
+        "150 + 6 * sin(15.484 - e * 9.425)",
+        361.4,
+        "150 + 6 * sin(16.157 - e * 9.425)",
+        366.1,
+        "150 + 6 * sin(16.83 - e * 9.425)",
+        370.7,
+        "150 + 6 * sin(17.503 - e * 9.425)",
+        375.4,
+        "150 + 6 * sin(18.176 - e * 9.425)",
+        380.0,
+        "150 + 6 * sin(18.85 - e * 9.425)"
+       ],
+       "stroke": "#B5452B",
+       "sw": 4,
+       "a": "ramp(u, 0.1, 0.3)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        250.0,
+        "196 + 6 * sin(0.0 - e * 9.425)",
+        254.4,
+        "196 + 6 * sin(0.673 - e * 9.425)",
+        258.7,
+        "196 + 6 * sin(1.346 - e * 9.425)",
+        263.1,
+        "196 + 6 * sin(2.02 - e * 9.425)",
+        267.4,
+        "196 + 6 * sin(2.693 - e * 9.425)",
+        271.8,
+        "196 + 6 * sin(3.366 - e * 9.425)",
+        276.1,
+        "196 + 6 * sin(4.039 - e * 9.425)",
+        280.5,
+        "196 + 6 * sin(4.712 - e * 9.425)",
+        284.9,
+        "196 + 6 * sin(5.386 - e * 9.425)",
+        289.2,
+        "196 + 6 * sin(6.059 - e * 9.425)",
+        293.6,
+        "196 + 6 * sin(6.732 - e * 9.425)",
+        297.9,
+        "196 + 6 * sin(7.405 - e * 9.425)",
+        302.3,
+        "196 + 6 * sin(8.078 - e * 9.425)",
+        306.6,
+        "196 + 6 * sin(8.752 - e * 9.425)",
+        311.0,
+        "196 + 6 * sin(9.425 - e * 9.425)",
+        315.4,
+        "196 + 6 * sin(10.098 - e * 9.425)",
+        319.7,
+        "196 + 6 * sin(10.771 - e * 9.425)",
+        324.1,
+        "196 + 6 * sin(11.444 - e * 9.425)",
+        328.4,
+        "196 + 6 * sin(12.118 - e * 9.425)",
+        332.8,
+        "196 + 6 * sin(12.791 - e * 9.425)",
+        337.1,
+        "196 + 6 * sin(13.464 - e * 9.425)",
+        341.5,
+        "196 + 6 * sin(14.137 - e * 9.425)",
+        345.9,
+        "196 + 6 * sin(14.81 - e * 9.425)",
+        350.2,
+        "196 + 6 * sin(15.484 - e * 9.425)",
+        354.6,
+        "196 + 6 * sin(16.157 - e * 9.425)",
+        358.9,
+        "196 + 6 * sin(16.83 - e * 9.425)",
+        363.3,
+        "196 + 6 * sin(17.503 - e * 9.425)",
+        367.6,
+        "196 + 6 * sin(18.176 - e * 9.425)",
+        372.0,
+        "196 + 6 * sin(18.85 - e * 9.425)"
+       ],
+       "stroke": "#B5452B",
+       "sw": 4,
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "sound",
+       "x": 320,
+       "y": 116,
+       "size": 14,
+       "color": "#B5452B",
+       "a": "ramp(u, 0.35, 0.55)"
+      },
+      {
+       "op": "text",
+       "s": "steam escapes",
+       "x": 118,
+       "y": 120,
+       "size": 14,
+       "color": "#2C6E9B",
+       "a": "ramp(u, 0.15, 0.35)"
+      },
+      {
+       "op": "text",
+       "s": "a tiny pressure cooker",
+       "x": 200,
+       "y": 350,
+       "size": 18,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.45, 0.7)"
+      }
+     ],
+     "audio": "audio/popcorn/sound.mp3",
+     "audioSeconds": 11.82
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What is inside a popcorn kernel?",
+     "options": [
+      "A drop of water",
+      "A tiny stone",
+      "Nothing at all"
+     ],
+     "answer": 0,
+     "explanation": "Water inside the kernel turns to steam when it gets hot."
+    },
+    {
+     "question": "What pushes the shell open?",
+     "options": [
+      "Steam",
+      "Your teeth",
+      "Sugar"
+     ],
+     "answer": 0,
+     "explanation": "Steam takes far more room than water, so it pushes from inside."
+    },
+    {
+     "question": "Why does rice not pop like popcorn?",
+     "options": [
+      "It is too small",
+      "Its shell is too strong or too dry",
+      "It is not a seed"
+     ],
+     "answer": 1,
+     "explanation": "Popcorn has just the right shell and just the right amount of water."
+    }
+   ]
+  },
+  {
+   "id": "mirror",
+   "title": "Why does a mirror show me?",
+   "subtitle": "Light that bounces back",
+   "category": "Physics",
+   "emoji": "🪞",
+   "accent": "#7B2CBF",
+   "available": true,
+   "minRenderer": 2,
+   "scenes": [
+    {
+     "id": "bounce",
+     "title": "Light bounces",
+     "tint": "#EAF0FF",
+     "narration": "Light travels in straight lines, until it hits something. When it hits a smooth, shiny surface, it bounces off, and it bounces at the same angle it arrived. That is reflection, and it is the whole trick behind a mirror.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EAF0FF"
+         ],
+         [
+          1.0,
+          "#C9D8FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "rect",
+       "x": -10,
+       "y": 250,
+       "w": 420,
+       "h": 160,
+       "fill": "#DDE6FF",
+       "r": 0
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 250,
+       "x2": 400,
+       "y2": 250,
+       "color": "#5C6BC0",
+       "w": 6
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 244,
+       "x2": 400,
+       "y2": 244,
+       "color": "#B7C4EE",
+       "w": 2,
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 226,
+       "x2": 400,
+       "y2": 226,
+       "color": "#B7C4EE",
+       "w": 2,
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 208,
+       "x2": 400,
+       "y2": 208,
+       "color": "#B7C4EE",
+       "w": 2,
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 190,
+       "x2": 400,
+       "y2": 190,
+       "color": "#B7C4EE",
+       "w": 2,
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 0,
+       "y1": 172,
+       "x2": 400,
+       "y2": 172,
+       "color": "#B7C4EE",
+       "w": 2,
+       "a": 0.7
+      },
+      {
+       "op": "line",
+       "x1": 70,
+       "y1": 84,
+       "x2": 194.04,
+       "y2": 240.48,
+       "color": "electric",
+       "w": 6,
+       "a": "ramp(u, 0.1, 0.3)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        185.6,
+        241.03,
+        200,
+        248,
+        196.5,
+        232.39
+       ],
+       "closed": true,
+       "fill": "electric",
+       "stroke": "electric",
+       "sw": 2,
+       "a": "ramp(u, 0.1, 0.3)"
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 248,
+       "x2": 324.04,
+       "y2": 91.52,
+       "color": "electric",
+       "w": 6,
+       "a": "ramp(u, 0.35, 0.55)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        326.5,
+        99.61,
+        330,
+        84,
+        315.6,
+        90.97
+       ],
+       "closed": true,
+       "fill": "electric",
+       "stroke": "electric",
+       "sw": 2,
+       "a": "ramp(u, 0.35, 0.55)"
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 250,
+       "x2": 200,
+       "y2": 84,
+       "color": "ink",
+       "w": 2,
+       "a": 0.6,
+       "dash": [
+        6,
+        6
+       ]
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 250,
+       "r": 54,
+       "from": 4.71,
+       "to": 5.65,
+       "stroke": "ink",
+       "sw": 2,
+       "a": "ramp(u, 0.4, 0.55)"
+      },
+      {
+       "op": "text",
+       "s": "same angle",
+       "x": 262,
+       "y": 190,
+       "size": 14,
+       "color": "ink",
+       "a": "ramp(u, 0.55, 0.75)"
+      },
+      {
+       "op": "text",
+       "s": "light bounces off a smooth surface",
+       "x": 200,
+       "y": 372,
+       "size": 16,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.35, 0.6)"
+      }
+     ],
+     "audio": "audio/mirror/bounce.mp3",
+     "audioSeconds": 14.6
+    },
+    {
+     "id": "rough",
+     "title": "Why a wall is not a mirror",
+     "tint": "#F2F0FF",
+     "narration": "A rough wall bounces light in every direction, so the light that reaches your eye is a jumble — no picture. A mirror is so smooth that all the light from one spot bounces to one place, and your eye can put the picture back together.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#F2F0FF"
+         ],
+         [
+          1.0,
+          "#D9D2FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "path",
+       "d": [
+        "M",
+        -10,
+        286,
+        "Q",
+        40,
+        270,
+        80,
+        286,
+        "Q",
+        120,
+        302,
+        160,
+        286,
+        "Q",
+        200,
+        270,
+        240,
+        286,
+        "Q",
+        280,
+        302,
+        320,
+        286,
+        "Q",
+        360,
+        270,
+        400,
+        286
+       ],
+       "fill": "#CFC7F5",
+       "stroke": "ink",
+       "sw": 6
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 74,
+       "r": 10,
+       "fill": "#7B2CBF",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 88,
+       "x2": 112.05,
+       "y2": 273.66,
+       "color": "#7B2CBF",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        109.94,
+        270.0,
+        110,
+        278,
+        116.23,
+        272.98
+       ],
+       "closed": true,
+       "fill": "#7B2CBF",
+       "stroke": "#7B2CBF",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 88,
+       "x2": 156.11,
+       "y2": 273.33,
+       "color": "#7B2CBF",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        153.27,
+        270.19,
+        155,
+        278,
+        160.05,
+        271.79
+       ],
+       "closed": true,
+       "fill": "#7B2CBF",
+       "stroke": "#7B2CBF",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 88,
+       "x2": 200.0,
+       "y2": 273.2,
+       "color": "#7B2CBF",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        196.52,
+        270.8,
+        200,
+        278,
+        203.48,
+        270.8
+       ],
+       "closed": true,
+       "fill": "#7B2CBF",
+       "stroke": "#7B2CBF",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 88,
+       "x2": 243.89,
+       "y2": 273.33,
+       "color": "#7B2CBF",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        239.95,
+        271.79,
+        245,
+        278,
+        246.73,
+        270.19
+       ],
+       "closed": true,
+       "fill": "#7B2CBF",
+       "stroke": "#7B2CBF",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 88,
+       "x2": 287.95,
+       "y2": 273.66,
+       "color": "#7B2CBF",
+       "w": 3,
+       "a": 0.75
+      },
+      {
+       "op": "poly",
+       "pts": [
+        283.77,
+        272.98,
+        290,
+        278,
+        290.06,
+        270.0
+       ],
+       "closed": true,
+       "fill": "#7B2CBF",
+       "stroke": "#7B2CBF",
+       "sw": 2,
+       "a": 0.75
+      },
+      {
+       "op": "line",
+       "x1": 110,
+       "y1": 280,
+       "x2": 85.33,
+       "y2": 194.61,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        89.34,
+        195.95,
+        84,
+        190,
+        82.66,
+        197.89
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 155,
+       "y1": 280,
+       "x2": 130.33,
+       "y2": 194.61,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        134.34,
+        195.95,
+        129,
+        190,
+        127.66,
+        197.89
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 280,
+       "x2": 175.33,
+       "y2": 194.61,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        179.34,
+        195.95,
+        174,
+        190,
+        172.66,
+        197.89
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 245,
+       "y1": 280,
+       "x2": 220.33,
+       "y2": 194.61,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        224.34,
+        195.95,
+        219,
+        190,
+        217.66,
+        197.89
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 290,
+       "y1": 280,
+       "x2": 265.33,
+       "y2": 194.61,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        269.34,
+        195.95,
+        264,
+        190,
+        262.66,
+        197.89
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 120,
+       "y1": 280,
+       "x2": 136.99,
+       "y2": 200.69,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        139.89,
+        203.77,
+        138,
+        196,
+        133.09,
+        202.31
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 170,
+       "y1": 280,
+       "x2": 186.99,
+       "y2": 200.69,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        189.89,
+        203.77,
+        188,
+        196,
+        183.09,
+        202.31
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 220,
+       "y1": 280,
+       "x2": 236.99,
+       "y2": 200.69,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        239.89,
+        203.77,
+        238,
+        196,
+        233.09,
+        202.31
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "line",
+       "x1": 265,
+       "y1": 280,
+       "x2": 281.99,
+       "y2": 200.69,
+       "color": "#B57BFF",
+       "w": 3,
+       "a": 0.8
+      },
+      {
+       "op": "poly",
+       "pts": [
+        284.89,
+        203.77,
+        283,
+        196,
+        278.09,
+        202.31
+       ],
+       "closed": true,
+       "fill": "#B57BFF",
+       "stroke": "#B57BFF",
+       "sw": 2,
+       "a": 0.8
+      },
+      {
+       "op": "text",
+       "s": "no picture",
+       "x": 306,
+       "y": 96,
+       "size": 14,
+       "color": "#7B2CBF",
+       "a": "ramp(u, 0.55, 0.75)"
+      },
+      {
+       "op": "text",
+       "s": "a rough wall scatters the light",
+       "x": 200,
+       "y": 356,
+       "size": 16,
+       "color": "ink",
+       "pill": "white",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.4, 0.65)"
+      }
+     ],
+     "audio": "audio/mirror/rough.mp3",
+     "audioSeconds": 15.25
+    },
+    {
+     "id": "layers",
+     "title": "Glass, silver, paint",
+     "tint": "#EFF4FF",
+     "narration": "A mirror is not just glass. Behind the glass there is a thin layer of shiny metal, usually silver, and behind that a coat of paint. Light passes through the glass, bounces off the silver, and comes back to you.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#EFF4FF"
+         ],
+         [
+          1.0,
+          "#D5E4FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "rect",
+       "x": 90,
+       "y": 50,
+       "w": 160,
+       "h": 270,
+       "fill": "#DDEBFF",
+       "stroke": "ink",
+       "r": 6,
+       "sw": 4
+      },
+      {
+       "op": "rect",
+       "x": 250,
+       "y": 50,
+       "w": 20,
+       "h": 270,
+       "fill": "#C7D3EA",
+       "stroke": "ink",
+       "r": 2,
+       "sw": 3
+      },
+      {
+       "op": "rect",
+       "x": 270,
+       "y": 50,
+       "w": 16,
+       "h": 270,
+       "fill": "#6B7280",
+       "stroke": "ink",
+       "r": 2,
+       "sw": 2
+      },
+      {
+       "op": "rect",
+       "x": 286,
+       "y": 50,
+       "w": 24,
+       "h": 270,
+       "fill": "#3D405B",
+       "stroke": "ink",
+       "r": 2,
+       "sw": 2
+      },
+      {
+       "op": "line",
+       "x1": 60,
+       "y1": 110,
+       "x2": 239.21,
+       "y2": 173.59,
+       "color": "electric",
+       "w": 5,
+       "a": "ramp(u, 0.1, 0.3)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        234.07,
+        177.31,
+        246,
+        176,
+        237.56,
+        167.47
+       ],
+       "closed": true,
+       "fill": "electric",
+       "stroke": "electric",
+       "sw": 2,
+       "a": "ramp(u, 0.1, 0.3)"
+      },
+      {
+       "op": "line",
+       "x1": 246,
+       "y1": 176,
+       "x2": 66.79,
+       "y2": 239.59,
+       "color": "#FFB703",
+       "w": 5,
+       "a": "ramp(u, 0.35, 0.55)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        68.44,
+        233.47,
+        60,
+        242,
+        71.93,
+        243.31
+       ],
+       "closed": true,
+       "fill": "#FFB703",
+       "stroke": "#FFB703",
+       "sw": 2,
+       "a": "ramp(u, 0.35, 0.55)"
+      },
+      {
+       "op": "line",
+       "x1": 60,
+       "y1": 190,
+       "x2": 240.11,
+       "y2": 224.86,
+       "color": "electric",
+       "w": 4,
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        236.33,
+        228.56,
+        246,
+        226,
+        237.99,
+        220.02
+       ],
+       "closed": true,
+       "fill": "electric",
+       "stroke": "electric",
+       "sw": 2,
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "line",
+       "x1": 246,
+       "y1": 226,
+       "x2": 65.65,
+       "y2": 289.99,
+       "color": "#FFB703",
+       "w": 4,
+       "a": "ramp(u, 0.45, 0.65)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        67.03,
+        284.89,
+        60,
+        292,
+        69.94,
+        293.09
+       ],
+       "closed": true,
+       "fill": "#FFB703",
+       "stroke": "#FFB703",
+       "sw": 2,
+       "a": "ramp(u, 0.45, 0.65)"
+      },
+      {
+       "op": "rect",
+       "x": 96,
+       "y": 366,
+       "w": 12,
+       "h": 12,
+       "fill": "#DDEBFF",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "text",
+       "s": "glass",
+       "x": 152,
+       "y": 373,
+       "size": 12,
+       "color": "ink"
+      },
+      {
+       "op": "rect",
+       "x": 216,
+       "y": 366,
+       "w": 12,
+       "h": 12,
+       "fill": "#C7D3EA",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "text",
+       "s": "silver",
+       "x": 262,
+       "y": 373,
+       "size": 12,
+       "color": "ink"
+      },
+      {
+       "op": "rect",
+       "x": 302,
+       "y": 366,
+       "w": 12,
+       "h": 12,
+       "fill": "#3D405B",
+       "stroke": "ink",
+       "sw": 2
+      },
+      {
+       "op": "text",
+       "s": "paint",
+       "x": 348,
+       "y": 373,
+       "size": 12,
+       "color": "ink"
+      },
+      {
+       "op": "text",
+       "s": "light bounces off the silver",
+       "x": 200,
+       "y": 26,
+       "size": 15,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.5, 0.7)"
+      }
+     ],
+     "audio": "audio/mirror/layers.mp3",
+     "audioSeconds": 14.1
+    },
+    {
+     "id": "frontback",
+     "title": "Front to back",
+     "tint": "#FFF3F8",
+     "narration": "But why does a mirror seem to swap left and right? It does not. It swaps front and back. Your reflection's nose points at your nose. Raise your right hand, and the reflection raises the hand on your right side — the one that looks like its left.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "linear",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 400,
+        "stops": [
+         [
+          0.0,
+          "#FFF3F8"
+         ],
+         [
+          1.0,
+          "#FFD6E7"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "line",
+       "x1": 200,
+       "y1": 30,
+       "x2": 200,
+       "y2": 372,
+       "color": "#C77DA0",
+       "w": 4,
+       "a": 0.75,
+       "dash": [
+        8,
+        8
+       ]
+      },
+      {
+       "op": "group",
+       "x": 120,
+       "y": 340,
+       "scale": 1.4,
+       "a": "ramp(u, 0.1, 0.3)",
+       "do": [
+        {
+         "op": "rect",
+         "x": -12,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": 2,
+         "y": -34,
+         "w": 10,
+         "h": 34,
+         "fill": "#5C6BC0",
+         "stroke": "ink",
+         "r": 4,
+         "sw": 3
+        },
+        {
+         "op": "rect",
+         "x": -17,
+         "y": -78,
+         "w": 34,
+         "h": 50,
+         "fill": "coral",
+         "stroke": "ink",
+         "r": 10,
+         "sw": 3
+        },
+        {
+         "op": "circle",
+         "x": 0,
+         "y": -100,
+         "r": 22,
+         "fill": "skin",
+         "stroke": "ink",
+         "sw": 3
+        },
+        {
+         "op": "arc",
+         "x": 0,
+         "y": -104,
+         "r": 23,
+         "from": 3.3,
+         "to": 6.13,
+         "fill": "#5D4037"
+        },
+        {
+         "op": "circle",
+         "x": -7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "circle",
+         "x": 7.2,
+         "y": -101.6,
+         "r": 2.2,
+         "fill": "ink"
+        },
+        {
+         "op": "poly",
+         "pts": [
+          6.5,
+          -93.99,
+          5.54,
+          -92.06,
+          4.04,
+          -90.53,
+          2.12,
+          -89.54,
+          -0.0,
+          -89.2,
+          -2.12,
+          -89.54,
+          -4.04,
+          -90.53,
+          -5.54,
+          -92.06,
+          -6.5,
+          -93.99
+         ],
+         "stroke": "ink",
+         "sw": 2.5
+        },
+        {
+         "op": "circle",
+         "x": -12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        },
+        {
+         "op": "circle",
+         "x": 12.4,
+         "y": -94.8,
+         "r": 2.6,
+         "fill": "#FF9EC4",
+         "a": 0.7
+        }
+       ]
+      },
+      {
+       "op": "group",
+       "x": 280,
+       "y": 340,
+       "a": "ramp(u, 0.3, 0.5)",
+       "sx": -1,
+       "do": [
+        {
+         "op": "group",
+         "x": 0,
+         "y": 0,
+         "scale": 1.4,
+         "do": [
+          {
+           "op": "rect",
+           "x": -12,
+           "y": -34,
+           "w": 10,
+           "h": 34,
+           "fill": "#5C6BC0",
+           "stroke": "ink",
+           "r": 4,
+           "sw": 3
+          },
+          {
+           "op": "rect",
+           "x": 2,
+           "y": -34,
+           "w": 10,
+           "h": 34,
+           "fill": "#5C6BC0",
+           "stroke": "ink",
+           "r": 4,
+           "sw": 3
+          },
+          {
+           "op": "rect",
+           "x": -17,
+           "y": -78,
+           "w": 34,
+           "h": 50,
+           "fill": "mint",
+           "stroke": "ink",
+           "r": 10,
+           "sw": 3
+          },
+          {
+           "op": "circle",
+           "x": 0,
+           "y": -100,
+           "r": 22,
+           "fill": "skin",
+           "stroke": "ink",
+           "sw": 3
+          },
+          {
+           "op": "arc",
+           "x": 0,
+           "y": -104,
+           "r": 23,
+           "from": 3.3,
+           "to": 6.13,
+           "fill": "#5D4037"
+          },
+          {
+           "op": "circle",
+           "x": -7.2,
+           "y": -101.6,
+           "r": 2.2,
+           "fill": "ink"
+          },
+          {
+           "op": "circle",
+           "x": 7.2,
+           "y": -101.6,
+           "r": 2.2,
+           "fill": "ink"
+          },
+          {
+           "op": "poly",
+           "pts": [
+            6.5,
+            -93.99,
+            5.54,
+            -92.06,
+            4.04,
+            -90.53,
+            2.12,
+            -89.54,
+            -0.0,
+            -89.2,
+            -2.12,
+            -89.54,
+            -4.04,
+            -90.53,
+            -5.54,
+            -92.06,
+            -6.5,
+            -93.99
+           ],
+           "stroke": "ink",
+           "sw": 2.5
+          },
+          {
+           "op": "circle",
+           "x": -12.4,
+           "y": -94.8,
+           "r": 2.6,
+           "fill": "#FF9EC4",
+           "a": 0.7
+          },
+          {
+           "op": "circle",
+           "x": 12.4,
+           "y": -94.8,
+           "r": 2.6,
+           "fill": "#FF9EC4",
+           "a": 0.7
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "op": "text",
+       "s": "you",
+       "x": 120,
+       "y": 374,
+       "size": 14,
+       "color": "ink",
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "reflection",
+       "x": 280,
+       "y": 374,
+       "size": 14,
+       "color": "ink",
+       "a": "ramp(u, 0.4, 0.6)"
+      },
+      {
+       "op": "line",
+       "x1": 150,
+       "y1": 306,
+       "x2": 242.8,
+       "y2": 306.0,
+       "color": "#C77DA0",
+       "w": 4,
+       "a": "ramp(u, 0.5, 0.7)"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        239.19,
+        311.22,
+        250,
+        306,
+        239.19,
+        300.78
+       ],
+       "closed": true,
+       "fill": "#C77DA0",
+       "stroke": "#C77DA0",
+       "sw": 2,
+       "a": "ramp(u, 0.5, 0.7)"
+      },
+      {
+       "op": "text",
+       "s": "front",
+       "x": 84,
+       "y": 300,
+       "size": 12,
+       "color": "#A4537A",
+       "a": "ramp(u, 0.45, 0.6)"
+      },
+      {
+       "op": "text",
+       "s": "back",
+       "x": 318,
+       "y": 300,
+       "size": 12,
+       "color": "#A4537A",
+       "a": "ramp(u, 0.45, 0.6)"
+      },
+      {
+       "op": "text",
+       "s": "it swaps front and back",
+       "x": 200,
+       "y": 66,
+       "size": 18,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.6, 0.8)"
+      }
+     ],
+     "audio": "audio/mirror/frontback.mp3",
+     "audioSeconds": 15.88
+    },
+    {
+     "id": "smooth",
+     "title": "Smooth and clean",
+     "tint": "#F7FBFF",
+     "narration": "So a mirror is a light bouncer with a silver back. Keep it clean and smooth, and it will hand your own picture back to you, front to back, every time.",
+     "draw": [
+      {
+       "op": "rect",
+       "x": -10,
+       "y": -10,
+       "w": 420,
+       "h": 420,
+       "r": 0,
+       "grad": {
+        "kind": "radial",
+        "x": 200,
+        "y": 180,
+        "r": 240,
+        "stops": [
+         [
+          0.0,
+          "#F7FBFF"
+         ],
+         [
+          1.0,
+          "#CFE3FF"
+         ]
+        ]
+       }
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 170,
+       "r": 110,
+       "fill": "#DCEBFF",
+       "stroke": "ink",
+       "sw": 6
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 170,
+       "r": 96,
+       "fill": "#F7FBFF",
+       "stroke": "#8ED6F2",
+       "sw": 3
+      },
+      {
+       "op": "circle",
+       "x": 200,
+       "y": 176,
+       "r": 46,
+       "fill": "skin",
+       "stroke": "ink",
+       "sw": 3
+      },
+      {
+       "op": "arc",
+       "x": 200,
+       "y": 152,
+       "r": 47,
+       "from": 3.3,
+       "to": 6.13,
+       "fill": "#5D4037"
+      },
+      {
+       "op": "circle",
+       "x": 185.6,
+       "y": 174.8,
+       "r": 4.0,
+       "fill": "ink"
+      },
+      {
+       "op": "circle",
+       "x": 214.4,
+       "y": 174.8,
+       "r": 4.0,
+       "fill": "ink"
+      },
+      {
+       "op": "poly",
+       "pts": [
+        212.99,
+        190.02,
+        211.09,
+        193.88,
+        208.07,
+        196.95,
+        204.25,
+        198.92,
+        200.0,
+        199.6,
+        195.75,
+        198.92,
+        191.93,
+        196.95,
+        188.91,
+        193.88,
+        187.01,
+        190.02
+       ],
+       "stroke": "ink",
+       "sw": 3.2
+      },
+      {
+       "op": "circle",
+       "x": 175.2,
+       "y": 188.4,
+       "r": 5.2,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "circle",
+       "x": 224.8,
+       "y": 188.4,
+       "r": 5.2,
+       "fill": "#FF9EC4",
+       "a": 0.7
+      },
+      {
+       "op": "sparkle",
+       "x": 140,
+       "y": 112,
+       "r": 10,
+       "color": "white",
+       "a": "ramp(u, 0.2, 0.4)"
+      },
+      {
+       "op": "text",
+       "s": "smooth = your picture",
+       "x": 200,
+       "y": 320,
+       "size": 15,
+       "color": "ink",
+       "a": "ramp(u, 0.4, 0.6)"
+      },
+      {
+       "op": "text",
+       "s": "keep it clean",
+       "x": 200,
+       "y": 366,
+       "size": 15,
+       "color": "ink",
+       "pill": "sun",
+       "pillStroke": "ink",
+       "a": "ramp(u, 0.55, 0.78)"
+      }
+     ],
+     "audio": "audio/mirror/smooth.mp3",
+     "audioSeconds": 9.6
+    }
+   ],
+   "quiz": [
+    {
+     "question": "What does light do on a smooth, shiny surface?",
+     "options": [
+      "Bounces off at the same angle",
+      "Stops dead",
+      "Turns into sound"
+     ],
+     "answer": 0,
+     "explanation": "That bouncing is called reflection — it is how mirrors work."
+    },
+    {
+     "question": "Why can you see a picture in a mirror but not in a wall?",
+     "options": [
+      "The wall is too cold",
+      "A rough wall scatters light everywhere",
+      "Walls are not white"
+     ],
+     "answer": 1,
+     "explanation": "A smooth surface sends light from one spot to one place, so a picture forms."
+    },
+    {
+     "question": "What does a mirror really swap?",
+     "options": [
+      "Left and right",
+      "Front and back",
+      "Up and down"
+     ],
+     "answer": 1,
+     "explanation": "It swaps front and back — your reflection's nose points at your nose."
+    }
+   ]
+  }
+ ]
+}
